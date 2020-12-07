@@ -1,0 +1,542 @@
+text,What is the start time  this movie playing at liberty
+0,{'id': -3761545176701312921, 'name': 'starttime', 'confidence': 0.9783756732940674}
+1,{'name': 'starttime', 'confidence': 0.5475042272122116}
+2,{'id': -3761545176701312921, 'name': 'starttime', 'confidence': 0.415202796459198}
+final intent,{'id': -3761545176701312921, 'name': 'starttime', 'confidence': 0.5694784476445254, 'count': 1.450831379524079}
+
+text,I want tickets for 4 people tomorrow
+0,{'id': 8611858038082490634, 'name': 'inform', 'confidence': 0.9859820008277893}
+1,{'name': 'inform', 'confidence': 0.49103529514237304}
+2,{'id': 8611858038082490634, 'name': 'inform', 'confidence': 0.9672028422355652}
+final intent,{'id': 8611858038082490634, 'name': 'inform', 'confidence': 0.6936611945455776, 'count': 1.450831379524079}
+
+text,Which theater plays infinity war by 4.30 p.m.
+0,{'id': -5713217224374639960, 'name': 'theater', 'confidence': 0.9848437905311584}
+1,{'name': 'theater', 'confidence': 0.5909671886223374}
+2,{'id': -5713217224374639960, 'name': 'theater', 'confidence': 0.5604130625724792}
+final intent,{'id': -5713217224374639960, 'name': 'theater', 'confidence': 0.62002272072336, 'count': 1.450831379524079}
+
+text,I want 3 tickers for zootopia
+0,{'id': 8611858038082490634, 'name': 'inform', 'confidence': 0.9787213206291199}
+1,{'name': 'inform', 'confidence': 0.4712480385358434}
+2,{'id': 8611858038082490634, 'name': 'inform', 'confidence': 0.9660667181015015}
+final intent,{'id': 8611858038082490634, 'name': 'inform', 'confidence': 0.6854836018733816, 'count': 1.450831379524079}
+
+text,I want to watch a comedy movie in nyc
+0,{'id': 8611858038082490634, 'name': 'inform', 'confidence': 0.9997824430465698}
+1,{'name': 'inform', 'confidence': 0.609755042265104}
+2,{'id': 8611858038082490634, 'name': 'inform', 'confidence': 0.997944176197052}
+final intent,{'id': 8611858038082490634, 'name': 'inform', 'confidence': 0.7392194982129536, 'count': 1.450831379524079}
+
+text,Which theater playing Deadpool in  hamilton?
+0,{'id': -5713217224374639960, 'name': 'theater', 'confidence': 0.9130516052246094}
+1,{'name': 'theater', 'confidence': 0.3940697899962588}
+2,{'id': -5713217224374639960, 'name': 'theater', 'confidence': 0.6047590970993042}
+final intent,{'id': -5713217224374639960, 'name': 'theater', 'confidence': 0.5526772250292077, 'count': 1.450831379524079}
+
+text,Where I can purchase  3 tickets for batman in los angeles?
+0,{'name': 'nlu_fallback', 'confidence': 1.0}
+1,{'name': 'nlu_fallback', 'confidence': 1.0}
+2,{'id': -943509363721839463, 'name': 'theater+starttime', 'confidence': 0.37716156244277954}
+final intent,{'id': -943509363721839463, 'name': 'theater+starttime', 'confidence': 0.28000012738304536, 'count': 1.361904761904762}
+
+text,What is the name of the theater is playing zootopis
+0,{'id': -5713217224374639960, 'name': 'theater', 'confidence': 0.9185742735862732}
+1,{'name': 'nlu_fallback', 'confidence': 1.0}
+2,{'id': -5713217224374639960, 'name': 'theater', 'confidence': 0.4500766396522522}
+final intent,{'id': -5713217224374639960, 'name': 'theater', 'confidence': 0.4519424670793683, 'count': 1.450831379524079}
+
+text,Can I get 8  tickets for batman vs superman
+0,{'id': -6846093921299242916, 'name': 'ticket', 'confidence': 0.5591632723808289}
+1,{'name': 'nlu_fallback', 'confidence': 1.0}
+2,{'id': -6846093921299242916, 'name': 'ticket', 'confidence': 0.2647632658481598}
+final intent,{'id': -6846093921299242916, 'name': 'ticket', 'confidence': 0.317773214876677, 'count': 1.450831379524079}
+
+text,who is the main accress
+0,{'id': 1743008227598145237, 'name': 'actress', 'confidence': 0.7735084295272827}
+1,{'name': 'nlu_fallback', 'confidence': 1.0}
+2,{'id': 1743008227598145237, 'name': 'actress', 'confidence': 0.23324233293533325}
+final intent,{'id': 1743008227598145237, 'name': 'actress', 'confidence': 0.4240424758994652, 'count': 1.0414746543778801}
+
+text,What start time is it playing at amc pacific place 11
+0,{'id': -3761545176701312921, 'name': 'starttime', 'confidence': 0.9968977570533752}
+1,{'name': 'starttime', 'confidence': 0.7463388088043027}
+2,{'id': -3761545176701312921, 'name': 'starttime', 'confidence': 0.5418185591697693}
+final intent,{'id': -3761545176701312921, 'name': 'starttime', 'confidence': 0.6630598955462186, 'count': 1.450831379524079}
+
+text,What is the start time for the brother's grimsby at  emagine in Portland
+0,{'id': -3761545176701312921, 'name': 'starttime', 'confidence': 0.9969823956489563}
+1,{'name': 'starttime', 'confidence': 0.4241210149249586}
+2,{'id': -3761545176701312921, 'name': 'starttime', 'confidence': 0.7204251289367676}
+final intent,{'id': -3761545176701312921, 'name': 'starttime', 'confidence': 0.6167248311578574, 'count': 1.450831379524079}
+
+text,What start time can I book for 4 people in chicago
+0,{'id': -3761545176701312921, 'name': 'starttime', 'confidence': 0.7406823635101318}
+1,{'name': 'nlu_fallback', 'confidence': 1.0}
+2,{'id': -3761545176701312921, 'name': 'starttime', 'confidence': 0.3435198962688446}
+final intent,{'id': -3761545176701312921, 'name': 'starttime', 'confidence': 0.3990909208377503, 'count': 1.450831379524079}
+
+text,Which day Foxtrot playing in seattle
+0,{'id': 3780659282371112580, 'name': 'moviename', 'confidence': 0.4237770736217499}
+1,{'name': 'nlu_fallback', 'confidence': 1.0}
+2,{'name': 'nlu_fallback', 'confidence': 1.0}
+final intent,{'id': 3780659282371112580, 'name': 'moviename', 'confidence': 0.2879861403537053, 'count': 0.6795698924731183}
+
+text,What date is it playing in nyc
+0,{'name': 'nlu_fallback', 'confidence': 1.0}
+1,{'name': 'nlu_fallback', 'confidence': 1.0}
+2,{'id': 2225446231944322630, 'name': 'date+starttime', 'confidence': 0.2951143682003021}
+final intent,{'id': 4922932871070533270, 'name': 'date', 'confidence': 0.3187621340963926, 'count': 1.7712614870509609}
+
+text,Which theater and start time are available in san francisco
+0,{'id': -943509363721839463, 'name': 'theater+starttime', 'confidence': 0.6834799647331238}
+1,{'name': 'theater+starttime', 'confidence': 0.6352171008622559}
+2,{'id': -8962918893450022159, 'name': 'date+theater+starttime', 'confidence': 0.4901873767375946}
+final intent,{'id': -943509363721839463, 'name': 'theater+starttime', 'confidence': 0.4502622320880774, 'count': 1.450831379524079}
+
+text,Which theater and start time are available for batman in miami
+0,{'id': -943509363721839463, 'name': 'theater+starttime', 'confidence': 0.995714545249939}
+1,{'name': 'theater+starttime', 'confidence': 0.49019556975066775}
+2,{'id': -943509363721839463, 'name': 'theater+starttime', 'confidence': 0.5580506920814514}
+final intent,{'id': -943509363721839463, 'name': 'theater+starttime', 'confidence': 0.5944606786028424, 'count': 1.450831379524079}
+
+text,Available date and time at dallas
+0,{'id': 2225446231944322630, 'name': 'date+starttime', 'confidence': 0.9310261011123657}
+1,{'name': 'date+starttime', 'confidence': 0.7769629039671865}
+2,{'id': 2225446231944322630, 'name': 'date+starttime', 'confidence': 0.7369436621665955}
+final intent,{'id': 2225446231944322630, 'name': 'date+starttime', 'confidence': 0.6994061929014664, 'count': 1.450831379524079}
+
+text,What is the genre
+0,{'id': 2193719414866101763, 'name': 'genre', 'confidence': 0.41087064146995544}
+1,{'name': 'nlu_fallback', 'confidence': 1.0}
+2,{'name': 'nlu_fallback', 'confidence': 1.0}
+final intent,{'id': 2193719414866101763, 'name': 'genre', 'confidence': 0.22401025001849947, 'count': 1.088926617619317}
+
+text,What movies are playing in nyc around 10 am
+0,{'name': 'nlu_fallback', 'confidence': 1.0}
+1,{'name': 'inform', 'confidence': 0.4285720354442852}
+2,{'name': 'nlu_fallback', 'confidence': 1.0}
+final intent,{'name': 'inform', 'confidence': 0.4285720354442852, 'count': 1}
+
+text,I want to watch a action movie tomorrow
+0,{'id': 8611858038082490634, 'name': 'inform', 'confidence': 0.9930902719497681}
+1,{'name': 'inform', 'confidence': 0.5094503790184055}
+2,{'id': 8611858038082490634, 'name': 'inform', 'confidence': 0.9899654984474182}
+final intent,{'id': 8611858038082490634, 'name': 'inform', 'confidence': 0.7067977728549372, 'count': 1.450831379524079}
+
+text,I'd like some tickets before12pm
+0,{'id': 8611858038082490634, 'name': 'inform', 'confidence': 0.9997029304504395}
+1,{'name': 'nlu_fallback', 'confidence': 1.0}
+2,{'id': 8611858038082490634, 'name': 'inform', 'confidence': 0.9987225532531738}
+final intent,{'id': 8611858038082490634, 'name': 'inform', 'confidence': 0.6443674763276536, 'count': 1.450831379524079}
+
+text,no, i don't think so
+0,{'id': -3109887877959061069, 'name': 'deny', 'confidence': 0.9936904907226562}
+1,{'name': 'nlu_fallback', 'confidence': 1.0}
+2,{'id': -3109887877959061069, 'name': 'deny', 'confidence': 0.924098551273346}
+final intent,{'id': -3109887877959061069, 'name': 'deny', 'confidence': 0.6228154385041518, 'count': 1.450831379524079}
+
+text,Hello, Good morning
+0,{'id': -3570428647175207835, 'name': 'greeting', 'confidence': 0.9991067051887512}
+1,{'name': 'greeting', 'confidence': 0.33576801405113993}
+2,{'id': -3570428647175207835, 'name': 'greeting', 'confidence': 0.9774287343025208}
+final intent,{'id': -3570428647175207835, 'name': 'greeting', 'confidence': 0.6565805806594243, 'count': 1.450831379524079}
+
+text,That's sounds great
+0,{'id': 4745422400797223175, 'name': 'confirm_answer', 'confidence': 0.7962455153465271}
+1,{'name': 'nlu_fallback', 'confidence': 1.0}
+2,{'id': 4745422400797223175, 'name': 'confirm_answer', 'confidence': 0.5084132552146912}
+final intent,{'id': 4745422400797223175, 'name': 'confirm_answer', 'confidence': 0.41352749293865887, 'count': 1.450831379524079}
+
+text,Where I can watch it
+0,{'id': 8611858038082490634, 'name': 'inform', 'confidence': 0.6186398267745972}
+1,{'name': 'nlu_fallback', 'confidence': 1.0}
+2,{'id': 8611858038082490634, 'name': 'inform', 'confidence': 0.8800066709518433}
+final intent,{'id': 8611858038082490634, 'name': 'inform', 'confidence': 0.47514860058840325, 'count': 1.450831379524079}
+
+text,Which theater is playing 3d Avengers in atlanta
+0,{'id': -5713217224374639960, 'name': 'theater', 'confidence': 0.9824932217597961}
+1,{'name': 'nlu_fallback', 'confidence': 1.0}
+2,{'id': 8611858038082490634, 'name': 'inform', 'confidence': 0.5668409466743469}
+final intent,{'id': -5713217224374639960, 'name': 'theater', 'confidence': 0.4583162459219595, 'count': 1.450831379524079}
+
+=========================================================================================================text,What is the start time  this movie playing at liberty
+0,{'id': -8376657555618055785, 'name': 'starttime', 'confidence': 0.9783756732940674}
+1,{'name': 'starttime', 'confidence': 0.5475042272122116}
+2,{'id': -8376657555618055785, 'name': 'starttime', 'confidence': 0.415202796459198}
+final intent,{'id': -8376657555618055785, 'name': 'starttime', 'confidence': 0.5694784476445254, 'count': 1.450831379524079}
+
+text,I want tickets for 4 people tomorrow
+0,{'id': 1705554761281556540, 'name': 'inform', 'confidence': 0.9859820008277893}
+1,{'name': 'inform', 'confidence': 0.49103529514237304}
+2,{'id': 1705554761281556540, 'name': 'inform', 'confidence': 0.9672028422355652}
+final intent,{'id': 1705554761281556540, 'name': 'inform', 'confidence': 0.6936611945455776, 'count': 1.450831379524079}
+
+text,Which theater plays infinity war by 4.30 p.m.
+0,{'id': 7683540567034365498, 'name': 'theater', 'confidence': 0.9848437905311584}
+1,{'name': 'theater', 'confidence': 0.5909671886223374}
+2,{'id': 7683540567034365498, 'name': 'theater', 'confidence': 0.5604130625724792}
+final intent,{'id': 7683540567034365498, 'name': 'theater', 'confidence': 0.62002272072336, 'count': 1.450831379524079}
+
+text,I want 3 tickers for zootopia
+0,{'id': 1705554761281556540, 'name': 'inform', 'confidence': 0.9787213206291199}
+1,{'name': 'inform', 'confidence': 0.4712480385358434}
+2,{'id': 1705554761281556540, 'name': 'inform', 'confidence': 0.9660667181015015}
+final intent,{'id': 1705554761281556540, 'name': 'inform', 'confidence': 0.6854836018733816, 'count': 1.450831379524079}
+
+text,I want to watch a comedy movie in nyc
+0,{'id': 1705554761281556540, 'name': 'inform', 'confidence': 0.9997824430465698}
+1,{'name': 'inform', 'confidence': 0.609755042265104}
+2,{'id': 1705554761281556540, 'name': 'inform', 'confidence': 0.997944176197052}
+final intent,{'id': 1705554761281556540, 'name': 'inform', 'confidence': 0.7392194982129536, 'count': 1.450831379524079}
+
+text,Which theater playing Deadpool in  hamilton?
+0,{'id': 7683540567034365498, 'name': 'theater', 'confidence': 0.9130516052246094}
+1,{'name': 'theater', 'confidence': 0.3940697899962588}
+2,{'id': 7683540567034365498, 'name': 'theater', 'confidence': 0.6047590970993042}
+final intent,{'id': 7683540567034365498, 'name': 'theater', 'confidence': 0.5526772250292077, 'count': 1.450831379524079}
+
+text,Where I can purchase  3 tickets for batman in los angeles?
+0,{'name': 'nlu_fallback', 'confidence': 1.0}
+1,{'name': 'nlu_fallback', 'confidence': 1.0}
+2,{'id': 5785655100978333067, 'name': 'theater+starttime', 'confidence': 0.37716156244277954}
+final intent,{'id': 5785655100978333067, 'name': 'theater+starttime', 'confidence': 0.28000012738304536, 'count': 1.361904761904762}
+
+text,What is the name of the theater is playing zootopis
+0,{'id': 7683540567034365498, 'name': 'theater', 'confidence': 0.9185742735862732}
+1,{'name': 'nlu_fallback', 'confidence': 1.0}
+2,{'id': 7683540567034365498, 'name': 'theater', 'confidence': 0.4500766396522522}
+final intent,{'id': 7683540567034365498, 'name': 'theater', 'confidence': 0.4519424670793683, 'count': 1.450831379524079}
+
+=======================================================================================================
+
+text,What is the start time  this movie playing at liberty
+0,{'id': 8624894742414221094, 'name': 'starttime', 'confidence': 0.9783756732940674}
+1,{'name': 'starttime', 'confidence': 0.5475042272122116}
+2,{'id': 8624894742414221094, 'name': 'starttime', 'confidence': 0.415202796459198}
+final intent,{'id': 8624894742414221094, 'name': 'starttime', 'confidence': 0.5694784476445254, 'count': 1.450831379524079}
+
+text,I want tickets for 4 people tomorrow
+0,{'id': 1955526835182567455, 'name': 'inform', 'confidence': 0.9859820008277893}
+1,{'name': 'inform', 'confidence': 0.49103529514237304}
+2,{'id': 1955526835182567455, 'name': 'inform', 'confidence': 0.9672028422355652}
+final intent,{'id': 1955526835182567455, 'name': 'inform', 'confidence': 0.6936611945455776, 'count': 1.450831379524079}
+
+text,Which theater plays infinity war by 4.30 p.m.
+0,{'id': -8217858440072994811, 'name': 'theater', 'confidence': 0.9848437905311584}
+1,{'name': 'theater', 'confidence': 0.5909671886223374}
+2,{'id': -8217858440072994811, 'name': 'theater', 'confidence': 0.5604130625724792}
+final intent,{'id': -8217858440072994811, 'name': 'theater', 'confidence': 0.62002272072336, 'count': 1.450831379524079}
+
+text,I want 3 tickers for zootopia
+0,{'id': 1955526835182567455, 'name': 'inform', 'confidence': 0.9787213206291199}
+1,{'name': 'inform', 'confidence': 0.4712480385358434}
+2,{'id': 1955526835182567455, 'name': 'inform', 'confidence': 0.9660667181015015}
+final intent,{'id': 1955526835182567455, 'name': 'inform', 'confidence': 0.6854836018733816, 'count': 1.450831379524079}
+
+text,I want to watch a comedy movie in nyc
+0,{'id': 1955526835182567455, 'name': 'inform', 'confidence': 0.9997824430465698}
+1,{'name': 'inform', 'confidence': 0.609755042265104}
+2,{'id': 1955526835182567455, 'name': 'inform', 'confidence': 0.997944176197052}
+final intent,{'id': 1955526835182567455, 'name': 'inform', 'confidence': 0.7392194982129536, 'count': 1.450831379524079}
+
+text,Which theater playing Deadpool in  hamilton?
+0,{'id': -8217858440072994811, 'name': 'theater', 'confidence': 0.9130516052246094}
+1,{'name': 'theater', 'confidence': 0.3940697899962588}
+2,{'id': -8217858440072994811, 'name': 'theater', 'confidence': 0.6047590970993042}
+final intent,{'id': -8217858440072994811, 'name': 'theater', 'confidence': 0.5526772250292077, 'count': 1.450831379524079}
+
+text,Where I can purchase  3 tickets for batman in los angeles?
+0,{'name': 'nlu_fallback', 'confidence': 1.0}
+1,{'name': 'nlu_fallback', 'confidence': 1.0}
+2,{'id': 4283098850367555882, 'name': 'theater+starttime', 'confidence': 0.37716156244277954}
+final intent,{'id': 4283098850367555882, 'name': 'theater+starttime', 'confidence': 0.28000012738304536, 'count': 1.361904761904762}
+
+text,What is the name of the theater is playing zootopis
+0,{'id': -8217858440072994811, 'name': 'theater', 'confidence': 0.9185742735862732}
+1,{'name': 'nlu_fallback', 'confidence': 1.0}
+2,{'id': -8217858440072994811, 'name': 'theater', 'confidence': 0.4500766396522522}
+final intent,{'id': -8217858440072994811, 'name': 'theater', 'confidence': 0.4519424670793683, 'count': 1.450831379524079}
+
+text,Can I get 8  tickets for batman vs superman
+0,{'id': 8748040086630235944, 'name': 'ticket', 'confidence': 0.5591632723808289}
+1,{'name': 'nlu_fallback', 'confidence': 1.0}
+2,{'id': 8748040086630235944, 'name': 'ticket', 'confidence': 0.2647632658481598}
+final intent,{'id': 8748040086630235944, 'name': 'ticket', 'confidence': 0.317773214876677, 'count': 1.450831379524079}
+
+text,who is the main accress
+0,{'id': -3326885669372662992, 'name': 'actress', 'confidence': 0.7735084295272827}
+1,{'name': 'nlu_fallback', 'confidence': 1.0}
+2,{'id': -3326885669372662992, 'name': 'actress', 'confidence': 0.23324233293533325}
+final intent,{'id': -3326885669372662992, 'name': 'actress', 'confidence': 0.4240424758994652, 'count': 1.0414746543778801}
+
+text,What start time is it playing at amc pacific place 11
+0,{'id': 8624894742414221094, 'name': 'starttime', 'confidence': 0.9968977570533752}
+1,{'name': 'starttime', 'confidence': 0.7463388088043027}
+2,{'id': 8624894742414221094, 'name': 'starttime', 'confidence': 0.5418185591697693}
+final intent,{'id': 8624894742414221094, 'name': 'starttime', 'confidence': 0.6630598955462186, 'count': 1.450831379524079}
+
+text,What is the start time for the brother's grimsby at  emagine in Portland
+0,{'id': 8624894742414221094, 'name': 'starttime', 'confidence': 0.9969823956489563}
+1,{'name': 'starttime', 'confidence': 0.4241210149249586}
+2,{'id': 8624894742414221094, 'name': 'starttime', 'confidence': 0.7204251289367676}
+final intent,{'id': 8624894742414221094, 'name': 'starttime', 'confidence': 0.6167248311578574, 'count': 1.450831379524079}
+
+text,What start time can I book for 4 people in chicago
+0,{'id': 8624894742414221094, 'name': 'starttime', 'confidence': 0.7406823635101318}
+1,{'name': 'nlu_fallback', 'confidence': 1.0}
+2,{'id': 8624894742414221094, 'name': 'starttime', 'confidence': 0.3435198962688446}
+final intent,{'id': 8624894742414221094, 'name': 'starttime', 'confidence': 0.3990909208377503, 'count': 1.450831379524079}
+
+text,Which day Foxtrot playing in seattle
+0,{'id': 7418204119607209213, 'name': 'moviename', 'confidence': 0.4237770736217499}
+1,{'name': 'nlu_fallback', 'confidence': 1.0}
+2,{'name': 'nlu_fallback', 'confidence': 1.0}
+final intent,{'id': 7418204119607209213, 'name': 'moviename', 'confidence': 0.2879861403537053, 'count': 0.6795698924731183}
+
+text,What date is it playing in nyc
+0,{'name': 'nlu_fallback', 'confidence': 1.0}
+1,{'name': 'nlu_fallback', 'confidence': 1.0}
+2,{'id': -8181909696113429329, 'name': 'date+starttime', 'confidence': 0.2951143682003021}
+final intent,{'id': 1559534954861908951, 'name': 'date', 'confidence': 0.3187621340963926, 'count': 1.7712614870509609}
+
+text,Which theater and start time are available in san francisco
+0,{'id': 4283098850367555882, 'name': 'theater+starttime', 'confidence': 0.6834799647331238}
+1,{'name': 'theater+starttime', 'confidence': 0.6352171008622559}
+2,{'id': -5723250308606775074, 'name': 'date+theater+starttime', 'confidence': 0.4901873767375946}
+final intent,{'id': 4283098850367555882, 'name': 'theater+starttime', 'confidence': 0.4502622320880774, 'count': 1.450831379524079}
+
+text,Which theater and start time are available for batman in miami
+0,{'id': 4283098850367555882, 'name': 'theater+starttime', 'confidence': 0.995714545249939}
+1,{'name': 'theater+starttime', 'confidence': 0.49019556975066775}
+2,{'id': 4283098850367555882, 'name': 'theater+starttime', 'confidence': 0.5580506920814514}
+final intent,{'id': 4283098850367555882, 'name': 'theater+starttime', 'confidence': 0.5944606786028424, 'count': 1.450831379524079}
+
+text,Available date and time at dallas
+0,{'id': -8181909696113429329, 'name': 'date+starttime', 'confidence': 0.9310261011123657}
+1,{'name': 'date+starttime', 'confidence': 0.7769629039671865}
+2,{'id': -8181909696113429329, 'name': 'date+starttime', 'confidence': 0.7369436621665955}
+final intent,{'id': -8181909696113429329, 'name': 'date+starttime', 'confidence': 0.6994061929014664, 'count': 1.450831379524079}
+
+text,What is the genre
+0,{'id': -8311870687423258173, 'name': 'genre', 'confidence': 0.41087064146995544}
+1,{'name': 'nlu_fallback', 'confidence': 1.0}
+2,{'name': 'nlu_fallback', 'confidence': 1.0}
+final intent,{'id': -8311870687423258173, 'name': 'genre', 'confidence': 0.22401025001849947, 'count': 1.088926617619317}
+
+text,What movies are playing in nyc around 10 am
+0,{'name': 'nlu_fallback', 'confidence': 1.0}
+1,{'name': 'inform', 'confidence': 0.4285720354442852}
+2,{'name': 'nlu_fallback', 'confidence': 1.0}
+final intent,{'name': 'inform', 'confidence': 0.4285720354442852, 'count': 1}
+
+text,I want to watch a action movie tomorrow
+0,{'id': 1955526835182567455, 'name': 'inform', 'confidence': 0.9930902719497681}
+1,{'name': 'inform', 'confidence': 0.5094503790184055}
+2,{'id': 1955526835182567455, 'name': 'inform', 'confidence': 0.9899654984474182}
+final intent,{'id': 1955526835182567455, 'name': 'inform', 'confidence': 0.7067977728549372, 'count': 1.450831379524079}
+
+text,I'd like some tickets before12pm
+0,{'id': 1955526835182567455, 'name': 'inform', 'confidence': 0.9997029304504395}
+1,{'name': 'nlu_fallback', 'confidence': 1.0}
+2,{'id': 1955526835182567455, 'name': 'inform', 'confidence': 0.9987225532531738}
+final intent,{'id': 1955526835182567455, 'name': 'inform', 'confidence': 0.6443674763276536, 'count': 1.450831379524079}
+
+text,no, i don't think so
+0,{'id': -6873725759775995032, 'name': 'deny', 'confidence': 0.9936904907226562}
+1,{'name': 'nlu_fallback', 'confidence': 1.0}
+2,{'id': -6873725759775995032, 'name': 'deny', 'confidence': 0.924098551273346}
+final intent,{'id': -6873725759775995032, 'name': 'deny', 'confidence': 0.6228154385041518, 'count': 1.450831379524079}
+
+text,Hello, Good morning
+0,{'id': 9047315033733099616, 'name': 'greeting', 'confidence': 0.9991067051887512}
+1,{'name': 'greeting', 'confidence': 0.33576801405113993}
+2,{'id': 9047315033733099616, 'name': 'greeting', 'confidence': 0.9774287343025208}
+final intent,{'id': 9047315033733099616, 'name': 'greeting', 'confidence': 0.6565805806594243, 'count': 1.450831379524079}
+
+text,That's sounds great
+0,{'id': -5044491034404609747, 'name': 'confirm_answer', 'confidence': 0.7962455153465271}
+1,{'name': 'nlu_fallback', 'confidence': 1.0}
+2,{'id': -5044491034404609747, 'name': 'confirm_answer', 'confidence': 0.5084132552146912}
+final intent,{'id': -5044491034404609747, 'name': 'confirm_answer', 'confidence': 0.41352749293865887, 'count': 1.450831379524079}
+
+text,Where I can watch it
+0,{'id': 1955526835182567455, 'name': 'inform', 'confidence': 0.6186398267745972}
+1,{'name': 'nlu_fallback', 'confidence': 1.0}
+2,{'id': 1955526835182567455, 'name': 'inform', 'confidence': 0.8800066709518433}
+final intent,{'id': 1955526835182567455, 'name': 'inform', 'confidence': 0.47514860058840325, 'count': 1.450831379524079}
+
+text,Which theater is playing 3d Avengers in atlanta
+0,{'id': -8217858440072994811, 'name': 'theater', 'confidence': 0.9824932217597961}
+1,{'name': 'nlu_fallback', 'confidence': 1.0}
+2,{'id': 1955526835182567455, 'name': 'inform', 'confidence': 0.5668409466743469}
+final intent,{'id': -8217858440072994811, 'name': 'theater', 'confidence': 0.4583162459219595, 'count': 1.450831379524079}
+
+text,When is it playing at nyc
+0,{'name': 'nlu_fallback', 'confidence': 1.0}
+1,{'name': 'starttime', 'confidence': 0.3494206485205203}
+2,{'id': -8181909696113429329, 'name': 'date+starttime', 'confidence': 0.17416775226593018}
+final intent,{'name': 'starttime', 'confidence': 0.3494206485205203, 'count': 1}
+
+text,what are the available theater for DeadPool
+0,{'id': -8217858440072994811, 'name': 'theater', 'confidence': 0.7105320692062378}
+1,{'name': 'nlu_fallback', 'confidence': 1.0}
+2,{'id': -8217858440072994811, 'name': 'theater', 'confidence': 0.2906743586063385}
+final intent,{'id': -8217858440072994811, 'name': 'theater', 'confidence': 0.31911319128062926, 'count': 1.450831379524079}
+
+text,any time is okay
+0,{'name': 'nlu_fallback', 'confidence': 1.0}
+1,{'name': 'nlu_fallback', 'confidence': 1.0}
+2,{'id': 1955526835182567455, 'name': 'inform', 'confidence': 0.3416615426540375}
+final intent,{'id': 1955526835182567455, 'name': 'inform', 'confidence': 0.3416615426540375, 'count': 1}
+
+text,can you get 2 tickets for 4.00 pm for Antman?
+0,{'name': 'nlu_fallback', 'confidence': 1.0}
+1,{'name': 'nlu_fallback', 'confidence': 1.0}
+2,{'id': 1955526835182567455, 'name': 'inform', 'confidence': 0.4662221372127533}
+final intent,{'id': 1994534704181903235, 'name': 'date+theater', 'confidence': 0.2905232012271881, 'count': 1}
+
+text,That is right
+0,{'name': 'nlu_fallback', 'confidence': 1.0}
+1,{'name': 'nlu_fallback', 'confidence': 1.0}
+2,{'name': 'nlu_fallback', 'confidence': 1.0}
+final intent,{'id': 9047315033733099616, 'name': 'greeting', 'confidence': 0.3159380257129669, 'count': 1}
+
+text,Book 3 tickets for batman movie
+0,{'name': 'nlu_fallback', 'confidence': 1.0}
+1,{'name': 'nlu_fallback', 'confidence': 1.0}
+2,{'name': 'nlu_fallback', 'confidence': 1.0}
+final intent,{'name': 'inform', 'confidence': 0.22047952573189006, 'count': 1}
+
+text,can you please buy 7 tickets for the magnificent movie for the 8.00 pm
+0,{'name': 'nlu_fallback', 'confidence': 1.0}
+1,{'name': 'nlu_fallback', 'confidence': 1.0}
+2,{'id': 1955526835182567455, 'name': 'inform', 'confidence': 0.44214433431625366}
+final intent,{'name': 'inform', 'confidence': 0.27809578823344416, 'count': 1.361904761904762}
+
+text,Thank you for your service
+0,{'id': 7013670261921196978, 'name': 'thanks', 'confidence': 0.9675483703613281}
+1,{'name': 'nlu_fallback', 'confidence': 1.0}
+2,{'name': 'nlu_fallback', 'confidence': 1.0}
+final intent,{'id': 7013670261921196978, 'name': 'thanks', 'confidence': 0.38701915504237505, 'count': 1.450831379524079}
+
+text,That will work for me
+0,{'id': 9047315033733099616, 'name': 'greeting', 'confidence': 0.4865339994430542}
+1,{'name': 'nlu_fallback', 'confidence': 1.0}
+2,{'name': 'nlu_fallback', 'confidence': 1.0}
+final intent,{'id': 9047315033733099616, 'name': 'greeting', 'confidence': 0.33063385768603254, 'count': 0.6795698924731183}
+
+text,Can I know avaible start times
+0,{'id': 4283098850367555882, 'name': 'theater+starttime', 'confidence': 0.8255583047866821}
+1,{'name': 'nlu_fallback', 'confidence': 1.0}
+2,{'id': 8624894742414221094, 'name': 'starttime', 'confidence': 0.4685690402984619}
+final intent,{'id': 4283098850367555882, 'name': 'theater+starttime', 'confidence': 0.4251937683825678, 'count': 1.0414746543778801}
+
+text,yes , please
+0,{'id': -5044491034404609747, 'name': 'confirm_answer', 'confidence': 0.8232364058494568}
+1,{'name': 'nlu_fallback', 'confidence': 1.0}
+2,{'id': 1955526835182567455, 'name': 'inform', 'confidence': 0.9381861686706543}
+final intent,{'id': -5044491034404609747, 'name': 'confirm_answer', 'confidence': 0.37932084828863805, 'count': 1.0414746543778801}
+
+text,what are the cities the Black swan playing
+0,{'name': 'nlu_fallback', 'confidence': 1.0}
+1,{'name': 'nlu_fallback', 'confidence': 1.0}
+2,{'id': 9047315033733099616, 'name': 'greeting', 'confidence': 0.1926439106464386}
+final intent,{'id': 9047315033733099616, 'name': 'greeting', 'confidence': 0.1926439106464386, 'count': 1}
+
+text,No, not that
+0,{'id': -6873725759775995032, 'name': 'deny', 'confidence': 0.9572034478187561}
+1,{'name': 'nlu_fallback', 'confidence': 1.0}
+2,{'id': -6873725759775995032, 'name': 'deny', 'confidence': 0.8384998440742493}
+final intent,{'id': -6873725759775995032, 'name': 'deny', 'confidence': 0.5722010026734488, 'count': 1.450831379524079}
+
+text,sorry, i do not like it
+0,{'id': -6873725759775995032, 'name': 'deny', 'confidence': 0.9545019865036011}
+1,{'name': 'nlu_fallback', 'confidence': 1.0}
+2,{'id': -6873725759775995032, 'name': 'deny', 'confidence': 0.8062986135482788}
+final intent,{'id': -6873725759775995032, 'name': 'deny', 'confidence': 0.5768698825078661, 'count': 1.450831379524079}
+
+text,which are theaters bird box moive in portland
+0,{'id': 4283098850367555882, 'name': 'theater+starttime', 'confidence': 0.9601075053215027}
+1,{'name': 'nlu_fallback', 'confidence': 1.0}
+2,{'name': 'nlu_fallback', 'confidence': 1.0}
+final intent,{'id': 4283098850367555882, 'name': 'theater+starttime', 'confidence': 0.3999621656836333, 'count': 1.450831379524079}
+
+text,I like to see quiet place movie at 12:00 pm in los angeles?
+0,{'id': -7679760484593694368, 'name': 'video_format', 'confidence': 0.47191673517227173}
+1,{'name': 'inform', 'confidence': 0.44702680964129804}
+2,{'id': 1955526835182567455, 'name': 'inform', 'confidence': 0.6534678936004639}
+final intent,{'id': -7679760484593694368, 'name': 'video_format', 'confidence': 0.32070040497728575, 'count': 0.6795698924731183}
+
+text,Bye, nice work
+0,{'id': 7013670261921196978, 'name': 'thanks', 'confidence': 0.9278046488761902}
+1,{'name': 'nlu_fallback', 'confidence': 1.0}
+2,{'name': 'nlu_fallback', 'confidence': 1.0}
+final intent,{'id': 7013670261921196978, 'name': 'thanks', 'confidence': 0.46603106718665777, 'count': 1.0414746543778801}
+
+text,can you please buy me movie tickets at liberty?
+0,{'id': 8748040086630235944, 'name': 'ticket', 'confidence': 0.421893447637558}
+1,{'name': 'nlu_fallback', 'confidence': 1.0}
+2,{'id': 8748040086630235944, 'name': 'ticket', 'confidence': 0.2599172294139862}
+final intent,{'id': -3370747317808453698, 'name': 'confirm_question', 'confidence': 0.2662409842014313, 'count': 1}
+
+text,Hi, good evening !!!
+0,{'id': 9047315033733099616, 'name': 'greeting', 'confidence': 0.9989755153656006}
+1,{'name': 'nlu_fallback', 'confidence': 1.0}
+2,{'id': 9047315033733099616, 'name': 'greeting', 'confidence': 0.965359628200531}
+final intent,{'id': 9047315033733099616, 'name': 'greeting', 'confidence': 0.6099167141975397, 'count': 1.450831379524079}
+
+text,I want to get movie tickets for tomorrow at 8.00 pm ? 
+0,{'id': 1955526835182567455, 'name': 'inform', 'confidence': 0.9452268481254578}
+1,{'name': 'inform', 'confidence': 0.4761378945875411}
+2,{'id': 1955526835182567455, 'name': 'inform', 'confidence': 0.9680265784263611}
+final intent,{'id': 1955526835182567455, 'name': 'inform', 'confidence': 0.6766905196776595, 'count': 1.450831379524079}
+
+text,i 'm flexible on the time
+0,{'id': 8624894742414221094, 'name': 'starttime', 'confidence': 0.8506739139556885}
+1,{'name': 'inform', 'confidence': 0.33120255790713143}
+2,{'id': 8624894742414221094, 'name': 'starttime', 'confidence': 0.3905735909938812}
+final intent,{'id': 8624894742414221094, 'name': 'starttime', 'confidence': 0.4015529829701657, 'count': 1.450831379524079}
+
+text,What are the start times at liberty theater for Deadpool
+0,{'id': 4283098850367555882, 'name': 'theater+starttime', 'confidence': 0.9910224676132202}
+1,{'name': 'nlu_fallback', 'confidence': 1.0}
+2,{'id': 4283098850367555882, 'name': 'theater+starttime', 'confidence': 0.5559244155883789}
+final intent,{'id': 4283098850367555882, 'name': 'theater+starttime', 'confidence': 0.49872771154262097, 'count': 1.450831379524079}
+
+text,who are the actors?
+0,{'id': -2154362368042055688, 'name': 'actor', 'confidence': 0.7420803904533386}
+1,{'name': 'nlu_fallback', 'confidence': 1.0}
+2,{'name': 'nlu_fallback', 'confidence': 1.0}
+final intent,{'id': -2154362368042055688, 'name': 'actor', 'confidence': 0.3407686239796654, 'count': 1.088926617619317}
+
+text,that 's correct
+0,{'id': -5044491034404609747, 'name': 'confirm_answer', 'confidence': 0.8302503228187561}
+1,{'name': 'nlu_fallback', 'confidence': 1.0}
+2,{'id': -5044491034404609747, 'name': 'confirm_answer', 'confidence': 0.5202329754829407}
+final intent,{'id': -5044491034404609747, 'name': 'confirm_answer', 'confidence': 0.42911297042201346, 'count': 1.450831379524079}
+
+text,alright , thanks
+0,{'id': 7013670261921196978, 'name': 'thanks', 'confidence': 0.6843667030334473}
+1,{'name': 'nlu_fallback', 'confidence': 1.0}
+2,{'name': 'nlu_fallback', 'confidence': 1.0}
+final intent,{'id': 7013670261921196978, 'name': 'thanks', 'confidence': 0.36849518628417166, 'count': 1.0414746543778801}
+
+text,Can you give me the name of the actor?
+0,{'id': -2154362368042055688, 'name': 'actor', 'confidence': 0.6465135216712952}
+1,{'name': 'nlu_fallback', 'confidence': 1.0}
+2,{'id': -2154362368042055688, 'name': 'actor', 'confidence': 0.23307621479034424}
+final intent,{'id': -2154362368042055688, 'name': 'actor', 'confidence': 0.36767211451503085, 'count': 1.0414746543778801}
+
+text,What is  the name of the actress?
+0,{'id': -3326885669372662992, 'name': 'actress', 'confidence': 0.9687690138816833}
+1,{'name': 'nlu_fallback', 'confidence': 1.0}
+2,{'id': -3326885669372662992, 'name': 'actress', 'confidence': 0.33160027861595154}
+final intent,{'id': -3326885669372662992, 'name': 'actress', 'confidence': 0.4398336297588849, 'count': 1.450831379524079}
+
+text,In which state i can watch this movie?
+0,{'name': 'nlu_fallback', 'confidence': 1.0}
+1,{'name': 'nlu_fallback', 'confidence': 1.0}
+2,{'id': 1955526835182567455, 'name': 'inform', 'confidence': 0.21377377212047577}
+final intent,{'id': 7418204119607209213, 'name': 'moviename', 'confidence': 0.16515039038914506, 'count': 0.6795698924731183}
+

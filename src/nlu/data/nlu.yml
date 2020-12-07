@@ -1,0 +1,780 @@
+version: "2.0"
+
+nlu:
+- intent: greeting
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: multiple_choice
+  examples: |
+    - How many tickets are available?
+    - Which movie is showing?
+    - Which date and start time are available?
+    - How many tickets are available for that day?
+
+- intent: confirm_answer
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+    
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+    - Oh, sorry! This is the wrong ticket!
+
+- intent: confirm_question
+  examples: |
+    - Could you help me to purchase the tickets?
+    - Could you help me to book the tickets?
+    - Could you help me to book the tickets for that movie?
+    - Could you help me to book the tickets?
+    - Could you help me to book the tickets for that movie?
+
+- intent: thanks
+  examples: |
+    - Thank you
+    - Thank you, [goodbye](closing)
+    - [bye](closing)
+    - [goodbye](closing)
+    - [see you around](closing)
+    - [see you later](closing)
+
+- intent: inform
+  examples: |
+    - I want to watch [zootopia](moviename)
+    - I want to watch at [10:30am](starttime)
+    - I want to watch at [hamilton](city)
+    - I want to set it up [tomorrow](date)
+    - I want [2](numberofpeople) tickets please!
+    - I want to watch at [manville 12 plex](theater)
+    - [ryan reynolds](actor)
+    - I need [three](numberofpeople) tickets at [manville](city) [alabama](state)
+    - I need [single](numberofpeople) tickets at [around 2pm](starttime)
+    - I want to watch at [latest showing](starttime) on [this weekend](date).
+    - [top rated](critic_rating)
+    - [is still playing in theaters](description)
+    - I want to watch a [comedy](genre) movie.
+    - I like to watch [horror](genre) movie.
+    - [pg](mpaa_rating)
+    - [3d](video_format)
+    - [$20](price)
+    - [2 kids](numberofkids)
+    - [first](moviename)
+    - [regal meridian](theater_chain)
+    - I want to watch at [4:30pm](starttime) in [nyc](city)
+    - [imax](video_format) [near here](distanceconstraints)
+    - [two](numberofpeople) tickets at [carmike 16](theater)
+    - I want to watch [Deadpool](moviename) at [cinemas](theater)
+    - [one](numberofpeople) tickets at [latest showing](starttime) [today](date)
+    - [best restaurant](other)
+    - I want tickets for [the danish girl](moviename) at [1:10pm](starttime).
+    - I want some tickets at [nyc](city).
+    - I want some tickets at [nyc](city).
+    - I want some tickets at [FLIX BREWHOUSE DES MOINES](theater).
+    - I need tickets at [pa](state).
+    - I need some tickets for [star wars](moviename) at [regal meridian](theater_chain).
+    - I need some tickets [before 4pm](starttime)
+    - I need [9](numberofpeople) tickets for [IMAX](video_format) at [around 2pm](starttime).    
+    - Hi, I'd like to buy tickets for [amc lowes oak tree](moviename) in [il](state).
+    - Okay, I need to have the tickets for [standard](video_format) [the witch](moviename) starting at [12:30pm](starttime) at [central cinema](theater) on [march 24th][date]
+    - Okay, I need [5](numberofpeople) tickets for [imax 3d](video_format) [kung fu panda 3](moviename) starting at [before 4pm](starttime) at [Redwood City 20](theater) on [weekend](date)
+    - Okay, I want [3](numberofpeople) tickets for [Avengers](moviename) starting at [9.30 a.m.](starttime) at [emagine](theater) in [Seattle](city) on [tomorrow](date)
+
+- intent: theater
+  examples: |    
+    - Which theater will play the [zootopia](moviename) at [8 p.m.](starttime)?
+    - Which theater is playing [whiskey tango foxtrot](moviename) at [8:45](starttime) in [detroit](city)?
+    - what is the theater will be playing at [miami](city)?
+    - Which theater is [how to be single](moviename) playing at [latest showing](starttime) [a different day](date)?
+    - what is the name of the theater is playing [kung fu panda 3](moviename)?
+    - Which theater [closest](distanceconstraints) is available?
+    - Is there a theater that playing at [10pm](starttime)?
+    - what theater can I book [1](numberofpeople) ticket for [How to be single](moviename)?
+    - Which theater is [london has fallen](moviename) playing? 
+    - Which theater is playing [eddie the eagle](moviename) at [chicago](city)?
+    - what is the theater that will [gods of egypt](moviename) play [openingnight](date)?
+    - Which theater is [triple 9](moviename) playing [visalia](distanceconstraints)?
+    - Is there a theater that playing [the witch](moviename) in [mo](state)?
+    - Which theater near zipcode [48071](zip) is playing [where to invade next](moviename)?
+    - Which theater is playing [3d](video_format) [zoolander 2](moviename)?
+    - Which theater [near the space needle](distanceconstraints) can I book [5](numberofpeople) [imax](video_format) tickets?
+    - Which theater is available?
+    - Where I can purchase [seven](numberofpeople) tickets?
+    - Which theater can I book [2 adult](numberofpeople) tickets at [north carolina](state)?
+    - What theater is playing at [OR](state)?
+    - I need [2](numberofpeople) tickets. what is the theater [area](distanceconstraints) offers [2d](video_format) in [louisiana](state)?
+    - I need [3](numberofpeople) tickets. Which theater offers [standard](video_format)?
+    - I need [4](numberofpeople) tickets. Which theater [nearest](distanceconstraints) is playing?
+    - I need [5](numberofpeople) tickets. what theater [near 98119](distanceconstraints) at [mn](state)?
+    - I need [10](numberofpeople) tickets. Which theater offers [standard/2D version](video_format) at [ga](state)?
+
+- intent: ticket
+  examples: |    
+    - Is there [regular](video_format) tickets available?
+    - Is there any ticket available [closest time](distanceconstraints)?
+    - Can I get the tickets for [march 24th](date)?
+    - Could you help me to book the tickets?
+    - Can I book [twelve](numberofpeople) tickets for [hail caesar](moviename)?
+    - Can I get tickets for [the big short](moviename) [weekend](date)?
+    - Can I buy tickets for [deadpool](moviename) at [sacramento](city)?
+    - Can I get some tickets for [kung fu panda 3](moviename)?
+    - Can I book a [single](numberofpeople) ticket?
+    - Can I get tickets for [room](moviename) at [cinemas](theater)?
+
+- intent: moviename
+  examples: |  
+    - What movie is playing at [11:10am](starttime) [3/12](date) in [pittsburgh](city)?
+    - Which movie is available on [next friday](date) for [3](numberofpeople) tickets?
+    - What movie is showing at [atlanta](city)?
+    - What is the movie is playing [space needle](distanceconstraints)?
+    - which movie is playing at [royal oak emagine theater](theater)?
+    - What movie is playing on [tuesday](date)?
+    - What movie is available?
+
+- intent: other
+  examples: | 
+    - Anything else about the movie?
+    - is there any other concerns about the movie?
+    - what are the other interesting things about the movie?
+
+- intent: price
+  examples: | 
+    - What is the price?
+    - what about the price?
+    - can you tell me the price of the ticket
+    - tell me the price
+
+- intent: city
+  examples: | 
+    - Which city is available?
+    - what are the available cities?
+    - what city can i watch this movie?
+
+- intent: numberofpeople
+  examples: | 
+    - How many tickets are available?
+    - how much tickets available?
+    - how many tickets can i get?
+    
+- intent: actor
+  examples: | 
+    - What actor is in the movie?
+    - who is the actor in this movie?
+    - the name of the actor in this movie?
+    - what is the name of the actor?
+
+- intent: actress
+  examples: | 
+    - What actress is in the movie?
+    - who is the actress in this movie?
+    - can you give me the name of the actress
+    - what is the name of the actress?
+
+- intent: critic_rating
+  examples: | 
+    - What is the critic_rating for the movie?
+    - what is the critic rating?
+    - Do you know about the critic ratings?
+    - what is the critic rating for [infinity war](moviename)
+
+- intent: starttime
+  examples: | 
+    - What start time is it playing at [amc](theater_chain)?
+    - What is the start time for [independce day](moviename)?
+    - What is the start time for [kung fu panda](moviename) [east side](distanceconstraints)?
+    - What is the start time for [Deadpool](moviename) at zipcode [90602](zip)?
+    - What start time can I book [two](numberofpeople) tickets for [the revenant](moviename)?
+    - What is the start time for [10 cloverfield lane](moviename) [Friday](date)?
+    - What is the start time for [the brothers grimsby](moviename) in [florida](state)?
+    - When is [the perfect match](moviename) playing at [south barrington](city)?
+    - What is the start time for [the brother's grimsby](moviename) at [emagine](theater)?
+    - What is the start time available for [five](numberofpeople) tickets?
+    - What start time is available?
+    - What time is it playing [friday march 11](date)? I need [6](numberofpeople) tickets. 
+    - What start time can I book [8](numberofpeople) tickets at [over seattle](city)?
+    - What start time can I book [7](numberofpeople) tickets [downtown](distanceconstraints)?
+    - When it will play at [dallas](city) [tn](state)?
+    - I want to purchase [5](numberofpeople) tickets. What time is that movie playing at [Cinerama](theater) in [Belleville](city)?
+    - I want to purchase [eleven](numberofpeople) tickets. What time is playing on [march 12](date), in zipcode [97232](zip)?
+    - I need [ten](numberofpeople) tickets. What time is the movie playing at [the century rowland plaza](theater) on [3/9/2016](date)?
+    - I want to purchase [11](numberofpeople) tickets. What time is playing at [st](city), and zipcode is [33172](zip)?
+    - What is the start time for that movie [close to 95833](distanceconstraints)?
+    - What time is playing at [cobb dolphin cinemas](theater)?
+    - What time is playing at [louis park](city) [33133](zip) on [tomorrow afternoon](date)?
+    - What time is playing at [Portland](city)?
+    - What time would you like on [now](date)?
+    - What time is playing in [Monroe](city) on [3/11](date)
+    - I would like [10](numberofpeople) tickets for that movie. What time is it playing at [ca](state)?
+    - I need [7](numberofpeople) tickets. What is the start time in the area of zipcode [65807](zip)?
+    - I want to get [2](numberofpeople) tickets. What time is it playing at [cary](city) [fl](state)
+    - What time is playing at [alamo draft house](theater) in [whittier](city)?
+    - I want to get [3](numberofpeople) tickets. What is the start time at [sparta](city) [94952](zip) on [9th](date)?
+    - What time is playing in zipcode [60201](zip)?
+    - At what time does the movie starts?
+    - I want [4](numberofpeople) tickets. What is the start time at [century 16](theater) in [Shiloh](city) on [21-mar](date)?
+
+- intent: description
+  examples: |   
+    - Is there any other description for the [lolo](moviename)?
+    - What is the description for the movie?
+    - can you provide a description for the movie?
+    - is there any description of the movie?
+
+- intent: distanceconstraints
+  examples: |   
+    - What is the distanceconstraints for the movie?
+    - what are the distance constraints?
+    - is there any distance constraints?
+
+- intent: genre
+  examples: | 
+    - What is the genre for the movie?
+    - what genre this movie belongs?
+    - what is the genre of the movie?
+
+- intent: mpaa_rating
+  examples: | 
+    - What is the mpaa_rating for the movie?
+    - What is the price for the movie?
+    - what is the mpaa rating?
+    
+- intent: video_format
+  examples: | 
+    - What is the video format for the movie?
+    - the video format of the movie?
+    - can you give the video format of the movie
+        
+- intent: numberofkids
+  examples: | 
+    - How many kid tickets are available?
+    - how many kid tickets can i get?
+    - how many tickets are available for kids?
+
+- intent: zip
+  examples: |
+    - What is the zip?
+    - can you give me the zip code
+    - the zip code?
+    
+- intent: theater_chain
+  examples: |
+    - Which theater_chain is it playing?
+    - what is the theater chain?
+    - what theater chain  it is available?
+    - what theater chain does [the witch](moviename) playing?
+        
+- intent: state
+  examples: |
+    - Which state is availble?
+    - what is the state available
+    - from which state?
+    - what state is available to watch in [Saturday](date)
+
+- intent: movie_series
+  examples: |
+    - What is the movie series?
+    - what is teh name of the movie series?
+    - name of the movie series?
+    - what is the movie series that includes the movie [annabel](moviename)
+    
+- intent: date
+  examples: | 
+    - What date can I book [2](numberofpeople) tickets for [brooklyn](moviename)?
+    - Which day [the other side of the door](moviename) will be showing at [10:30am](starttime)?
+    - When is [the boy](moviename) playing?
+    - What date is [other side of the door](moviename) playing at [o'fallon](city)?
+    - When is [witch](moviename) playing in [pennsylvania](state)?
+    - What date is [The Witch](moviename) playing at zipcode [85249](zip)?
+    - Which day is [Young Messiah](moviename) playing at [regal marysville 14](theater)?
+    - What date is available?
+    - When is [risen](moviename) playing [near space needle](distanceconstraints)?
+    - What date is available for [3](numberofpeople) tickets?
+    - I need to get [two]{"entity": "numberofpeople", "value": "2"} tickets. What date is playing at [ny](state)?
+    - What date is playing at [iowa](state)?
+
+- intent: theater+starttime
+  examples: |  
+    - Which theater and start time are available on [tomorrow](date)?
+    - Which theater and start time are available to book [a]{"entity": "numberofpeople", "value": "1"} ticket at [fairview heights](city)?
+    - What theater and start time are available to book [2](numberofpeople) tickets in [springfield](city) [35246](zip)?
+    - What theater and start time are free at [albany](city) on [this weekend](date)?
+    - What theater and start time are available at [mi](state)
+    - Which theater and start time do you want to book [three]{"entity": "numberofpeople", "value": "3"} tickets at [houma](city) [illinois](state)?
+    - what is the available starttime and teater for [5](numberofpeople) tickets [south beach](distanceconstraints)?
+    - what is the available theater and start time for [4](numberofpeople) tickets at [evanston](city) on [today](date)?
+    - What theater and start time are available for [four]{"entity": "numberofpeople", "value": "4"} tickets at [california](state)?
+    - What theater and start time are available in [la](city) [48071](zip) on [saturday](date)?
+    - what is the available theater and start time to book [6](numberofpeople) tickets in [90036](zip)?
+    - Which theater and start time are available [near](distanceconstraints)?
+    - Which theater and start time are available
+    - Which theater and start time are available for [7](numberofpeople) tickets on [tonight](date)?
+    - Which theater and start time are free at [Southfield](city) [oregon](state)
+    - can i know which start time and theater is available for [10](numberofpeople) tickets in [monroe](city) [35242](zip) on [friday](date)?
+    - Which theater [near me](distanceconstraints) is available in [al](state) for [imax 3d](video_format)?
+    - What theater and start time are available to book [9](numberofpeople) tickets?
+
+- intent: date+starttime
+  examples: |  
+    - What date and start time are availble to book [20](numberofpeople) tickets?
+    - What date and start time are available to book [2](numberofpeople) tickets at [olympic blvd](theater)?
+    - What time and date is available [south side](distanceconstraints)?
+    - What date and start time are available to book [10](numberofpeople) tickets at [box office window](theater) in [norfolk](city)?
+    - What is the available time and date to book [13](numberofpeople) tickets in [Long Island](city) [ma](state)?
+    - What date and start time are available in zipcode [08835](zip)
+    - What date and start time are available at [northern san francisco](city) [nj](state)?
+    - What is teh available time and date at [park west 14](theater) in [louis](city)?
+    - What date and time are available for [4](numberofpeople) tickets at [94109](city)
+    - What date and start time are available to book [2](numberofpeople) tickets [local theater](distanceconstraints)?
+    - which time and date are available for [3](numberofpeople) tickets in zipcode [98272](zip)
+    - What date and start time are available to book [1](numberofpeople) ticket at [washington](state)? 
+    - What date and start time are available?   
+    - available date and time at [wa](state)?
+    - What date and start time do you want at [sappington](city)
+
+- intent: date+theater
+  examples: | 
+    - Can you tell me the available theater and date?
+    - give me available dates and theaters
+    - what are the available dates and theaters to watch [high school musical](moviename)
+
+- intent: date+ticket+starttime
+  examples: |  
+    - What date and start time are available for some tickets
+    - which dates and start times are available to get tickets?
+    - I want to get tickets for [the first](moviename) what are the dates and starttime available to buy tickets?
+
+- intent: date+theater+starttime
+  examples: | 
+    - Can you tell me the available theater and date, start time?
+    - what dates theaters and time slots are available for the movie?
+    - what are the available theaters start time and the dates for the movie
+
+- lookup: city
+  examples: |
+    - hamilton
+    - manville
+    - bridgewater
+    - seattle
+    - bellevue
+    - birmingham
+    - san francisco
+    - portland
+    - royal oak
+    - Royal Oak
+    - madison heights
+    - detroit
+    - des moines
+    - johnstown
+    - boston
+    - carbondale
+    - los angeles
+    - stony brook
+    - 94952
+    - tampa
+    - hoover
+    - dramas
+    - Sacramento
+    - nashville
+    - Seattle
+    - st louis
+    - whittier village stadium cinemas
+    - southeast portland
+    - miami
+    - chicago
+    - nyc
+    - sacramento
+    - pittsburgh
+    - atlanta
+    - south barrington
+    - over seattle
+    - dallas
+    - st
+    - louis park
+    - Portland
+    - Monroe
+    - cary
+    - whittier
+    - sparta
+    - Shiloh
+    - Belleville
+    - o'fallon
+    - fairview heights
+    - springfield
+    - albany
+    - houma
+    - la
+    - evanston
+    - Southfield
+    - monroe
+    - Long Island
+    - northern san francisco
+    - 94109
+    - louis
+    - sappington
+    - norfolk
+    - Los Angeles CA 90015
+    - campcreek area
+    - regency
+    - arlington
+    - philadelphia
+    - princeton
+    - buford
+    - las vegas
+    - waynesboro
+    - Clear Lake
+    - du quoin
+    - Du Quoin
+    - altoona
+    - orlando
+    - regency academy 6 theater
+    - baltimore
+    - knoxville
+    - chico
+    - wilmington
+    - lansing
+    - bayou vista
+    - manchester stadium 16
+    - Houma
+    - tulare
+    - shiloh
+    - belleville
+    - Springfield
+    - du Quoin
+
+- lookup: theater
+  examples: |
+    - Redwood City 20
+    - many
+    - amc pacific place 11 theater
+    - regal lloyd center 10
+    - carmike 16
+    - river east 21
+    - emagine theater
+    - emagine
+    - different
+    - amc star john r 15
+    - any
+    - FLIX BREWHOUSE DES MOINES
+    - CARMIKE COBBLESTONE 9
+    - cinemas
+    - regal visalia stadium 10
+    - amc pacific place 11
+    - amc loews boston common 19
+    - amc showplace carbondale 8
+    - amc lowes oak tree
+    - amc lowes oak tree 6
+    - royal oak emagine theater
+    - Regal LA LIVE Stadium 14
+    - regal la live stadium
+    - Big Picture
+    - Cinerama
+    - Central Cinema
+    - century rowland plaza
+    - the century rowland plaza
+    - regency commerce 14
+    - bellevue lincoln square
+    - amc west shore 14 210 Westshore Plaza
+    - pacific science center imax theaters
+    - carmike patton creek
+    - regal meridian sundance cinemas
+    - regal thornton place
+    - REGAL NATOMAS MARKETPLACE STADIUM 16 & RPX
+    - Regal Natomas Marketplace
+    - amc hamilton 24
+    - regal meridan 16
+    - elmwood palace 20
+    - regal hollywood stadium 27
+    - chase park plaza cinemas
+    - regal lloyd center century eastport 16
+    - regal movies on tv stadium 16
+    - regal lloyd
+    - Regal South Beach
+    - Cinepolis USA
+    - Cobb Dolphin Cinemas
+    - cobb dolphin cinemas
+    - amc southcenter 16
+    - ua kaufman astoria stadium 14
+    - regal theater
+    - the Holiday 6
+    -  the Stadium 5
+    - the Natomas Marketplace Stadium
+    - Natomas Marketplace Stadium
+    - regal natomas marketplace stadium
+    - richland cinemas
+    - this theater
+    - amc loews waterfront 22
+    - amc phipps plaza 14
+    - south barrington
+    - regal la live stadium 14
+    - pacific theatres at the grove
+    - regal la stadium 14
+    - regal la
+    - varsity theater
+    - theaters all over
+    - alamo draft house
+    - alamo drafthouse dallas
+    - century Eastport 16
+    - regal pioneer place
+    - regal lloyd center 10 & IMAX
+    - CENTURY 16 EASTPORT PLAZA
+    - century 16 EASTPORT PLAZA
+    - century 16
+    - regal barkley village stadium 16
+    - amc loews cascade mall
+    - regal marysville 14
+    - park west 14
+    - fangandgo
+    - Frank Theatres Parkside Town Commons Stadium 11
+    - Frank Theatres
+    - whittier village stadium cinemas
+    - cinemar downey
+    - amc theaters puente hills
+    - wehrenberg o'fallon 15 cine
+    - wehrenberg st clair 10 cine
+    - WEHRENBERG CAMPBELL 16
+    - pacific place 11
+
+- lookup: distanceconstraints
+  examples: |
+    - closest
+    - visalia
+    - near the space needle
+    - area
+    - nearest
+    - near 98119
+    - closest time
+    - space needle
+    - east side
+    - downtown
+    - close to 95833
+    - near space needle
+    - south beach
+    - near
+    - south barrington
+    - near me
+    - south side
+    - local theater
+    - closest theater to you
+    - 12 miles
+    -  seattle area
+    - northern part of the city
+    - near here
+    - near my location
+    - safeco field
+    - near you:
+    - north side
+    - vicinity
+    - around the city
+    - far away from disney
+    - near you
+    - near safeco field
+    - in your area
+    - your area
+    - ave
+    - general
+
+- lookup: critic_rating
+  examples: |
+    - good
+    - 84 percent
+    - 93 of audience
+    - best
+    - good place
+    - top rated
+    - most scene
+    - number 1
+    - 4.5/5
+    - top 4
+    - lowly 26% on rotten tomatoes but 64% of the audience seemed to like it
+    - great reviews all around with a 84 percent on rotten tomatoes and 93 of audience members recommending it
+    - 6
+    - 5
+    - nice
+    - 4 5/5 star rating
+    - 26%
+    - popular
+    - most seen
+    - 4 5/5 stars
+    - 8%
+    - top
+
+- lookup: state
+  examples: |
+    - illinois
+    - ny
+    - fl
+    - ca
+    - tn
+    - florida
+    - il
+    - pa
+    - ga
+    - mn
+    - OR
+    - north carolina
+    - mo
+    - alabama
+    - louisiana
+    - WA
+    - NY
+    - virginia
+    - texas
+    - ne
+    - georgia
+    - va
+    - IA
+    - maryland
+    - nc
+    - or
+    - michigan
+    - la
+    - LA
+    - nv
+
+- lookup: moviename
+  examples: |
+    - where to invade next
+    - zoolander 2
+    - hail caesar
+    - star wars
+    - the big short
+    - the danish girl
+    - deadpool
+    - kung fu panda 3
+    - room
+    - independce day
+    - kung fu panda
+    - Deadpool
+    - London has fallen
+    - the revenant
+    - 10 cloverfield lane
+    - the brothers grimsby
+    - the perfect match
+    - the brother's grimsby
+    - lolo
+    - brooklyn
+    - the other side of the door
+    - the boy
+    - other side of the door
+    - witch
+    - The Witch
+    - Young Messiah
+    - The Young Messiah
+    - risen
+    - big short
+    - Avengers
+    - Finding Dory
+    - zoology
+    - called zoology
+    - batman
+    - batman vs superman
+    - race
+    - revenant
+    - star wars the force awakens
+    - TheWitch
+    - The Other Side of The Door
+    - How to be Single
+    - whiskey
+    - tango
+    - Foxtrot
+    - whisky tango foxtrot
+    - Zootopia
+    - starwars
+    - The revenant
+    - dirty grandpa
+    - first
+    - kung fu kanda 3
+    - Fandango
+    - 10 cloverfield lane
+    - deadpool
+    - brothers grimsby
+    - The Perfect Match
+    - mei ren yu (the mermaid)
+    - mei ren yu
+    - big
+    - London Has Fallen
+    - Whiskey Tango Foxtrot
+    - Eddie The Eagle
+    - Godys of Egypt
+    - Triple 9
+    - Where to Invade Next
+    - Zoolander 2
+    - Hail Caesar
+    - Kung Fu Panda 3
+    - Star Wars
+    - The Big Short
+    - The Danish Girl
+    - more
+    - spotlight
+    - batman moviename
+    - batman v superman
+    - creed
+    - large number of movies
+    - risen race spotlight
+    - london had fallen
+    - hail casaer
+    - race and risen
+    - The big short
+    - whisky foxtrot tango
+    - zootopis
+    - avengers
+    - finding dory
+    - same movie
+    - the young messiah
+    - morning as
+
+- lookup: genre
+  examples: |
+    - comedy
+    - comedies
+    - kid
+    - action
+    - violence
+    - superhero
+    - romance
+    - thriller
+    - drama
+    - family friendly
+    - funny
+    - kids
+    - scary
+    - horror
+    - showing
+    - romantic comedies
+    - romantic comedy
+    - adult comedy
+    - romantic
+    - drama/romance
+    - foreign
+    - superhero movie
+    - dramas
+    - animated
+    - thriller science fiction
+    - super great day
+    - comedies)
+    - not live action
+    - date night:
+    - sci-fi
+    - Action/Adventure Sci-Fi/Fantasy

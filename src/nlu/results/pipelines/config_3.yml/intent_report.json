@@ -1,0 +1,343 @@
+{
+  "confirm_question": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 3,
+    "confused_with": {
+      "nlu_fallback": 2,
+      "theater": 1
+    }
+  },
+  "numberofpeople": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 3,
+    "confused_with": {
+      "nlu_fallback": 3
+    }
+  },
+  "ticket": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 10,
+    "confused_with": {
+      "inform": 4,
+      "nlu_fallback": 4,
+      "date+ticket+starttime": 2
+    }
+  },
+  "moviename": {
+    "precision": 0.5,
+    "recall": 0.14285714285714285,
+    "f1-score": 0.22222222222222224,
+    "support": 7,
+    "confused_with": {
+      "nlu_fallback": 4,
+      "inform": 1
+    }
+  },
+  "inform": {
+    "precision": 0.625,
+    "recall": 0.6756756756756757,
+    "f1-score": 0.6493506493506493,
+    "support": 37,
+    "confused_with": {
+      "nlu_fallback": 8,
+      "date+ticket+starttime": 2
+    }
+  },
+  "date+ticket+starttime": {
+    "precision": 0.06666666666666667,
+    "recall": 0.3333333333333333,
+    "f1-score": 0.1111111111111111,
+    "support": 3,
+    "confused_with": {
+      "nlu_fallback": 2
+    }
+  },
+  "date+starttime": {
+    "precision": 0.3333333333333333,
+    "recall": 0.13333333333333333,
+    "f1-score": 0.19047619047619044,
+    "support": 15,
+    "confused_with": {
+      "nlu_fallback": 7,
+      "date+theater+starttime": 3,
+      "date+ticket+starttime": 3
+    }
+  },
+  "distanceconstraints": {
+    "precision": 1.0,
+    "recall": 0.6666666666666666,
+    "f1-score": 0.8,
+    "support": 3,
+    "confused_with": {
+      "price": 1
+    }
+  },
+  "multiple_choice": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 4,
+    "confused_with": {
+      "nlu_fallback": 3,
+      "date+theater+starttime": 1
+    }
+  },
+  "actor": {
+    "precision": 1.0,
+    "recall": 0.5,
+    "f1-score": 0.6666666666666666,
+    "support": 4,
+    "confused_with": {
+      "nlu_fallback": 2
+    }
+  },
+  "deny": {
+    "precision": 0.3333333333333333,
+    "recall": 0.125,
+    "f1-score": 0.18181818181818182,
+    "support": 8,
+    "confused_with": {
+      "nlu_fallback": 4,
+      "inform": 3
+    }
+  },
+  "thanks": {
+    "precision": 0.75,
+    "recall": 0.5,
+    "f1-score": 0.6,
+    "support": 6,
+    "confused_with": {
+      "nlu_fallback": 2,
+      "inform": 1
+    }
+  },
+  "greeting": {
+    "precision": 0.8333333333333334,
+    "recall": 0.7692307692307693,
+    "f1-score": 0.8,
+    "support": 13,
+    "confused_with": {
+      "inform": 1,
+      "thanks": 1
+    }
+  },
+  "critic_rating": {
+    "precision": 1.0,
+    "recall": 0.5,
+    "f1-score": 0.6666666666666666,
+    "support": 4,
+    "confused_with": {
+      "nlu_fallback": 2
+    }
+  },
+  "price": {
+    "precision": 0.6666666666666666,
+    "recall": 1.0,
+    "f1-score": 0.8,
+    "support": 4,
+    "confused_with": {}
+  },
+  "date+theater+starttime": {
+    "precision": 0.10344827586206896,
+    "recall": 1.0,
+    "f1-score": 0.1875,
+    "support": 3,
+    "confused_with": {}
+  },
+  "confirm_answer": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 6,
+    "confused_with": {
+      "inform": 2,
+      "nlu_fallback": 2,
+      "greeting": 1
+    }
+  },
+  "genre": {
+    "precision": 1.0,
+    "recall": 0.3333333333333333,
+    "f1-score": 0.5,
+    "support": 3,
+    "confused_with": {
+      "nlu_fallback": 2
+    }
+  },
+  "numberofkids": {
+    "precision": 1.0,
+    "recall": 0.3333333333333333,
+    "f1-score": 0.5,
+    "support": 3,
+    "confused_with": {
+      "nlu_fallback": 2
+    }
+  },
+  "theater+starttime": {
+    "precision": 1.0,
+    "recall": 0.05555555555555555,
+    "f1-score": 0.10526315789473684,
+    "support": 18,
+    "confused_with": {
+      "date+theater+starttime": 10,
+      "nlu_fallback": 7
+    }
+  },
+  "movie_series": {
+    "precision": 1.0,
+    "recall": 0.25,
+    "f1-score": 0.4,
+    "support": 4,
+    "confused_with": {
+      "nlu_fallback": 3
+    }
+  },
+  "description": {
+    "precision": 1.0,
+    "recall": 0.75,
+    "f1-score": 0.8571428571428571,
+    "support": 4,
+    "confused_with": {
+      "nlu_fallback": 1
+    }
+  },
+  "date": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 12,
+    "confused_with": {
+      "nlu_fallback": 7,
+      "inform": 1,
+      "moviename": 1
+    }
+  },
+  "other": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 3,
+    "confused_with": {
+      "nlu_fallback": 3
+    }
+  },
+  "date+theater": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 3,
+    "confused_with": {
+      "date+theater+starttime": 3
+    }
+  },
+  "starttime": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 33,
+    "confused_with": {
+      "nlu_fallback": 18,
+      "date+ticket+starttime": 6,
+      "date+starttime": 4
+    }
+  },
+  "city": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 3,
+    "confused_with": {
+      "nlu_fallback": 2,
+      "date+theater+starttime": 1
+    }
+  },
+  "theater_chain": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 4,
+    "confused_with": {
+      "nlu_fallback": 3,
+      "theater": 1
+    }
+  },
+  "actress": {
+    "precision": 1.0,
+    "recall": 0.5,
+    "f1-score": 0.6666666666666666,
+    "support": 4,
+    "confused_with": {
+      "nlu_fallback": 2
+    }
+  },
+  "mpaa_rating": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 3,
+    "confused_with": {
+      "nlu_fallback": 2,
+      "price": 1
+    }
+  },
+  "state": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 4,
+    "confused_with": {
+      "nlu_fallback": 3,
+      "date+theater+starttime": 1
+    }
+  },
+  "theater": {
+    "precision": 0.5555555555555556,
+    "recall": 0.2,
+    "f1-score": 0.29411764705882354,
+    "support": 25,
+    "confused_with": {
+      "nlu_fallback": 14,
+      "date+theater": 3
+    }
+  },
+  "zip": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 3,
+    "confused_with": {}
+  },
+  "video_format": {
+    "precision": 1.0,
+    "recall": 0.6666666666666666,
+    "f1-score": 0.8,
+    "support": 3,
+    "confused_with": {
+      "nlu_fallback": 1
+    }
+  },
+  "micro avg": {
+    "precision": 0.5033557046979866,
+    "recall": 0.2830188679245283,
+    "f1-score": 0.36231884057971014,
+    "support": 265
+  },
+  "macro avg": {
+    "precision": 0.46374521072796937,
+    "recall": 0.3069113473525238,
+    "f1-score": 0.3235000593257286,
+    "support": 265
+  },
+  "weighted avg": {
+    "precision": 0.4516637750307236,
+    "recall": 0.2830188679245283,
+    "f1-score": 0.3059067949950887,
+    "support": 265
+  }
+}

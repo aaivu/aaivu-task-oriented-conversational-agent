@@ -1,0 +1,185 @@
+{
+  "numberofpeople": {
+    "precision": 0.9259259259259259,
+    "recall": 0.8928571428571429,
+    "f1-score": 0.9090909090909091,
+    "support": 56,
+    "confused_with": {}
+  },
+  "state": {
+    "precision": 0.5,
+    "recall": 0.38461538461538464,
+    "f1-score": 0.4347826086956522,
+    "support": 26,
+    "confused_with": {
+      "city": 8
+    }
+  },
+  "city": {
+    "precision": 0.5135135135135135,
+    "recall": 0.41304347826086957,
+    "f1-score": 0.4578313253012048,
+    "support": 46,
+    "confused_with": {
+      "state": 7
+    }
+  },
+  "theater_chain": {
+    "precision": 1.0,
+    "recall": 0.8,
+    "f1-score": 0.888888888888889,
+    "support": 5,
+    "confused_with": {
+      "state": 1
+    }
+  },
+  "moviename": {
+    "precision": 0.8620689655172413,
+    "recall": 0.21367521367521367,
+    "f1-score": 0.34246575342465757,
+    "support": 117,
+    "confused_with": {
+      "zip": 2
+    }
+  },
+  "closing": {
+    "precision": 1.0,
+    "recall": 0.2222222222222222,
+    "f1-score": 0.3636363636363636,
+    "support": 9,
+    "confused_with": {}
+  },
+  "description": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 5,
+    "confused_with": {
+      "city": 1
+    }
+  },
+  "video_format": {
+    "precision": 1.0,
+    "recall": 0.4,
+    "f1-score": 0.5714285714285715,
+    "support": 15,
+    "confused_with": {
+      "moviename": 1
+    }
+  },
+  "actor": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 2,
+    "confused_with": {}
+  },
+  "genre": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 2,
+    "confused_with": {}
+  },
+  "mpaa_rating": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 1,
+    "confused_with": {}
+  },
+  "date": {
+    "precision": 0.9444444444444444,
+    "recall": 0.4473684210526316,
+    "f1-score": 0.6071428571428572,
+    "support": 38,
+    "confused_with": {
+      "city": 1
+    }
+  },
+  "numberofkids": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 2,
+    "confused_with": {
+      "numberofpeople": 1
+    }
+  },
+  "theater": {
+    "precision": 0.7647058823529411,
+    "recall": 0.2826086956521739,
+    "f1-score": 0.4126984126984127,
+    "support": 46,
+    "confused_with": {
+      "city": 5
+    }
+  },
+  "distanceconstraints": {
+    "precision": 0.8571428571428571,
+    "recall": 0.35294117647058826,
+    "f1-score": 0.5,
+    "support": 34,
+    "confused_with": {
+      "zip": 1
+    }
+  },
+  "critic_rating": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 2,
+    "confused_with": {}
+  },
+  "other": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 2,
+    "confused_with": {}
+  },
+  "price": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 1,
+    "confused_with": {}
+  },
+  "starttime": {
+    "precision": 0.9090909090909091,
+    "recall": 0.38461538461538464,
+    "f1-score": 0.5405405405405405,
+    "support": 26,
+    "confused_with": {
+      "city": 2
+    }
+  },
+  "zip": {
+    "precision": 0.7222222222222222,
+    "recall": 0.8666666666666667,
+    "f1-score": 0.7878787878787877,
+    "support": 15,
+    "confused_with": {
+      "city": 1,
+      "numberofpeople": 1
+    }
+  },
+  "micro avg": {
+    "precision": 0.7869565217391304,
+    "recall": 0.4022222222222222,
+    "f1-score": 0.5323529411764706,
+    "support": 450
+  },
+  "macro avg": {
+    "precision": 0.4999557360105027,
+    "recall": 0.28303068930441394,
+    "f1-score": 0.34081925093634224,
+    "support": 450
+  },
+  "weighted avg": {
+    "precision": 0.7844743467303754,
+    "recall": 0.4022222222222222,
+    "f1-score": 0.49901903236913325,
+    "support": 450
+  }
+}
