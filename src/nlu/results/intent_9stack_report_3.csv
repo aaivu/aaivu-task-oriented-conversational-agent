@@ -1,0 +1,770 @@
+text,What is the start time  this movie playing at liberty
+config_1.yml,{'id': 3909639233228087228, 'name': 'starttime', 'confidence': 0.9563517570495605}
+config_2.yml,{'name': 'starttime', 'confidence': 0.5714057733464805}
+config_3.yml,{'id': 3909639233228087228, 'name': 'starttime', 'confidence': 0.3857327103614807}
+config_4.yml,{'id': 3909639233228087228, 'name': 'starttime', 'confidence': 0.9909725785255432}
+config_5.yml,{'id': 3909639233228087228, 'name': 'starttime', 'confidence': 0.871309220790863}
+config_7.yml,{'id': 3909639233228087228, 'name': 'starttime', 'confidence': 0.8061126470565796}
+config_8.yml,{'id': 3909639233228087228, 'name': 'starttime', 'confidence': 0.9906439781188965}
+config_9.yml,{'id': 3909639233228087228, 'name': 'starttime', 'confidence': 0.9687022566795349}
+final intent,{'id': 3909639233228087228, 'name': 'starttime', 'confidence': 0.8155506326579111, 'count': 4.554274922436903}
+
+text,I want tickets for 4 people tomorrow
+config_1.yml,{'id': -1689345383776254929, 'name': 'inform', 'confidence': 0.9971704483032227}
+config_2.yml,{'name': 'inform', 'confidence': 0.49054346200112636}
+config_3.yml,{'id': -1689345383776254929, 'name': 'inform', 'confidence': 0.8915664553642273}
+config_4.yml,{'id': -1689345383776254929, 'name': 'inform', 'confidence': 0.9988298416137695}
+config_5.yml,{'id': -1689345383776254929, 'name': 'inform', 'confidence': 0.9992693066596985}
+config_7.yml,{'id': -1689345383776254929, 'name': 'inform', 'confidence': 0.9960089325904846}
+config_8.yml,{'id': -1689345383776254929, 'name': 'inform', 'confidence': 0.9944967031478882}
+config_9.yml,{'id': -1689345383776254929, 'name': 'inform', 'confidence': 0.9924376010894775}
+final intent,{'id': -1689345383776254929, 'name': 'inform', 'confidence': 0.8971158044769866, 'count': 4.554274922436903}
+
+text,Which theater plays infinity war by 4.30 p.m.
+config_1.yml,{'id': 5691535686079850191, 'name': 'theater', 'confidence': 0.8837984800338745}
+config_2.yml,{'name': 'theater', 'confidence': 0.6402233371889074}
+config_3.yml,{'id': -1689345383776254929, 'name': 'inform', 'confidence': 0.37076136469841003}
+config_4.yml,{'id': 5691535686079850191, 'name': 'theater', 'confidence': 0.8901999592781067}
+config_5.yml,{'id': 5691535686079850191, 'name': 'theater', 'confidence': 0.9944384098052979}
+config_7.yml,{'id': 5691535686079850191, 'name': 'theater', 'confidence': 0.9196481704711914}
+config_8.yml,{'id': 5691535686079850191, 'name': 'theater', 'confidence': 0.9265958070755005}
+config_9.yml,{'id': 5691535686079850191, 'name': 'theater', 'confidence': 0.9802459478378296}
+final intent,{'id': 5691535686079850191, 'name': 'theater', 'confidence': 0.81607343168999, 'count': 4.554274922436903}
+
+text,I want 3 tickers for zootopia
+config_1.yml,{'id': -1689345383776254929, 'name': 'inform', 'confidence': 0.9935738444328308}
+config_2.yml,{'name': 'inform', 'confidence': 0.4704538436549622}
+config_3.yml,{'id': -1689345383776254929, 'name': 'inform', 'confidence': 0.9451189637184143}
+config_4.yml,{'id': -1689345383776254929, 'name': 'inform', 'confidence': 0.9752518534660339}
+config_5.yml,{'id': -1689345383776254929, 'name': 'inform', 'confidence': 0.9896743893623352}
+config_7.yml,{'id': -1689345383776254929, 'name': 'inform', 'confidence': 0.9992793202400208}
+config_8.yml,{'id': -1689345383776254929, 'name': 'inform', 'confidence': 0.9973692297935486}
+config_9.yml,{'id': -1689345383776254929, 'name': 'inform', 'confidence': 0.9982098340988159}
+final intent,{'id': -1689345383776254929, 'name': 'inform', 'confidence': 0.8960392874840714, 'count': 4.554274922436903}
+
+text,I want to watch a comedy movie in nyc
+config_1.yml,{'id': -1689345383776254929, 'name': 'inform', 'confidence': 0.9998164772987366}
+config_2.yml,{'name': 'inform', 'confidence': 0.6258102569031557}
+config_3.yml,{'id': -1689345383776254929, 'name': 'inform', 'confidence': 0.9837464690208435}
+config_4.yml,{'id': -1689345383776254929, 'name': 'inform', 'confidence': 0.9667713046073914}
+config_5.yml,{'id': -1689345383776254929, 'name': 'inform', 'confidence': 0.999832034111023}
+config_7.yml,{'id': -1689345383776254929, 'name': 'inform', 'confidence': 0.9977562427520752}
+config_8.yml,{'id': -1689345383776254929, 'name': 'inform', 'confidence': 0.9997261762619019}
+config_9.yml,{'id': -1689345383776254929, 'name': 'inform', 'confidence': 0.9998494982719421}
+final intent,{'id': -1689345383776254929, 'name': 'inform', 'confidence': 0.9129604203719488, 'count': 4.554274922436903}
+
+text,Which theater playing Deadpool in  hamilton?
+config_1.yml,{'id': 5691535686079850191, 'name': 'theater', 'confidence': 0.8768612742424011}
+config_2.yml,{'name': 'theater', 'confidence': 0.43426479992506956}
+config_3.yml,{'id': 5691535686079850191, 'name': 'theater', 'confidence': 0.3996634781360626}
+config_4.yml,{'id': 5691535686079850191, 'name': 'theater', 'confidence': 0.8650763034820557}
+config_5.yml,{'id': 5691535686079850191, 'name': 'theater', 'confidence': 0.8471337556838989}
+config_7.yml,{'id': 5691535686079850191, 'name': 'theater', 'confidence': 0.9027747511863708}
+config_8.yml,{'id': 5691535686079850191, 'name': 'theater', 'confidence': 0.9833102226257324}
+config_9.yml,{'id': 5691535686079850191, 'name': 'theater', 'confidence': 0.8747617602348328}
+final intent,{'id': 5691535686079850191, 'name': 'theater', 'confidence': 0.7709393760929971, 'count': 4.554274922436903}
+
+text,Where I can purchase  3 tickets for batman in los angeles?
+config_1.yml,{'id': 5691535686079850191, 'name': 'theater', 'confidence': 0.728615403175354}
+config_2.yml,{'name': 'nlu_fallback', 'confidence': 1.0}
+config_3.yml,{'id': 6168623230032456341, 'name': 'theater+starttime', 'confidence': 0.2642310857772827}
+config_4.yml,{'id': 6168623230032456341, 'name': 'theater+starttime', 'confidence': 0.8498390316963196}
+config_5.yml,{'id': 5691535686079850191, 'name': 'theater', 'confidence': 0.5933581590652466}
+config_7.yml,{'id': -136818964051920869, 'name': 'description', 'confidence': 0.37528666853904724}
+config_8.yml,{'id': 5691535686079850191, 'name': 'theater', 'confidence': 0.5366125106811523}
+config_9.yml,{'id': 6168623230032456341, 'name': 'theater+starttime', 'confidence': 0.4784858822822571}
+final intent,{'id': -136818964051920869, 'name': 'description', 'confidence': 0.37528666853904724, 'count': 1}
+
+text,What is the name of the theater is playing zootopis
+config_1.yml,{'id': 5691535686079850191, 'name': 'theater', 'confidence': 0.9814020991325378}
+config_2.yml,{'name': 'nlu_fallback', 'confidence': 1.0}
+config_3.yml,{'id': 5691535686079850191, 'name': 'theater', 'confidence': 0.30032315850257874}
+config_4.yml,{'id': 5691535686079850191, 'name': 'theater', 'confidence': 0.7650033831596375}
+config_5.yml,{'id': 5691535686079850191, 'name': 'theater', 'confidence': 0.9335213899612427}
+config_7.yml,{'id': 5691535686079850191, 'name': 'theater', 'confidence': 0.8848349452018738}
+config_8.yml,{'id': 5691535686079850191, 'name': 'theater', 'confidence': 0.9767709374427795}
+config_9.yml,{'id': 5691535686079850191, 'name': 'theater', 'confidence': 0.9305359125137329}
+final intent,{'id': 5691535686079850191, 'name': 'theater', 'confidence': 0.7551824063857726, 'count': 4.554274922436903}
+
+text,Can I get 8  tickets for batman vs superman
+config_1.yml,{'id': -2584379215333449852, 'name': 'ticket', 'confidence': 0.6543228030204773}
+config_2.yml,{'name': 'nlu_fallback', 'confidence': 1.0}
+config_3.yml,{'id': -5787859350109060847, 'name': 'date+ticket+starttime', 'confidence': 0.47810983657836914}
+config_4.yml,{'id': -2584379215333449852, 'name': 'ticket', 'confidence': 0.4763631820678711}
+config_5.yml,{'id': -5787859350109060847, 'name': 'date+ticket+starttime', 'confidence': 0.6759853363037109}
+config_7.yml,{'id': -2584379215333449852, 'name': 'ticket', 'confidence': 0.6039333343505859}
+config_8.yml,{'id': -2584379215333449852, 'name': 'ticket', 'confidence': 0.6193676590919495}
+config_9.yml,{'id': -5787859350109060847, 'name': 'date+ticket+starttime', 'confidence': 0.48623448610305786}
+final intent,{'id': -5787859350109060847, 'name': 'date+ticket+starttime', 'confidence': 0.3980573991145463, 'count': 3.3881611664220364}
+
+text,who is the main accress
+config_1.yml,{'id': -3661820531841689376, 'name': 'actress', 'confidence': 0.5133955478668213}
+config_2.yml,{'name': 'nlu_fallback', 'confidence': 1.0}
+config_3.yml,{'id': -3661820531841689376, 'name': 'actress', 'confidence': 0.4970715641975403}
+config_4.yml,{'id': -3661820531841689376, 'name': 'actress', 'confidence': 0.835875391960144}
+config_5.yml,{'name': 'nlu_fallback', 'confidence': 1.0}
+config_7.yml,{'id': -3661820531841689376, 'name': 'actress', 'confidence': 0.5836370587348938}
+config_8.yml,{'id': -3661820531841689376, 'name': 'actress', 'confidence': 0.884648323059082}
+config_9.yml,{'id': -3661820531841689376, 'name': 'actress', 'confidence': 0.7281826734542847}
+final intent,{'id': -3661820531841689376, 'name': 'actress', 'confidence': 0.6104983982512304, 'count': 4.184125668705559}
+
+text,What start time is it playing at amc pacific place 11
+config_1.yml,{'id': 3909639233228087228, 'name': 'starttime', 'confidence': 0.9863473176956177}
+config_2.yml,{'name': 'starttime', 'confidence': 0.7411371777909961}
+config_3.yml,{'name': 'nlu_fallback', 'confidence': 1.0}
+config_4.yml,{'id': 3909639233228087228, 'name': 'starttime', 'confidence': 0.9945645332336426}
+config_5.yml,{'id': 3909639233228087228, 'name': 'starttime', 'confidence': 0.9947239756584167}
+config_7.yml,{'id': 3909639233228087228, 'name': 'starttime', 'confidence': 0.9822257161140442}
+config_8.yml,{'id': 3909639233228087228, 'name': 'starttime', 'confidence': 0.9995741844177246}
+config_9.yml,{'id': 3909639233228087228, 'name': 'starttime', 'confidence': 0.9969591498374939}
+final intent,{'id': 3909639233228087228, 'name': 'starttime', 'confidence': 0.8752043617915294, 'count': 4.554274922436903}
+
+text,What is the start time for the brother's grimsby at  emagine in Portland
+config_1.yml,{'id': 3909639233228087228, 'name': 'starttime', 'confidence': 0.9986346364021301}
+config_2.yml,{'name': 'starttime', 'confidence': 0.43081824542794317}
+config_3.yml,{'name': 'nlu_fallback', 'confidence': 1.0}
+config_4.yml,{'id': 3909639233228087228, 'name': 'starttime', 'confidence': 0.997882604598999}
+config_5.yml,{'id': 3909639233228087228, 'name': 'starttime', 'confidence': 0.9967699646949768}
+config_7.yml,{'id': 3909639233228087228, 'name': 'starttime', 'confidence': 0.9734940528869629}
+config_8.yml,{'id': 3909639233228087228, 'name': 'starttime', 'confidence': 0.999330997467041}
+config_9.yml,{'id': 3909639233228087228, 'name': 'starttime', 'confidence': 0.9966776967048645}
+final intent,{'id': 3909639233228087228, 'name': 'starttime', 'confidence': 0.854644771683405, 'count': 4.554274922436903}
+
+text,What start time can I book for 4 people in chicago
+config_1.yml,{'id': 3909639233228087228, 'name': 'starttime', 'confidence': 0.7329280376434326}
+config_2.yml,{'name': 'nlu_fallback', 'confidence': 1.0}
+config_3.yml,{'id': 3909639233228087228, 'name': 'starttime', 'confidence': 0.32123255729675293}
+config_4.yml,{'id': 6168623230032456341, 'name': 'theater+starttime', 'confidence': 0.683496356010437}
+config_5.yml,{'id': 3909639233228087228, 'name': 'starttime', 'confidence': 0.6859622001647949}
+config_7.yml,{'id': 3909639233228087228, 'name': 'starttime', 'confidence': 0.9456914067268372}
+config_8.yml,{'id': 3909639233228087228, 'name': 'starttime', 'confidence': 0.5654849410057068}
+config_9.yml,{'id': 3909639233228087228, 'name': 'starttime', 'confidence': 0.8299416899681091}
+final intent,{'id': 3909639233228087228, 'name': 'starttime', 'confidence': 0.5687524310739418, 'count': 4.554274922436903}
+
+text,Which day Foxtrot playing in seattle
+config_1.yml,{'name': 'nlu_fallback', 'confidence': 1.0}
+config_2.yml,{'name': 'nlu_fallback', 'confidence': 1.0}
+config_3.yml,{'name': 'nlu_fallback', 'confidence': 1.0}
+config_4.yml,{'id': -5671959431771900048, 'name': 'moviename', 'confidence': 0.34738221764564514}
+config_5.yml,{'name': 'nlu_fallback', 'confidence': 1.0}
+config_7.yml,{'name': 'nlu_fallback', 'confidence': 1.0}
+config_8.yml,{'name': 'nlu_fallback', 'confidence': 1.0}
+config_9.yml,{'name': 'nlu_fallback', 'confidence': 1.0}
+final intent,{'id': -5671959431771900048, 'name': 'moviename', 'confidence': 0.34738221764564514, 'count': 1}
+
+text,What date is it playing in nyc
+config_1.yml,{'id': 1073652434517772957, 'name': 'date', 'confidence': 0.762384831905365}
+config_2.yml,{'name': 'nlu_fallback', 'confidence': 1.0}
+config_3.yml,{'id': 1073652434517772957, 'name': 'date', 'confidence': 0.3717823922634125}
+config_4.yml,{'id': 1073652434517772957, 'name': 'date', 'confidence': 0.8455983996391296}
+config_5.yml,{'id': 1073652434517772957, 'name': 'date', 'confidence': 0.9152832627296448}
+config_7.yml,{'name': 'nlu_fallback', 'confidence': 1.0}
+config_8.yml,{'id': 1073652434517772957, 'name': 'date', 'confidence': 0.8840698599815369}
+config_9.yml,{'id': -4202388384172592661, 'name': 'date+starttime', 'confidence': 0.5571753978729248}
+final intent,{'id': 1073652434517772957, 'name': 'date', 'confidence': 0.6132609718534043, 'count': 4.554274922436903}
+
+text,Which theater and start time are available in san francisco
+config_1.yml,{'id': 6168623230032456341, 'name': 'theater+starttime', 'confidence': 0.8034857511520386}
+config_2.yml,{'name': 'theater+starttime', 'confidence': 0.6392397363310804}
+config_3.yml,{'id': -257253878889286546, 'name': 'date+theater+starttime', 'confidence': 0.3672179877758026}
+config_4.yml,{'name': 'nlu_fallback', 'confidence': 1.0}
+config_5.yml,{'id': 6168623230032456341, 'name': 'theater+starttime', 'confidence': 0.7093735337257385}
+config_7.yml,{'id': 6168623230032456341, 'name': 'theater+starttime', 'confidence': 0.8677862286567688}
+config_8.yml,{'id': 6168623230032456341, 'name': 'theater+starttime', 'confidence': 0.8027603030204773}
+config_9.yml,{'id': 6168623230032456341, 'name': 'theater+starttime', 'confidence': 0.9117242693901062}
+final intent,{'id': 6168623230032456341, 'name': 'theater+starttime', 'confidence': 0.6583937763830713, 'count': 4.554274922436903}
+
+text,Which theater and start time are available for batman in miami
+config_1.yml,{'id': 6168623230032456341, 'name': 'theater+starttime', 'confidence': 0.9724091291427612}
+config_2.yml,{'name': 'theater+starttime', 'confidence': 0.48463520345384814}
+config_3.yml,{'id': 6168623230032456341, 'name': 'theater+starttime', 'confidence': 0.7044392228126526}
+config_4.yml,{'id': 6168623230032456341, 'name': 'theater+starttime', 'confidence': 0.9721986651420593}
+config_5.yml,{'id': 6168623230032456341, 'name': 'theater+starttime', 'confidence': 0.9877464771270752}
+config_7.yml,{'id': 6168623230032456341, 'name': 'theater+starttime', 'confidence': 0.9794188141822815}
+config_8.yml,{'id': 6168623230032456341, 'name': 'theater+starttime', 'confidence': 0.9951199293136597}
+config_9.yml,{'id': 6168623230032456341, 'name': 'theater+starttime', 'confidence': 0.9946070909500122}
+final intent,{'id': 6168623230032456341, 'name': 'theater+starttime', 'confidence': 0.8723898631228251, 'count': 4.554274922436903}
+
+text,Available date and time at dallas
+config_1.yml,{'id': -4202388384172592661, 'name': 'date+starttime', 'confidence': 0.7666782736778259}
+config_2.yml,{'name': 'date+starttime', 'confidence': 0.7512140272839443}
+config_3.yml,{'name': 'nlu_fallback', 'confidence': 1.0}
+config_4.yml,{'id': -4202388384172592661, 'name': 'date+starttime', 'confidence': 0.8791014552116394}
+config_5.yml,{'id': -4202388384172592661, 'name': 'date+starttime', 'confidence': 0.9610705971717834}
+config_7.yml,{'id': -4202388384172592661, 'name': 'date+starttime', 'confidence': 0.901364803314209}
+config_8.yml,{'id': -4202388384172592661, 'name': 'date+starttime', 'confidence': 0.8550837635993958}
+config_9.yml,{'id': -4202388384172592661, 'name': 'date+starttime', 'confidence': 0.9936031699180603}
+final intent,{'id': -4202388384172592661, 'name': 'date+starttime', 'confidence': 0.8075704965172983, 'count': 4.554274922436903}
+
+text,What is the genre
+config_1.yml,{'id': 7282060709881718675, 'name': 'genre', 'confidence': 0.7144217491149902}
+config_2.yml,{'name': 'nlu_fallback', 'confidence': 1.0}
+config_3.yml,{'name': 'nlu_fallback', 'confidence': 1.0}
+config_4.yml,{'id': 7282060709881718675, 'name': 'genre', 'confidence': 0.48806947469711304}
+config_5.yml,{'id': 7282060709881718675, 'name': 'genre', 'confidence': 0.41479620337486267}
+config_7.yml,{'name': 'nlu_fallback', 'confidence': 1.0}
+config_8.yml,{'name': 'nlu_fallback', 'confidence': 1.0}
+config_9.yml,{'id': 7282060709881718675, 'name': 'genre', 'confidence': 0.7596479058265686}
+final intent,{'id': 7282060709881718675, 'name': 'genre', 'confidence': 0.3935897039083046, 'count': 4.554274922436903}
+
+text,What movies are playing in nyc around 10 am
+config_1.yml,{'name': 'nlu_fallback', 'confidence': 1.0}
+config_2.yml,{'name': 'inform', 'confidence': 0.4278886653449085}
+config_3.yml,{'name': 'nlu_fallback', 'confidence': 1.0}
+config_4.yml,{'name': 'nlu_fallback', 'confidence': 1.0}
+config_5.yml,{'id': -5671959431771900048, 'name': 'moviename', 'confidence': 0.7168105244636536}
+config_7.yml,{'id': -4202388384172592661, 'name': 'date+starttime', 'confidence': 0.37447088956832886}
+config_8.yml,{'name': 'nlu_fallback', 'confidence': 1.0}
+config_9.yml,{'id': -4202388384172592661, 'name': 'date+starttime', 'confidence': 0.6612618565559387}
+final intent,{'id': -5671959431771900048, 'name': 'moviename', 'confidence': 0.535884503897044, 'count': 1.4796163069544366}
+
+text,I want to watch a action movie tomorrow
+config_1.yml,{'id': -1689345383776254929, 'name': 'inform', 'confidence': 0.9993196129798889}
+config_2.yml,{'name': 'inform', 'confidence': 0.5189084510829701}
+config_3.yml,{'id': -1689345383776254929, 'name': 'inform', 'confidence': 0.9614815711975098}
+config_4.yml,{'id': -1689345383776254929, 'name': 'inform', 'confidence': 0.9679739475250244}
+config_5.yml,{'id': -1689345383776254929, 'name': 'inform', 'confidence': 0.9998554587364197}
+config_7.yml,{'id': -1689345383776254929, 'name': 'inform', 'confidence': 0.991377055644989}
+config_8.yml,{'id': -1689345383776254929, 'name': 'inform', 'confidence': 0.9985857605934143}
+config_9.yml,{'id': -1689345383776254929, 'name': 'inform', 'confidence': 0.9983216524124146}
+final intent,{'id': -1689345383776254929, 'name': 'inform', 'confidence': 0.9015778384136579, 'count': 4.554274922436903}
+
+text,I'd like some tickets before12pm
+config_1.yml,{'id': -1689345383776254929, 'name': 'inform', 'confidence': 0.9989482760429382}
+config_2.yml,{'name': 'nlu_fallback', 'confidence': 1.0}
+config_3.yml,{'id': -1689345383776254929, 'name': 'inform', 'confidence': 0.9960770606994629}
+config_4.yml,{'id': -1689345383776254929, 'name': 'inform', 'confidence': 0.9985600709915161}
+config_5.yml,{'id': -1689345383776254929, 'name': 'inform', 'confidence': 0.9991940259933472}
+config_7.yml,{'id': -1689345383776254929, 'name': 'inform', 'confidence': 0.9987307786941528}
+config_8.yml,{'id': -1689345383776254929, 'name': 'inform', 'confidence': 0.9987569451332092}
+config_9.yml,{'id': -1689345383776254929, 'name': 'inform', 'confidence': 0.9987648129463196}
+final intent,{'id': -1689345383776254929, 'name': 'inform', 'confidence': 0.8900027927817505, 'count': 4.554274922436903}
+
+text,no, i don't think so
+config_1.yml,{'id': -5404317724958533355, 'name': 'deny', 'confidence': 0.9773397445678711}
+config_2.yml,{'name': 'nlu_fallback', 'confidence': 1.0}
+config_3.yml,{'id': -5404317724958533355, 'name': 'deny', 'confidence': 0.9221504330635071}
+config_4.yml,{'id': -5404317724958533355, 'name': 'deny', 'confidence': 0.9956337213516235}
+config_5.yml,{'id': -5404317724958533355, 'name': 'deny', 'confidence': 0.9742334485054016}
+config_7.yml,{'id': -5404317724958533355, 'name': 'deny', 'confidence': 0.8442479968070984}
+config_8.yml,{'id': -5404317724958533355, 'name': 'deny', 'confidence': 0.9928247928619385}
+config_9.yml,{'id': -5404317724958533355, 'name': 'deny', 'confidence': 0.9912102222442627}
+final intent,{'id': -5404317724958533355, 'name': 'deny', 'confidence': 0.8582634535097166, 'count': 4.554274922436903}
+
+text,Hello, Good morning
+config_1.yml,{'id': -6329779991859247258, 'name': 'greeting', 'confidence': 0.9998849630355835}
+config_2.yml,{'name': 'greeting', 'confidence': 0.34088332130402144}
+config_3.yml,{'id': -6329779991859247258, 'name': 'greeting', 'confidence': 0.8693667054176331}
+config_4.yml,{'id': -6329779991859247258, 'name': 'greeting', 'confidence': 0.9993663430213928}
+config_5.yml,{'id': -6329779991859247258, 'name': 'greeting', 'confidence': 0.9988875985145569}
+config_7.yml,{'id': -6329779991859247258, 'name': 'greeting', 'confidence': 0.9622353315353394}
+config_8.yml,{'id': -6329779991859247258, 'name': 'greeting', 'confidence': 0.997999370098114}
+config_9.yml,{'id': -6329779991859247258, 'name': 'greeting', 'confidence': 0.997873067855835}
+final intent,{'id': -6329779991859247258, 'name': 'greeting', 'confidence': 0.8812122973656693, 'count': 4.554274922436903}
+
+text,That's sounds great
+config_1.yml,{'id': 7645440253143198013, 'name': 'confirm_answer', 'confidence': 0.7537136673927307}
+config_2.yml,{'name': 'nlu_fallback', 'confidence': 1.0}
+config_3.yml,{'id': 7645440253143198013, 'name': 'confirm_answer', 'confidence': 0.2927841246128082}
+config_4.yml,{'name': 'nlu_fallback', 'confidence': 1.0}
+config_5.yml,{'id': 7645440253143198013, 'name': 'confirm_answer', 'confidence': 0.6086616516113281}
+config_7.yml,{'id': 7645440253143198013, 'name': 'confirm_answer', 'confidence': 0.4418574571609497}
+config_8.yml,{'id': 7645440253143198013, 'name': 'confirm_answer', 'confidence': 0.9917423129081726}
+config_9.yml,{'id': 7645440253143198013, 'name': 'confirm_answer', 'confidence': 0.9630333781242371}
+final intent,{'id': 7645440253143198013, 'name': 'confirm_answer', 'confidence': 0.58662020345691, 'count': 4.554274922436903}
+
+text,Where I can watch it
+config_1.yml,{'id': -1689345383776254929, 'name': 'inform', 'confidence': 0.6272906064987183}
+config_2.yml,{'name': 'nlu_fallback', 'confidence': 1.0}
+config_3.yml,{'id': -1689345383776254929, 'name': 'inform', 'confidence': 0.6561528444290161}
+config_4.yml,{'id': 5691535686079850191, 'name': 'theater', 'confidence': 0.504123330116272}
+config_5.yml,{'name': 'nlu_fallback', 'confidence': 1.0}
+config_7.yml,{'id': -5404317724958533355, 'name': 'deny', 'confidence': 0.38957372307777405}
+config_8.yml,{'id': 5691535686079850191, 'name': 'theater', 'confidence': 0.48426565527915955}
+config_9.yml,{'id': -1689345383776254929, 'name': 'inform', 'confidence': 0.5423200726509094}
+final intent,{'id': 5691535686079850191, 'name': 'theater', 'confidence': 0.496180260181427, 'count': 1.6666666666666667}
+
+text,Which theater is playing 3d Avengers in atlanta
+config_1.yml,{'id': 5691535686079850191, 'name': 'theater', 'confidence': 0.9693364500999451}
+config_2.yml,{'name': 'nlu_fallback', 'confidence': 1.0}
+config_3.yml,{'name': 'nlu_fallback', 'confidence': 1.0}
+config_4.yml,{'id': 5691535686079850191, 'name': 'theater', 'confidence': 0.8237698078155518}
+config_5.yml,{'id': 5691535686079850191, 'name': 'theater', 'confidence': 0.7985263466835022}
+config_7.yml,{'id': 5691535686079850191, 'name': 'theater', 'confidence': 0.8247914910316467}
+config_8.yml,{'id': 5691535686079850191, 'name': 'theater', 'confidence': 0.9106005430221558}
+config_9.yml,{'id': 5691535686079850191, 'name': 'theater', 'confidence': 0.8844594359397888}
+final intent,{'id': 5691535686079850191, 'name': 'theater', 'confidence': 0.734727974559251, 'count': 4.554274922436903}
+
+text,When is it playing at nyc
+config_1.yml,{'name': 'nlu_fallback', 'confidence': 1.0}
+config_2.yml,{'name': 'starttime', 'confidence': 0.31676427807206897}
+config_3.yml,{'id': 1073652434517772957, 'name': 'date', 'confidence': 0.18112637102603912}
+config_4.yml,{'id': -5787859350109060847, 'name': 'date+ticket+starttime', 'confidence': 0.4896451532840729}
+config_5.yml,{'id': -4202388384172592661, 'name': 'date+starttime', 'confidence': 0.6542659401893616}
+config_7.yml,{'id': -1689345383776254929, 'name': 'inform', 'confidence': 0.49614211916923523}
+config_8.yml,{'id': -6618295221481261146, 'name': 'thanks', 'confidence': 0.5185222029685974}
+config_9.yml,{'id': -4202388384172592661, 'name': 'date+starttime', 'confidence': 0.7314488887786865}
+final intent,{'id': -6618295221481261146, 'name': 'thanks', 'confidence': 0.5185222029685974, 'count': 1}
+
+text,what are the available theater for DeadPool
+config_1.yml,{'id': 5691535686079850191, 'name': 'theater', 'confidence': 0.7164214253425598}
+config_2.yml,{'name': 'nlu_fallback', 'confidence': 1.0}
+config_3.yml,{'id': 6168623230032456341, 'name': 'theater+starttime', 'confidence': 0.24304825067520142}
+config_4.yml,{'id': 5691535686079850191, 'name': 'theater', 'confidence': 0.6705885529518127}
+config_5.yml,{'id': 5691535686079850191, 'name': 'theater', 'confidence': 0.6887804269790649}
+config_7.yml,{'id': 5691535686079850191, 'name': 'theater', 'confidence': 0.7168053984642029}
+config_8.yml,{'id': 5691535686079850191, 'name': 'theater', 'confidence': 0.923340916633606}
+config_9.yml,{'id': 5691535686079850191, 'name': 'theater', 'confidence': 0.6179422736167908}
+final intent,{'id': 5691535686079850191, 'name': 'theater', 'confidence': 0.5919024432815332, 'count': 4.554274922436903}
+
+text,any time is okay
+config_1.yml,{'id': -1689345383776254929, 'name': 'inform', 'confidence': 0.358243852853775}
+config_2.yml,{'name': 'nlu_fallback', 'confidence': 1.0}
+config_3.yml,{'name': 'nlu_fallback', 'confidence': 1.0}
+config_4.yml,{'id': 3909639233228087228, 'name': 'starttime', 'confidence': 0.7395641803741455}
+config_5.yml,{'id': -1689345383776254929, 'name': 'inform', 'confidence': 0.6115281581878662}
+config_7.yml,{'id': 3909639233228087228, 'name': 'starttime', 'confidence': 0.3255564272403717}
+config_8.yml,{'id': -6618295221481261146, 'name': 'thanks', 'confidence': 0.45309025049209595}
+config_9.yml,{'name': 'nlu_fallback', 'confidence': 1.0}
+final intent,{'id': -6618295221481261146, 'name': 'thanks', 'confidence': 0.45309025049209595, 'count': 1}
+
+text,can you get 2 tickets for 4.00 pm for Antman?
+config_1.yml,{'id': -2584379215333449852, 'name': 'ticket', 'confidence': 0.34481140971183777}
+config_2.yml,{'name': 'nlu_fallback', 'confidence': 1.0}
+config_3.yml,{'id': -1689345383776254929, 'name': 'inform', 'confidence': 0.31074967980384827}
+config_4.yml,{'id': -5787859350109060847, 'name': 'date+ticket+starttime', 'confidence': 0.3862626552581787}
+config_5.yml,{'id': -5787859350109060847, 'name': 'date+ticket+starttime', 'confidence': 0.5117105841636658}
+config_7.yml,{'name': 'nlu_fallback', 'confidence': 1.0}
+config_8.yml,{'id': -1689345383776254929, 'name': 'inform', 'confidence': 0.3789544403553009}
+config_9.yml,{'id': 1073652434517772957, 'name': 'date', 'confidence': 0.33260393142700195}
+final intent,{'id': -5787859350109060847, 'name': 'date+ticket+starttime', 'confidence': 0.3061073219066127, 'count': 2.36056166056166}
+
+text,That is right
+config_1.yml,{'id': 2266968725631305122, 'name': 'zip', 'confidence': 0.3448880910873413}
+config_2.yml,{'name': 'nlu_fallback', 'confidence': 1.0}
+config_3.yml,{'name': 'nlu_fallback', 'confidence': 1.0}
+config_4.yml,{'id': 7645440253143198013, 'name': 'confirm_answer', 'confidence': 0.4415086507797241}
+config_5.yml,{'id': 7645440253143198013, 'name': 'confirm_answer', 'confidence': 0.6250665187835693}
+config_7.yml,{'id': 7645440253143198013, 'name': 'confirm_answer', 'confidence': 0.3656850755214691}
+config_8.yml,{'name': 'nlu_fallback', 'confidence': 1.0}
+config_9.yml,{'id': -1689345383776254929, 'name': 'inform', 'confidence': 0.3711027503013611}
+final intent,{'id': -1689345383776254929, 'name': 'inform', 'confidence': 0.3711027503013611, 'count': 1}
+
+text,Book 3 tickets for batman movie
+config_1.yml,{'id': -5787859350109060847, 'name': 'date+ticket+starttime', 'confidence': 0.41469451785087585}
+config_2.yml,{'name': 'nlu_fallback', 'confidence': 1.0}
+config_3.yml,{'id': -5787859350109060847, 'name': 'date+ticket+starttime', 'confidence': 0.4367612302303314}
+config_4.yml,{'name': 'nlu_fallback', 'confidence': 1.0}
+config_5.yml,{'id': 3909639233228087228, 'name': 'starttime', 'confidence': 0.43597716093063354}
+config_7.yml,{'name': 'nlu_fallback', 'confidence': 1.0}
+config_8.yml,{'name': 'nlu_fallback', 'confidence': 1.0}
+config_9.yml,{'name': 'nlu_fallback', 'confidence': 1.0}
+final intent,{'id': -5787859350109060847, 'name': 'date+ticket+starttime', 'confidence': 0.2968478724320327, 'count': 1.7000345572763185}
+
+text,can you please buy 7 tickets for the magnificent movie for the 8.00 pm
+config_1.yml,{'name': 'nlu_fallback', 'confidence': 1.0}
+config_2.yml,{'name': 'nlu_fallback', 'confidence': 1.0}
+config_3.yml,{'id': -1689345383776254929, 'name': 'inform', 'confidence': 0.6373348832130432}
+config_4.yml,{'id': -3604305754342918084, 'name': 'date+theater', 'confidence': 0.5213486552238464}
+config_5.yml,{'id': -1689345383776254929, 'name': 'inform', 'confidence': 0.3636767268180847}
+config_7.yml,{'id': -1689345383776254929, 'name': 'inform', 'confidence': 0.6440841555595398}
+config_8.yml,{'id': -1689345383776254929, 'name': 'inform', 'confidence': 0.8820480704307556}
+config_9.yml,{'id': -1689345383776254929, 'name': 'inform', 'confidence': 0.8403006792068481}
+final intent,{'id': -3604305754342918084, 'name': 'date+theater', 'confidence': 0.5213486552238464, 'count': 1}
+
+text,Thank you for your service
+config_1.yml,{'id': -6618295221481261146, 'name': 'thanks', 'confidence': 0.8743088245391846}
+config_2.yml,{'name': 'nlu_fallback', 'confidence': 1.0}
+config_3.yml,{'id': -6618295221481261146, 'name': 'thanks', 'confidence': 0.39301007986068726}
+config_4.yml,{'id': -6618295221481261146, 'name': 'thanks', 'confidence': 0.7243379950523376}
+config_5.yml,{'id': -6618295221481261146, 'name': 'thanks', 'confidence': 0.9398532509803772}
+config_7.yml,{'id': -136818964051920869, 'name': 'description', 'confidence': 0.4927116930484772}
+config_8.yml,{'id': -6618295221481261146, 'name': 'thanks', 'confidence': 0.8014318346977234}
+config_9.yml,{'id': -6618295221481261146, 'name': 'thanks', 'confidence': 0.9609467387199402}
+final intent,{'id': -6618295221481261146, 'name': 'thanks', 'confidence': 0.6431302275094424, 'count': 4.554274922436903}
+
+text,That will work for me
+config_1.yml,{'name': 'nlu_fallback', 'confidence': 1.0}
+config_2.yml,{'name': 'nlu_fallback', 'confidence': 1.0}
+config_3.yml,{'name': 'nlu_fallback', 'confidence': 1.0}
+config_4.yml,{'id': 5691535686079850191, 'name': 'theater', 'confidence': 0.3659546673297882}
+config_5.yml,{'name': 'nlu_fallback', 'confidence': 1.0}
+config_7.yml,{'name': 'nlu_fallback', 'confidence': 1.0}
+config_8.yml,{'name': 'nlu_fallback', 'confidence': 1.0}
+config_9.yml,{'name': 'nlu_fallback', 'confidence': 1.0}
+final intent,{'id': 5691535686079850191, 'name': 'theater', 'confidence': 0.3659546673297882, 'count': 1}
+
+text,Can I know avaible start times
+config_1.yml,{'id': 3909639233228087228, 'name': 'starttime', 'confidence': 0.7901691794395447}
+config_2.yml,{'name': 'nlu_fallback', 'confidence': 1.0}
+config_3.yml,{'id': -5787859350109060847, 'name': 'date+ticket+starttime', 'confidence': 0.7024109959602356}
+config_4.yml,{'id': 3909639233228087228, 'name': 'starttime', 'confidence': 0.7483220100402832}
+config_5.yml,{'id': -5787859350109060847, 'name': 'date+ticket+starttime', 'confidence': 0.4461735188961029}
+config_7.yml,{'id': 3909639233228087228, 'name': 'starttime', 'confidence': 0.5442759394645691}
+config_8.yml,{'id': 6168623230032456341, 'name': 'theater+starttime', 'confidence': 0.7380625009536743}
+config_9.yml,{'id': 3909639233228087228, 'name': 'starttime', 'confidence': 0.8123654127120972}
+final intent,{'id': 3909639233228087228, 'name': 'starttime', 'confidence': 0.4652734318327838, 'count': 4.554274922436903}
+
+text,yes , please
+config_1.yml,{'id': 7645440253143198013, 'name': 'confirm_answer', 'confidence': 0.9009771943092346}
+config_2.yml,{'name': 'nlu_fallback', 'confidence': 1.0}
+config_3.yml,{'id': -1689345383776254929, 'name': 'inform', 'confidence': 0.9371272921562195}
+config_4.yml,{'id': 7645440253143198013, 'name': 'confirm_answer', 'confidence': 0.6270712018013}
+config_5.yml,{'id': 7645440253143198013, 'name': 'confirm_answer', 'confidence': 0.7491369247436523}
+config_7.yml,{'name': 'nlu_fallback', 'confidence': 1.0}
+config_8.yml,{'id': 7645440253143198013, 'name': 'confirm_answer', 'confidence': 0.9566136002540588}
+config_9.yml,{'name': 'nlu_fallback', 'confidence': 1.0}
+final intent,{'id': 7645440253143198013, 'name': 'confirm_answer', 'confidence': 0.6235685805002322, 'count': 3.8218068281258493}
+
+text,what are the cities the Black swan playing
+config_1.yml,{'id': -4332810852521544268, 'name': 'video_format', 'confidence': 0.4675273001194}
+config_2.yml,{'name': 'nlu_fallback', 'confidence': 1.0}
+config_3.yml,{'name': 'nlu_fallback', 'confidence': 1.0}
+config_4.yml,{'id': 7924715135691754479, 'name': 'city', 'confidence': 0.6909358501434326}
+config_5.yml,{'id': 7924715135691754479, 'name': 'city', 'confidence': 0.33835357427597046}
+config_7.yml,{'name': 'nlu_fallback', 'confidence': 1.0}
+config_8.yml,{'id': 7924715135691754479, 'name': 'city', 'confidence': 0.4692066013813019}
+config_9.yml,{'name': 'nlu_fallback', 'confidence': 1.0}
+final intent,{'id': 7924715135691754479, 'name': 'city', 'confidence': 0.3757245304619647, 'count': 4.172125299463429}
+
+text,No, not that
+config_1.yml,{'id': -5404317724958533355, 'name': 'deny', 'confidence': 0.9208627343177795}
+config_2.yml,{'name': 'nlu_fallback', 'confidence': 1.0}
+config_3.yml,{'id': -5404317724958533355, 'name': 'deny', 'confidence': 0.7168276309967041}
+config_4.yml,{'id': -5404317724958533355, 'name': 'deny', 'confidence': 0.9945566654205322}
+config_5.yml,{'id': -5404317724958533355, 'name': 'deny', 'confidence': 0.9059314727783203}
+config_7.yml,{'id': -5404317724958533355, 'name': 'deny', 'confidence': 0.6671541333198547}
+config_8.yml,{'id': -5404317724958533355, 'name': 'deny', 'confidence': 0.9782522320747375}
+config_9.yml,{'id': -5404317724958533355, 'name': 'deny', 'confidence': 0.992344319820404}
+final intent,{'id': -5404317724958533355, 'name': 'deny', 'confidence': 0.8008900184344222, 'count': 4.554274922436903}
+
+text,sorry, i do not like it
+config_1.yml,{'id': -5404317724958533355, 'name': 'deny', 'confidence': 0.6943003535270691}
+config_2.yml,{'name': 'nlu_fallback', 'confidence': 1.0}
+config_3.yml,{'id': -5404317724958533355, 'name': 'deny', 'confidence': 0.8778876662254333}
+config_4.yml,{'id': -5404317724958533355, 'name': 'deny', 'confidence': 0.9397976994514465}
+config_5.yml,{'id': -5404317724958533355, 'name': 'deny', 'confidence': 0.945479154586792}
+config_7.yml,{'id': -5404317724958533355, 'name': 'deny', 'confidence': 0.5323393940925598}
+config_8.yml,{'id': -5404317724958533355, 'name': 'deny', 'confidence': 0.9249495267868042}
+config_9.yml,{'id': -5404317724958533355, 'name': 'deny', 'confidence': 0.8470436334609985}
+final intent,{'id': -5404317724958533355, 'name': 'deny', 'confidence': 0.7505386878808762, 'count': 4.554274922436903}
+
+text,which are theaters bird box moive in portland
+config_1.yml,{'id': 6168623230032456341, 'name': 'theater+starttime', 'confidence': 0.9055302739143372}
+config_2.yml,{'name': 'nlu_fallback', 'confidence': 1.0}
+config_3.yml,{'id': 6168623230032456341, 'name': 'theater+starttime', 'confidence': 0.4602867066860199}
+config_4.yml,{'id': 6168623230032456341, 'name': 'theater+starttime', 'confidence': 0.9157543182373047}
+config_5.yml,{'id': 6168623230032456341, 'name': 'theater+starttime', 'confidence': 0.8515034317970276}
+config_7.yml,{'name': 'nlu_fallback', 'confidence': 1.0}
+config_8.yml,{'id': 6168623230032456341, 'name': 'theater+starttime', 'confidence': 0.6523358821868896}
+config_9.yml,{'id': 6168623230032456341, 'name': 'theater+starttime', 'confidence': 0.9836205840110779}
+final intent,{'id': 6168623230032456341, 'name': 'theater+starttime', 'confidence': 0.6663117655416894, 'count': 4.554274922436903}
+
+text,I like to see quiet place movie at 12:00 pm in los angeles?
+config_1.yml,{'name': 'nlu_fallback', 'confidence': 1.0}
+config_2.yml,{'name': 'inform', 'confidence': 0.4561313894709218}
+config_3.yml,{'id': -1689345383776254929, 'name': 'inform', 'confidence': 0.2831222414970398}
+config_4.yml,{'name': 'nlu_fallback', 'confidence': 1.0}
+config_5.yml,{'name': 'nlu_fallback', 'confidence': 1.0}
+config_7.yml,{'name': 'nlu_fallback', 'confidence': 1.0}
+config_8.yml,{'id': -5671959431771900048, 'name': 'moviename', 'confidence': 0.4110972285270691}
+config_9.yml,{'id': -1689345383776254929, 'name': 'inform', 'confidence': 0.7596192955970764}
+final intent,{'id': -5671959431771900048, 'name': 'moviename', 'confidence': 0.4110972285270691, 'count': 1}
+
+text,Bye, nice work
+config_1.yml,{'id': -6618295221481261146, 'name': 'thanks', 'confidence': 0.9435081481933594}
+config_2.yml,{'name': 'nlu_fallback', 'confidence': 1.0}
+config_3.yml,{'name': 'nlu_fallback', 'confidence': 1.0}
+config_4.yml,{'id': -6618295221481261146, 'name': 'thanks', 'confidence': 0.40442076325416565}
+config_5.yml,{'id': -6618295221481261146, 'name': 'thanks', 'confidence': 0.9800702929496765}
+config_7.yml,{'id': -1689345383776254929, 'name': 'inform', 'confidence': 0.34007903933525085}
+config_8.yml,{'id': -6618295221481261146, 'name': 'thanks', 'confidence': 0.8573993444442749}
+config_9.yml,{'id': -6618295221481261146, 'name': 'thanks', 'confidence': 0.8958171606063843}
+final intent,{'id': -6618295221481261146, 'name': 'thanks', 'confidence': 0.6301467695724875, 'count': 4.184125668705559}
+
+text,can you please buy me movie tickets at liberty?
+config_1.yml,{'id': -6618295221481261146, 'name': 'thanks', 'confidence': 0.3377431035041809}
+config_2.yml,{'name': 'nlu_fallback', 'confidence': 1.0}
+config_3.yml,{'id': -1689345383776254929, 'name': 'inform', 'confidence': 0.22822904586791992}
+config_4.yml,{'id': -5787859350109060847, 'name': 'date+ticket+starttime', 'confidence': 0.3626951575279236}
+config_5.yml,{'id': -5787859350109060847, 'name': 'date+ticket+starttime', 'confidence': 0.689448893070221}
+config_7.yml,{'name': 'nlu_fallback', 'confidence': 1.0}
+config_8.yml,{'id': -1689345383776254929, 'name': 'inform', 'confidence': 0.44937604665756226}
+config_9.yml,{'id': -4202388384172592661, 'name': 'date+starttime', 'confidence': 0.6250819563865662}
+final intent,{'id': -5787859350109060847, 'name': 'date+ticket+starttime', 'confidence': 0.32519298266606705, 'count': 3.0044748044748046}
+
+text,Hi, good evening !!!
+config_1.yml,{'id': -6329779991859247258, 'name': 'greeting', 'confidence': 0.9997848868370056}
+config_2.yml,{'name': 'nlu_fallback', 'confidence': 1.0}
+config_3.yml,{'id': -6329779991859247258, 'name': 'greeting', 'confidence': 0.8897503614425659}
+config_4.yml,{'id': -6329779991859247258, 'name': 'greeting', 'confidence': 0.9991664886474609}
+config_5.yml,{'id': -6329779991859247258, 'name': 'greeting', 'confidence': 0.9986380934715271}
+config_7.yml,{'id': -6329779991859247258, 'name': 'greeting', 'confidence': 0.7473325729370117}
+config_8.yml,{'id': -6329779991859247258, 'name': 'greeting', 'confidence': 0.9985846281051636}
+config_9.yml,{'id': -6329779991859247258, 'name': 'greeting', 'confidence': 0.9957326054573059}
+final intent,{'id': -6329779991859247258, 'name': 'greeting', 'confidence': 0.8485487012507252, 'count': 4.554274922436903}
+
+text,I want to get movie tickets for tomorrow at 8.00 pm ? 
+config_1.yml,{'id': -1689345383776254929, 'name': 'inform', 'confidence': 0.9824073910713196}
+config_2.yml,{'name': 'inform', 'confidence': 0.4709450836259399}
+config_3.yml,{'id': -1689345383776254929, 'name': 'inform', 'confidence': 0.8883039951324463}
+config_4.yml,{'id': -1689345383776254929, 'name': 'inform', 'confidence': 0.9527187943458557}
+config_5.yml,{'id': -1689345383776254929, 'name': 'inform', 'confidence': 0.9917412996292114}
+config_7.yml,{'id': -1689345383776254929, 'name': 'inform', 'confidence': 0.967268705368042}
+config_8.yml,{'id': -1689345383776254929, 'name': 'inform', 'confidence': 0.9977190494537354}
+config_9.yml,{'id': -1689345383776254929, 'name': 'inform', 'confidence': 0.975172758102417}
+final intent,{'id': -1689345383776254929, 'name': 'inform', 'confidence': 0.8807403234619452, 'count': 4.554274922436903}
+
+text,i 'm flexible on the time
+config_1.yml,{'id': 3909639233228087228, 'name': 'starttime', 'confidence': 0.9216023087501526}
+config_2.yml,{'name': 'inform', 'confidence': 0.32649938499109826}
+config_3.yml,{'name': 'nlu_fallback', 'confidence': 1.0}
+config_4.yml,{'name': 'nlu_fallback', 'confidence': 1.0}
+config_5.yml,{'id': 3909639233228087228, 'name': 'starttime', 'confidence': 0.9175162315368652}
+config_7.yml,{'id': 3909639233228087228, 'name': 'starttime', 'confidence': 0.7629954814910889}
+config_8.yml,{'id': 3909639233228087228, 'name': 'starttime', 'confidence': 0.6172364354133606}
+config_9.yml,{'id': 3909639233228087228, 'name': 'starttime', 'confidence': 0.9768749475479126}
+final intent,{'id': 3909639233228087228, 'name': 'starttime', 'confidence': 0.5971088307596181, 'count': 4.554274922436903}
+
+text,What are the start times at liberty theater for Deadpool
+config_1.yml,{'id': 6168623230032456341, 'name': 'theater+starttime', 'confidence': 0.7902278900146484}
+config_2.yml,{'name': 'nlu_fallback', 'confidence': 1.0}
+config_3.yml,{'id': 6168623230032456341, 'name': 'theater+starttime', 'confidence': 0.4634758532047272}
+config_4.yml,{'id': 6168623230032456341, 'name': 'theater+starttime', 'confidence': 0.925994873046875}
+config_5.yml,{'id': 6168623230032456341, 'name': 'theater+starttime', 'confidence': 0.8781543374061584}
+config_7.yml,{'id': 6168623230032456341, 'name': 'theater+starttime', 'confidence': 0.9262791275978088}
+config_8.yml,{'id': 6168623230032456341, 'name': 'theater+starttime', 'confidence': 0.981507420539856}
+config_9.yml,{'id': 6168623230032456341, 'name': 'theater+starttime', 'confidence': 0.9837373495101929}
+final intent,{'id': 6168623230032456341, 'name': 'theater+starttime', 'confidence': 0.7756068298433916, 'count': 4.554274922436903}
+
+text,who are the actors?
+config_1.yml,{'id': 486237698141244984, 'name': 'actor', 'confidence': 0.697528600692749}
+config_2.yml,{'name': 'nlu_fallback', 'confidence': 1.0}
+config_3.yml,{'name': 'nlu_fallback', 'confidence': 1.0}
+config_4.yml,{'id': -3604305754342918084, 'name': 'date+theater', 'confidence': 0.6171439290046692}
+config_5.yml,{'id': -3604305754342918084, 'name': 'date+theater', 'confidence': 0.34952184557914734}
+config_7.yml,{'id': 486237698141244984, 'name': 'actor', 'confidence': 0.39505720138549805}
+config_8.yml,{'id': 486237698141244984, 'name': 'actor', 'confidence': 0.8432503342628479}
+config_9.yml,{'id': 486237698141244984, 'name': 'actor', 'confidence': 0.7220768332481384}
+final intent,{'id': 486237698141244984, 'name': 'actor', 'confidence': 0.4911295666387479, 'count': 3.5194286093297205}
+
+text,that 's correct
+config_1.yml,{'id': 7645440253143198013, 'name': 'confirm_answer', 'confidence': 0.9029728174209595}
+config_2.yml,{'name': 'nlu_fallback', 'confidence': 1.0}
+config_3.yml,{'id': 7645440253143198013, 'name': 'confirm_answer', 'confidence': 0.4276444613933563}
+config_4.yml,{'id': 7645440253143198013, 'name': 'confirm_answer', 'confidence': 0.684261679649353}
+config_5.yml,{'id': 7645440253143198013, 'name': 'confirm_answer', 'confidence': 0.869301974773407}
+config_7.yml,{'id': 7645440253143198013, 'name': 'confirm_answer', 'confidence': 0.6127137541770935}
+config_8.yml,{'id': 7645440253143198013, 'name': 'confirm_answer', 'confidence': 0.9983527064323425}
+config_9.yml,{'id': 7645440253143198013, 'name': 'confirm_answer', 'confidence': 0.9597772359848022}
+final intent,{'id': 7645440253143198013, 'name': 'confirm_answer', 'confidence': 0.7121185118784709, 'count': 4.554274922436903}
+
+text,alright , thanks
+config_1.yml,{'id': -6618295221481261146, 'name': 'thanks', 'confidence': 0.6676755547523499}
+config_2.yml,{'name': 'nlu_fallback', 'confidence': 1.0}
+config_3.yml,{'id': -6618295221481261146, 'name': 'thanks', 'confidence': 0.284767210483551}
+config_4.yml,{'id': -6618295221481261146, 'name': 'thanks', 'confidence': 0.43763309717178345}
+config_5.yml,{'id': -6618295221481261146, 'name': 'thanks', 'confidence': 0.8893271684646606}
+config_7.yml,{'id': -5404317724958533355, 'name': 'deny', 'confidence': 0.3305259346961975}
+config_8.yml,{'id': -6618295221481261146, 'name': 'thanks', 'confidence': 0.4169701933860779}
+config_9.yml,{'id': -6618295221481261146, 'name': 'thanks', 'confidence': 0.7967002391815186}
+final intent,{'id': -6618295221481261146, 'name': 'thanks', 'confidence': 0.5159847504867517, 'count': 4.184125668705559}
+
+text,Can you give me the name of the actor?
+config_1.yml,{'id': 486237698141244984, 'name': 'actor', 'confidence': 0.6360757350921631}
+config_2.yml,{'name': 'nlu_fallback', 'confidence': 1.0}
+config_3.yml,{'id': -3661820531841689376, 'name': 'actress', 'confidence': 0.34704354405403137}
+config_4.yml,{'name': 'nlu_fallback', 'confidence': 1.0}
+config_5.yml,{'id': -3604305754342918084, 'name': 'date+theater', 'confidence': 0.586607038974762}
+config_7.yml,{'name': 'nlu_fallback', 'confidence': 1.0}
+config_8.yml,{'id': 486237698141244984, 'name': 'actor', 'confidence': 0.9024062752723694}
+config_9.yml,{'id': 486237698141244984, 'name': 'actor', 'confidence': 0.7695637345314026}
+final intent,{'id': 486237698141244984, 'name': 'actor', 'confidence': 0.583364650562001, 'count': 3.149279355598377}
+
+text,What is  the name of the actress?
+config_1.yml,{'id': -3661820531841689376, 'name': 'actress', 'confidence': 0.9803860187530518}
+config_2.yml,{'name': 'nlu_fallback', 'confidence': 1.0}
+config_3.yml,{'id': -3661820531841689376, 'name': 'actress', 'confidence': 0.7675197124481201}
+config_4.yml,{'id': -3661820531841689376, 'name': 'actress', 'confidence': 0.932600200176239}
+config_5.yml,{'id': -3661820531841689376, 'name': 'actress', 'confidence': 0.874491274356842}
+config_7.yml,{'id': -3661820531841689376, 'name': 'actress', 'confidence': 0.8365229368209839}
+config_8.yml,{'id': -3661820531841689376, 'name': 'actress', 'confidence': 0.9805140495300293}
+config_9.yml,{'id': -3661820531841689376, 'name': 'actress', 'confidence': 0.9136698842048645}
+final intent,{'id': -3661820531841689376, 'name': 'actress', 'confidence': 0.801726778895713, 'count': 4.554274922436903}
+
+text,In which state i can watch this movie?
+config_1.yml,{'name': 'nlu_fallback', 'confidence': 1.0}
+config_2.yml,{'name': 'nlu_fallback', 'confidence': 1.0}
+config_3.yml,{'name': 'nlu_fallback', 'confidence': 1.0}
+config_4.yml,{'id': -9136534075160680026, 'name': 'state', 'confidence': 0.5311898589134216}
+config_5.yml,{'id': -9136534075160680026, 'name': 'state', 'confidence': 0.5506783127784729}
+config_7.yml,{'name': 'nlu_fallback', 'confidence': 1.0}
+config_8.yml,{'name': 'nlu_fallback', 'confidence': 1.0}
+config_9.yml,{'id': -9136534075160680026, 'name': 'state', 'confidence': 0.30503901839256287}
+final intent,{'id': -9136534075160680026, 'name': 'state', 'confidence': 0.3477739444561757, 'count': 4.054827833088703}
+
+text,Good Morning
+config_1.yml,{'id': -6329779991859247258, 'name': 'greeting', 'confidence': 0.9994920492172241}
+config_2.yml,{'name': 'greeting', 'confidence': 0.3541537781173434}
+config_3.yml,{'id': -6329779991859247258, 'name': 'greeting', 'confidence': 0.8175904154777527}
+config_4.yml,{'id': -6329779991859247258, 'name': 'greeting', 'confidence': 0.9960448145866394}
+config_5.yml,{'id': -6329779991859247258, 'name': 'greeting', 'confidence': 0.9988826513290405}
+config_7.yml,{'id': -6329779991859247258, 'name': 'greeting', 'confidence': 0.8641095161437988}
+config_8.yml,{'id': -6329779991859247258, 'name': 'greeting', 'confidence': 0.9926143288612366}
+config_9.yml,{'id': -6329779991859247258, 'name': 'greeting', 'confidence': 0.9603298306465149}
+final intent,{'id': -6329779991859247258, 'name': 'greeting', 'confidence': 0.8610265309312063, 'count': 4.554274922436903}
+
+text,Could you help me get ticets
+config_1.yml,{'id': -8554015503229780959, 'name': 'confirm_question', 'confidence': 0.4366288483142853}
+config_2.yml,{'name': 'nlu_fallback', 'confidence': 1.0}
+config_3.yml,{'name': 'nlu_fallback', 'confidence': 1.0}
+config_4.yml,{'id': -8554015503229780959, 'name': 'confirm_question', 'confidence': 0.39716020226478577}
+config_5.yml,{'id': -2584379215333449852, 'name': 'ticket', 'confidence': 0.6015245914459229}
+config_7.yml,{'name': 'nlu_fallback', 'confidence': 1.0}
+config_8.yml,{'id': -5787859350109060847, 'name': 'date+ticket+starttime', 'confidence': 0.3429626524448395}
+config_9.yml,{'id': -8554015503229780959, 'name': 'confirm_question', 'confidence': 0.6462669372558594}
+final intent,{'id': -8554015503229780959, 'name': 'confirm_question', 'confidence': 0.3095665360543433, 'count': 3.704509361751123}
+
+text,I'd like watch a horror movie in san francisco
+config_1.yml,{'id': -1689345383776254929, 'name': 'inform', 'confidence': 0.9964503049850464}
+config_2.yml,{'name': 'inform', 'confidence': 0.5628162962549146}
+config_3.yml,{'id': -1689345383776254929, 'name': 'inform', 'confidence': 0.8272593021392822}
+config_4.yml,{'id': -1689345383776254929, 'name': 'inform', 'confidence': 0.9166120886802673}
+config_5.yml,{'id': -1689345383776254929, 'name': 'inform', 'confidence': 0.9992275834083557}
+config_7.yml,{'id': -1689345383776254929, 'name': 'inform', 'confidence': 0.8849115371704102}
+config_8.yml,{'id': -1689345383776254929, 'name': 'inform', 'confidence': 0.9717752933502197}
+config_9.yml,{'id': -1689345383776254929, 'name': 'inform', 'confidence': 0.9913234114646912}
+final intent,{'id': -1689345383776254929, 'name': 'inform', 'confidence': 0.8701913028026758, 'count': 4.554274922436903}
+
+text,Can I get the availble available theater and start time
+config_1.yml,{'id': 6168623230032456341, 'name': 'theater+starttime', 'confidence': 0.851529598236084}
+config_2.yml,{'name': 'nlu_fallback', 'confidence': 1.0}
+config_3.yml,{'id': -257253878889286546, 'name': 'date+theater+starttime', 'confidence': 0.3048839569091797}
+config_4.yml,{'id': 6168623230032456341, 'name': 'theater+starttime', 'confidence': 0.8346941471099854}
+config_5.yml,{'id': -257253878889286546, 'name': 'date+theater+starttime', 'confidence': 0.7908442616462708}
+config_7.yml,{'name': 'nlu_fallback', 'confidence': 1.0}
+config_8.yml,{'id': 6168623230032456341, 'name': 'theater+starttime', 'confidence': 0.8697020411491394}
+config_9.yml,{'id': 6168623230032456341, 'name': 'theater+starttime', 'confidence': 0.6864264011383057}
+final intent,{'id': 6168623230032456341, 'name': 'theater+starttime', 'confidence': 0.53132920903956, 'count': 4.554274922436903}
+
+text,Name of the actor, please
+config_1.yml,{'id': 486237698141244984, 'name': 'actor', 'confidence': 0.821418285369873}
+config_2.yml,{'name': 'nlu_fallback', 'confidence': 1.0}
+config_3.yml,{'id': -1689345383776254929, 'name': 'inform', 'confidence': 0.560856282711029}
+config_4.yml,{'id': 486237698141244984, 'name': 'actor', 'confidence': 0.6020119190216064}
+config_5.yml,{'id': -1689345383776254929, 'name': 'inform', 'confidence': 0.7122688889503479}
+config_7.yml,{'name': 'nlu_fallback', 'confidence': 1.0}
+config_8.yml,{'id': 486237698141244984, 'name': 'actor', 'confidence': 0.7317984104156494}
+config_9.yml,{'id': 486237698141244984, 'name': 'actor', 'confidence': 0.5634717345237732}
+final intent,{'id': 486237698141244984, 'name': 'actor', 'confidence': 0.4333222174189624, 'count': 4.191956081857192}
+
+text,Is there 3d tickets available
+config_1.yml,{'id': -2584379215333449852, 'name': 'ticket', 'confidence': 0.6124325394630432}
+config_2.yml,{'name': 'nlu_fallback', 'confidence': 1.0}
+config_3.yml,{'name': 'nlu_fallback', 'confidence': 1.0}
+config_4.yml,{'id': -5787859350109060847, 'name': 'date+ticket+starttime', 'confidence': 0.6600552797317505}
+config_5.yml,{'id': -2584379215333449852, 'name': 'ticket', 'confidence': 0.3586546778678894}
+config_7.yml,{'id': -5787859350109060847, 'name': 'date+ticket+starttime', 'confidence': 0.37893733382225037}
+config_8.yml,{'name': 'nlu_fallback', 'confidence': 1.0}
+config_9.yml,{'name': 'nlu_fallback', 'confidence': 1.0}
+final intent,{'id': -2584379215333449852, 'name': 'ticket', 'confidence': 0.2712312345307305, 'count': 3.888994257156238}
+
+text,yes, of course
+config_1.yml,{'id': 7645440253143198013, 'name': 'confirm_answer', 'confidence': 0.9413982033729553}
+config_2.yml,{'name': 'nlu_fallback', 'confidence': 1.0}
+config_3.yml,{'id': 7645440253143198013, 'name': 'confirm_answer', 'confidence': 0.8333080410957336}
+config_4.yml,{'id': 7645440253143198013, 'name': 'confirm_answer', 'confidence': 0.913727343082428}
+config_5.yml,{'id': 7645440253143198013, 'name': 'confirm_answer', 'confidence': 0.9885185956954956}
+config_7.yml,{'id': 7645440253143198013, 'name': 'confirm_answer', 'confidence': 0.7699177265167236}
+config_8.yml,{'id': 7645440253143198013, 'name': 'confirm_answer', 'confidence': 0.9989496469497681}
+config_9.yml,{'id': 7645440253143198013, 'name': 'confirm_answer', 'confidence': 0.9626536965370178}
+final intent,{'id': 7645440253143198013, 'name': 'confirm_answer', 'confidence': 0.8241611286798476, 'count': 4.554274922436903}
+
+text,2 tickets at emagine 
+config_1.yml,{'id': -1689345383776254929, 'name': 'inform', 'confidence': 0.4386466145515442}
+config_2.yml,{'name': 'inform', 'confidence': 0.8429687087641713}
+config_3.yml,{'name': 'nlu_fallback', 'confidence': 1.0}
+config_4.yml,{'id': -1689345383776254929, 'name': 'inform', 'confidence': 0.36102762818336487}
+config_5.yml,{'id': -1689345383776254929, 'name': 'inform', 'confidence': 0.991077184677124}
+config_7.yml,{'id': -1689345383776254929, 'name': 'inform', 'confidence': 0.8264842629432678}
+config_8.yml,{'name': 'nlu_fallback', 'confidence': 1.0}
+config_9.yml,{'id': -1689345383776254929, 'name': 'inform', 'confidence': 0.5714232921600342}
+final intent,{'id': -1689345383776254929, 'name': 'inform', 'confidence': 0.5801652541017266, 'count': 3.8876082557702367}
+
+text,what is the movie I can watch tomorrow
+config_1.yml,{'id': -1689345383776254929, 'name': 'inform', 'confidence': 0.43761715292930603}
+config_2.yml,{'name': 'nlu_fallback', 'confidence': 1.0}
+config_3.yml,{'id': -1689345383776254929, 'name': 'inform', 'confidence': 0.4360848069190979}
+config_4.yml,{'name': 'nlu_fallback', 'confidence': 1.0}
+config_5.yml,{'id': -3661820531841689376, 'name': 'actress', 'confidence': 0.3016679286956787}
+config_7.yml,{'name': 'nlu_fallback', 'confidence': 1.0}
+config_8.yml,{'id': -1689345383776254929, 'name': 'inform', 'confidence': 0.8609404563903809}
+config_9.yml,{'id': -1689345383776254929, 'name': 'inform', 'confidence': 0.46634888648986816}
+final intent,{'id': -1689345383776254929, 'name': 'inform', 'confidence': 0.4718930625463298, 'count': 2.714096954920806}
+
+text,what is the start time and the date available for this movie?
+config_1.yml,{'id': -4202388384172592661, 'name': 'date+starttime', 'confidence': 0.528572142124176}
+config_2.yml,{'name': 'nlu_fallback', 'confidence': 1.0}
+config_3.yml,{'name': 'nlu_fallback', 'confidence': 1.0}
+config_4.yml,{'id': -4202388384172592661, 'name': 'date+starttime', 'confidence': 0.8981493711471558}
+config_5.yml,{'id': -4202388384172592661, 'name': 'date+starttime', 'confidence': 0.7930504679679871}
+config_7.yml,{'id': -4202388384172592661, 'name': 'date+starttime', 'confidence': 0.5468137264251709}
+config_8.yml,{'id': -4202388384172592661, 'name': 'date+starttime', 'confidence': 0.8825147151947021}
+config_9.yml,{'id': -4202388384172592661, 'name': 'date+starttime', 'confidence': 0.8944240808486938}
+final intent,{'id': -4202388384172592661, 'name': 'date+starttime', 'confidence': 0.705485556413157, 'count': 4.184125668705559}
+
+text,what is the movie available at 4 p.m.
+config_1.yml,{'id': -5671959431771900048, 'name': 'moviename', 'confidence': 0.6045618653297424}
+config_2.yml,{'name': 'nlu_fallback', 'confidence': 1.0}
+config_3.yml,{'name': 'nlu_fallback', 'confidence': 1.0}
+config_4.yml,{'id': -5671959431771900048, 'name': 'moviename', 'confidence': 0.6655680537223816}
+config_5.yml,{'id': -257253878889286546, 'name': 'date+theater+starttime', 'confidence': 0.332082062959671}
+config_7.yml,{'id': -5671959431771900048, 'name': 'moviename', 'confidence': 0.3233793377876282}
+config_8.yml,{'id': -5671959431771900048, 'name': 'moviename', 'confidence': 0.4035625457763672}
+config_9.yml,{'id': -5671959431771900048, 'name': 'moviename', 'confidence': 0.798441469669342}
+final intent,{'id': -5671959431771900048, 'name': 'moviename', 'confidence': 0.4923119545151331, 'count': 3.5194286093297205}
+
+text,what is the genre of the movie?
+config_1.yml,{'id': 7282060709881718675, 'name': 'genre', 'confidence': 0.838391900062561}
+config_2.yml,{'name': 'nlu_fallback', 'confidence': 1.0}
+config_3.yml,{'id': 7282060709881718675, 'name': 'genre', 'confidence': 0.2325737178325653}
+config_4.yml,{'id': 7282060709881718675, 'name': 'genre', 'confidence': 0.712474524974823}
+config_5.yml,{'id': 7282060709881718675, 'name': 'genre', 'confidence': 0.6885958909988403}
+config_7.yml,{'id': -7129791802055303387, 'name': 'movie_series', 'confidence': 0.3768928349018097}
+config_8.yml,{'id': -5671959431771900048, 'name': 'moviename', 'confidence': 0.3904082477092743}
+config_9.yml,{'id': 7282060709881718675, 'name': 'genre', 'confidence': 0.7505485415458679}
+final intent,{'id': 7282060709881718675, 'name': 'genre', 'confidence': 0.4699804461395711, 'count': 4.554274922436903}
+
+text,Okay go with it
+config_1.yml,{'name': 'nlu_fallback', 'confidence': 1.0}
+config_2.yml,{'name': 'nlu_fallback', 'confidence': 1.0}
+config_3.yml,{'id': -1689345383776254929, 'name': 'inform', 'confidence': 0.9281740188598633}
+config_4.yml,{'id': -6329779991859247258, 'name': 'greeting', 'confidence': 0.6576089262962341}
+config_5.yml,{'id': -6329779991859247258, 'name': 'greeting', 'confidence': 0.45429083704948425}
+config_7.yml,{'name': 'nlu_fallback', 'confidence': 1.0}
+config_8.yml,{'id': -6329779991859247258, 'name': 'greeting', 'confidence': 0.4769592881202698}
+config_9.yml,{'id': -5404317724958533355, 'name': 'deny', 'confidence': 0.37768611311912537}
+final intent,{'id': -6329779991859247258, 'name': 'greeting', 'confidence': 0.3548313124040014, 'count': 4.239312728493817}
+
+text,Can i buy tickets seperately for kids?
+config_1.yml,{'id': -2584379215333449852, 'name': 'ticket', 'confidence': 0.6714249849319458}
+config_2.yml,{'name': 'nlu_fallback', 'confidence': 1.0}
+config_3.yml,{'id': -2584379215333449852, 'name': 'ticket', 'confidence': 0.4978162944316864}
+config_4.yml,{'id': -2584379215333449852, 'name': 'ticket', 'confidence': 0.7874712347984314}
+config_5.yml,{'id': -2584379215333449852, 'name': 'ticket', 'confidence': 0.6482091546058655}
+config_7.yml,{'id': -2584379215333449852, 'name': 'ticket', 'confidence': 0.4880146086215973}
+config_8.yml,{'id': -2584379215333449852, 'name': 'ticket', 'confidence': 0.8060064315795898}
+config_9.yml,{'id': 8572329860530162614, 'name': 'numberofkids', 'confidence': 0.5530490279197693}
+final intent,{'id': -2584379215333449852, 'name': 'ticket', 'confidence': 0.5875984573576362, 'count': 3.888994257156238}
+
+text,what theater chain is playing avengers
+config_1.yml,{'id': -3784151857611325061, 'name': 'theater_chain', 'confidence': 0.620498776435852}
+config_2.yml,{'name': 'nlu_fallback', 'confidence': 1.0}
+config_3.yml,{'id': -1689345383776254929, 'name': 'inform', 'confidence': 0.29602113366127014}
+config_4.yml,{'id': -3784151857611325061, 'name': 'theater_chain', 'confidence': 0.6485584378242493}
+config_5.yml,{'name': 'nlu_fallback', 'confidence': 1.0}
+config_7.yml,{'id': -3604305754342918084, 'name': 'date+theater', 'confidence': 0.37228360772132874}
+config_8.yml,{'id': -3784151857611325061, 'name': 'theater_chain', 'confidence': 0.8944316506385803}
+config_9.yml,{'name': 'nlu_fallback', 'confidence': 1.0}
+final intent,{'id': -3784151857611325061, 'name': 'theater_chain', 'confidence': 0.4839347382188423, 'count': 3.8218068281258493}
+
