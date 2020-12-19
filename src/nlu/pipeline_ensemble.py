@@ -204,7 +204,7 @@ def model_stack_predict(
     modelscores,
     output_file_path=None,
     fallback_confidence=0.5,
-    entity_stacking_type=1,
+    entity_stacking_type=3,
     value_added_scores=None,
     entity_out_file_path=None,
     model_folder_path="stack_models\pipelines",
