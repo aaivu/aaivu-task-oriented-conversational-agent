@@ -4,85 +4,14 @@ from math import isnan
 
 from rasa.test import get_evaluation_metrics
 from pipeline_ensemble import test_stack_pipelines, test_pipelines
+from pipeline_info import DictComparison
 
 # itargets = ('greeting', 'greeting', 'greeting', 'confirm_answer', 'deny', 'deny', 'thanks', 'inform', 'inform', 'inform', 'inform', 'inform', 'inform', 'inform', 'theater', 'theater', 'theater', 'theater', 'theater', 'ticket', 'ticket', 'moviename', 'moviename', 'starttime', 'starttime', 'starttime', 'starttime', 'starttime', 'starttime', 'date', 'date', 'date', 'theater+starttime', 'theater+starttime', 'theater+starttime', 'date+starttime', 'date+starttime', 'date+starttime', 'greeting', 'greeting', 'greeting', 'confirm_answer', 'deny', 'deny', 'thanks', 'inform', 'inform', 'inform', 'inform', 'inform', 'inform', 'inform', 'theater', 'theater', 'theater', 'theater', 'theater', 'ticket', 'ticket', 'moviename', 'moviename', 'starttime', 'starttime', 'starttime', 'starttime', 'starttime', 'starttime', 'date', 'date', 'theater+starttime', 'theater+starttime', 'theater+starttime', 'theater+starttime', 'date+starttime', 'date+starttime', 'date+starttime', 'greeting', 'greeting', 'greeting', 'confirm_answer', 'deny', 'thanks', 'thanks', 'inform', 'inform', 'inform', 'inform', 'inform', 'inform', 'inform', 'theater', 'theater', 'theater', 'theater', 'theater', 'ticket', 'ticket', 'moviename', 'starttime', 'starttime', 'starttime', 'starttime', 'starttime', 'starttime', 'starttime', 'date', 'date', 'theater+starttime', 'theater+starttime', 'theater+starttime', 'theater+starttime', 'date+starttime', 'date+starttime', 'date+starttime', 'greeting', 'greeting', 'confirm_answer', 'confirm_answer', 'deny', 'thanks', 'inform', 'inform', 'inform', 'inform', 'inform', 'inform', 'inform', 'inform', 'theater', 'theater', 'theater', 'theater', 'theater', 'ticket', 'ticket', 'moviename', 'starttime', 'starttime', 'starttime', 'starttime', 'starttime', 'starttime', 'starttime', 'date', 'date', 'theater+starttime', 'theater+starttime', 'theater+starttime', 'theater+starttime', 'date+starttime', 'date+starttime', 'date+starttime', 'greeting', 'greeting', 'confirm_answer', 'deny', 'deny', 'thanks', 'inform', 'inform', 'inform', 'inform', 'inform', 'inform', 'inform', 'inform', 'theater', 'theater', 'theater', 'theater', 'theater', 'ticket', 'ticket', 'moviename', 'starttime', 'starttime', 'starttime', 'starttime', 'starttime', 'starttime', 'date', 'date', 'date', 'theater+starttime', 'theater+starttime', 'theater+starttime', 'date+starttime', 'date+starttime', 'date+starttime')
 # ipredictions =  ('greeting', 'nlu_fallback', 'greeting', 'deny', 'deny', 'deny', 'greeting', 'inform', 'inform', 'inform', 'inform', 'inform', 'inform', 'inform', 'theater', 'theater', 'theater', 'theater', 'theater', 'nlu_fallback', 'inform', 'nlu_fallback', 'moviename', 'starttime', 'starttime', 'starttime', 'starttime', 'nlu_fallback', 'starttime', 'nlu_fallback', 'nlu_fallback', 'theater', 'theater+starttime', 'theater+starttime', 'theater+starttime', 'nlu_fallback', 'date+starttime', 'date+starttime', 'greeting', 'greeting', 'inform', 'deny', 'nlu_fallback', 'deny', 'nlu_fallback', 'inform', 'theater', 'inform', 'inform', 'nlu_fallback', 'inform', 'inform', 'theater', 'theater', 'ticket', 'theater', 'theater', 'ticket', 'nlu_fallback', 'nlu_fallback', 'nlu_fallback', 'starttime', 'starttime', 'starttime', 'starttime', 'starttime', 'starttime', 'date', 'date', 'theater+starttime', 'theater+starttime', 'nlu_fallback', 'theater+starttime', 'date+starttime', 'date+starttime', 'date+starttime', 'greeting', 'greeting', 'greeting', 'greeting', 'nlu_fallback', 'nlu_fallback', 'greeting', 'nlu_fallback', 'ticket', 'inform', 'nlu_fallback', 'inform', 'nlu_fallback', 'inform', 'nlu_fallback', 'nlu_fallback', 'theater', 'theater', 'theater', 'ticket', 'inform', 'moviename', 'starttime', 'starttime', 'starttime', 'starttime', 'starttime', 'starttime', 'starttime', 'date', 'starttime', 'theater+starttime', 'theater+starttime', 'theater+starttime', 'theater+starttime', 'date+starttime', 'theater+starttime', 'starttime', 'greeting', 'greeting', 'deny', 'nlu_fallback', 'deny', 'thanks', 'inform', 'greeting', 'nlu_fallback', 'inform', 'inform', 'inform', 'inform', 'inform', 'theater', 'theater', 'theater', 'theater', 'theater', 'nlu_fallback', 'nlu_fallback', 'moviename', 'starttime', 'starttime', 'starttime', 'starttime', 'starttime', 'nlu_fallback', 'nlu_fallback', 'date', 'date', 'theater+starttime', 'theater+starttime', 'theater+starttime', 'theater+starttime', 'date+starttime', 'date+starttime', 'date+starttime', 'greeting', 'greeting', 'nlu_fallback', 'inform', 'deny', 'nlu_fallback', 'inform', 'inform', 'inform', 'inform', 'nlu_fallback', 'inform', 'inform', 'inform', 'theater', 'theater', 'theater', 'theater', 'theater', 'ticket', 'nlu_fallback', 'theater', 'starttime', 'starttime', 'starttime', 'starttime', 'starttime', 'starttime', 'starttime', 'nlu_fallback', 'starttime', 'theater+starttime', 'theater+starttime', 'theater', 'nlu_fallback', 'date+starttime', 'date+starttime')
 
 
-class DictComparison:
-    def __init__(self, targets, predictions, out_file_path=None):
-        self.targets = targets
-        self.predictions = predictions
-        self.out_file_path = out_file_path
 
-    @staticmethod
-    def partial_confusion_matrix(self):
-        TP, FP, FN = 0, 0, 0
-        file_exist = 0
-        if self.out_file_path:
-            try:
-                out_file = open(self.out_file_path, "a+")
-                file_exist = 1
-            except FileNotFoundError:
-                print("cannot open output file to write partial_confusion_matrix")
-                file_exist = 0
-
-        for i in range(len(self.targets)):
-            target = self.targets[i]
-            prediction = self.predictions[i]
-            target = dict((k.lower(), v.lower()) for k, v in target.items())
-            prediction = dict((k.lower(), v.lower()) for k, v in prediction.items())
-
-            TP += len(set(target.items()) & set(prediction.items()))
-            FP += len(set(prediction.items()) - set(target.items()))
-            FN += len(set(target.items()) - set(prediction.items()))
-
-            if file_exist:
-                try:
-                    out_file.write("target :" + str(target) + "\n")
-                    out_file.write("prediction :" + str(prediction) + "\n")
-                    out_file.write(
-                        "TP : {} \n".format(
-                            set(target.items()) & set(prediction.items())
-                        )
-                    )
-                    out_file.write(
-                        "FP : {} \n".format(
-                            set(prediction.items()) - set(target.items())
-                        )
-                    )
-                    out_file.write(
-                        "FN : {} \n\n".format(
-                            set(target.items()) - set(prediction.items())
-                        )
-                    )
-                except FileNotFoundError:
-                    print("cannot write output file partial_confusion_matrix")
-
-        if file_exist:
-            try:
-                out_file.close()
-            except FileNotFoundError:
-                print("no file to close in partial_confusion_matrix")
-
-        print("TP, FP, FN ", TP, FP, FN)
-        return (TP, FP, FN)
-
-    def recall(self):
-        TP, FP, FN = self.partial_confusion_matrix(self)
-        return TP / (TP + FP)
-
-    def precision(self):
-        TP, FP, FN = self.partial_confusion_matrix(self)
-        return TP / (TP + FN)
-
-    def f1score(self):
-        recall = self.recall()
-        precision = self.precision()
-        return 2 * precision * recall / (precision + recall)
-
-
-df = pd.read_csv("data\\test_data.csv")
+df = pd.read_csv("nlu\\data\\test_data.csv")
 sentences = df.Sentence.to_list()
 itargets = df.intent.to_list()
 
@@ -117,7 +46,7 @@ single_models = [
     "stack_models\\pipelines\\config_4.yml\\nlu-20201119-023646.tar.gz",
     "stack_models\\pipelines\\config_5.yml\\nlu-20201119-030659.tar.gz",
     "stack_models\\pipelines\\config_7.yml\\nlu-20201119-152018.tar.gz",
-    "stack_models\\pipelines\config_8.yml\\nlu-20201119-124504.tar.gz",
+    "stack_models\\pipelines\\config_8.yml\\nlu-20201119-124504.tar.gz",
     "stack_models\\pipelines\\config_9.yml\\nlu-20201119-130525.tar.gz",
 ]
 
@@ -125,7 +54,7 @@ single_models = [
 ipredictions_intent, ipredictions_entities = test_stack_pipelines(
     sentences,
     "results\\stack_reports\\with_entity5.csv",
-    trim_count=0,
+    trim_count=1,
 )
 # print(ipredictions_entities)
 # print(len(ipredictions_intent), len(itargets))
@@ -140,3 +69,4 @@ dict_comparison = DictComparison(
     out_file_path="results\\stack_entity_reports\\entity_result.txt",
 )
 print(dict_comparison.recall(), dict_comparison.precision(), dict_comparison.f1score())
+

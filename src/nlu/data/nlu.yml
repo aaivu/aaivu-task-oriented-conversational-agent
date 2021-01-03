@@ -48,8 +48,8 @@ nlu:
   examples: |
     - Could you help me to purchase the tickets?
     - Could you help me to book the tickets?
-    - Could you help me to book the tickets for that movie?
-    - Could you help me to book the tickets?
+    - can you help me to book the tickets for that movie?
+    - Could you help me to buy the tickets?
     - Could you help me to book the tickets for that movie?
 
 - intent: thanks

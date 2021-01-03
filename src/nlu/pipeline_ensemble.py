@@ -11,93 +11,12 @@ from rasa.nlu.model import Interpreter, Metadata
 from rasa import model
 from rasa.shared.utils.io import json_to_string
 import rasa.utils.common
+from pipeline_info import ModelScores, StackModels
 
 if typing.TYPE_CHECKING:
     from rasa.nlu.components import ComponentBuilder
 
 logger = logging.getLogger(__name__)
-
-
-class StackModels:
-    __instance = None
-
-    def __init__(self, model_folder_path):
-        if StackModels.__instance is None:
-            StackModels.__instance = object.__init__(self)
-        self.model_folder_path = model_folder_path
-
-    @staticmethod
-    def get_loaded_model_path(model_path):
-        temp_path = model.get_model(model_path)
-        loaded_model_path = temp_path + "\\nlu"
-        return loaded_model_path
-
-    def load_models(self):
-        models = glob.glob(self.model_folder_path + "\\*")
-        loaded_models = {}
-        for model in models:
-            config = model.split("\\")[-1]
-            # print("config", config)
-            model = max(glob.glob(model + "\\*"), key=os.path.getctime)
-            model_path = get_loaded_model_path(model)
-            interpreter = Interpreter.load(model_path, component_builder=None)
-            loaded_models["{}".format(config)] = interpreter
-        return loaded_models
-
-
-class ModelScores:
-    __instance = None
-
-    def __init__(self, model_score_path):
-        if ModelScores.__instance is None:
-            ModelScores.__instance = object.__init__(self)
-        self.model_score_path = model_score_path
-
-    def get_scores(self, avg="micro avg", score="f1-score", trim_count=None):
-        models = glob.glob(self.model_score_path + "\\*")
-        model_scores = {}
-
-        for model in models:
-            config = model.split("\\")[-1]
-            try:
-                with open("{}\intent_report.json".format(model, config)) as f:
-                    intent_report = json.load(f)
-            except (OSError, IOError) as e:
-                print("error load in reports \n {} \n config {}".format(e, config))
-            finally:
-                model_score = intent_report[avg][score]
-                model_scores[config] = model_score
-                # print("score ", model_score)
-
-        if trim_count:
-            sorted_model_scores = {
-                k: v
-                for k, v in sorted(
-                    model_scores.items(), key=lambda item: item[1], reverse=True
-                )
-            }
-            try:
-                dropped_model_scores = [
-                    sorted_model_scores.popitem() for item in range(trim_count)
-                ]
-            except (KeyError or TypeError):
-                print("cannot trim model scores")
-            finally:
-                return sorted_model_scores
-
-        return model_scores
-
-    def get_value_added_scores(self, avg="micro avg", score="f1-score"):
-        model_scores = self.get_scores(avg, score)
-        sorted_model_scores = {
-            k: v for k, v in sorted(model_scores.items(), key=lambda item: item[1])
-        }
-        value_added_scores = {}
-
-        for idx, key in enumerate(sorted_model_scores):
-            value_added_scores[key] = idx + 1
-        # print("value_added_scores :", value_added_scores)
-        return value_added_scores
 
 
 def run_cmdline(component_builder: Optional["ComponentBuilder"] = None) -> None:
@@ -143,16 +62,19 @@ def test_pipelines(test_data, model_path):
 def test_stack_pipelines(
     test_data, output_file_path, trim_count=None, fallback_confidence=0.5
 ):
-    model_folder_path = "stack_models\pipelines"
-    model_score_path = "results\pipelines"
-    entity_out_file_path = "results\\stack_reports\\full_entity_result14.csv"
+    model_folder_path = "nlu\\stack_models\\pipelines"
+    model_score_path = "nlu\\results\\pipelines"
+    entity_out_file_path = "nlu\\results\\stack_reports\\full_entity_result14.csv"
+    evaluation_dataset_path = "nlu\\data\\test_data.csv"
+
 
     target_entities = []
 
     stackmodels = StackModels(model_folder_path)
     stackmodels = stackmodels.load_models()
-    modelscores = ModelScores(model_score_path)
+    modelscores = ModelScores(model_score_path,model_folder_path=model_folder_path,evaluation_dataset_path=evaluation_dataset_path)
     model_scores = modelscores.get_scores(trim_count=trim_count)
+    entity_scores = modelscores.get_model_evaluation_scores()
     value_added_scores = modelscores.get_value_added_scores()
     test_result = []
     test_entity_result = []
@@ -175,6 +97,7 @@ def test_stack_pipelines(
             sentence,
             stackmodels,
             model_scores,
+            entity_scores,
             output_file_path,
             fallback_confidence,
             value_added_scores=None,
@@ -202,13 +125,14 @@ def model_stack_predict(
     message,
     stackmodels,
     modelscores,
+    modelentityscores,
     output_file_path=None,
     fallback_confidence=0.5,
     entity_stacking_type=3,
     value_added_scores=None,
     entity_out_file_path=None,
-    model_folder_path="stack_models\pipelines",
-    model_score_path="results\pipelines",
+    model_folder_path="nlu\\stack_models\\pipelines",
+    model_score_path="nlu\\results\\pipelines",
 ):
 
     nlu_test_result_tofile = {"text": message}
@@ -216,6 +140,8 @@ def model_stack_predict(
     intent_ranking = []
     stack_entities = []
     entity_file_exist = 0
+    
+    
 
     if entity_out_file_path:
         try:
@@ -226,7 +152,8 @@ def model_stack_predict(
             entity_file_exist = 0
 
     for config_id, config in enumerate(modelscores):
-
+        print("###############modelscores :",modelscores[config])
+        print("$$$$$$$$$$$$$$$modelentityscores :",modelentityscores[config])
         score = modelscores[config]
 
         try:
@@ -323,6 +250,8 @@ def model_stack_predict(
                         stack_entities.append(entity)
 
         elif entity_stacking_type == 3:
+            if not modelentityscores[config]:
+                modelentityscores[config] = 0.5
             for entity in result["entities"]:
                 try:
                     if value_added_scores:
@@ -330,13 +259,13 @@ def model_stack_predict(
                             value_added_scores[config] * entity["confidence_entity"]
                         )
                     else:
-                        confidence_entity = entity["confidence_entity"]
+                        confidence_entity = entity["confidence_entity"]*modelentityscores[config]
                 except KeyError:
                     remove_from_regex = ["greeting", "thanks", "deny", "confirm_answer"]
                     if result["intent"]["name"] in remove_from_regex:
                         confidence_entity = 0
                     else:
-                        confidence_entity = 1
+                        confidence_entity = modelentityscores[config]
 
                 if not stack_entities:
                     entity["count"] = confidence_entity
@@ -373,7 +302,7 @@ def model_stack_predict(
                     if i["count"] < 25:
                         stack_entities.remove(i)
                         continue
-                if i["count"] < (len(modelscores) / 2):
+                if i["count"] < 2:
                     stack_entities[num] = None
                     if entity_file_exist:
                         entity_out_file.write(
