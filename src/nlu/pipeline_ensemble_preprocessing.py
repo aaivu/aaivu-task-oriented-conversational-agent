@@ -12,6 +12,7 @@ from rasa import model
 from rasa.shared.utils.io import json_to_string
 import rasa.utils.common
 
+
 class StackModels:
     __instance = None
 
@@ -42,7 +43,9 @@ class StackModels:
 class ModelScores:
     __instance = None
 
-    def __init__(self, model_score_path, model_folder_path=None, evaluation_dataset_path = None):
+    def __init__(
+        self, model_score_path, model_folder_path=None, evaluation_dataset_path=None
+    ):
         if ModelScores.__instance is None:
             ModelScores.__instance = object.__init__(self)
         self.model_score_path = model_score_path
@@ -102,7 +105,7 @@ class ModelScores:
         return loaded_model_path
 
     @staticmethod
-    def test_pipelines(self,test_data, model_path):
+    def test_pipelines(self, test_data, model_path):
         model_path = self.get_loaded_model_path(model_path)
         interpreter = Interpreter.load(model_path, None)
         test_result = []
@@ -142,7 +145,7 @@ class ModelScores:
         evaluation_dataset = pd.read_csv(self.evaluation_dataset_path)
         models = glob.glob(self.model_folder_path + "\\*")
         # test_score_intents = {}
-        test_score_entities={}
+        test_score_entities = {}
 
         sentences = evaluation_dataset.Sentence.to_list()
         # target_intents = evaluation_dataset.intent.to_list()
@@ -150,13 +153,16 @@ class ModelScores:
 
         for model in models:
             config = model.split("\\")[-1]
-            test_pipeline_predicted_intents, test_pipeline_predicted_entities= self.test_pipelines(self,sentences, model)
+            (
+                test_pipeline_predicted_intents,
+                test_pipeline_predicted_entities,
+            ) = self.test_pipelines(self, sentences, model)
             dict_comparison = DictComparison(
                 target_entities,
                 test_pipeline_predicted_entities,
             )
-            test_score_entities[config]= dict_comparison.f1score()
-        print("test_score_entities: ",test_score_entities)
+            test_score_entities[config] = dict_comparison.f1score()
+        print("test_score_entities: ", test_score_entities)
         return test_score_entities
 
 
@@ -231,4 +237,3 @@ class DictComparison:
         recall = self.recall()
         precision = self.precision()
         return 2 * precision * recall / (precision + recall)
-

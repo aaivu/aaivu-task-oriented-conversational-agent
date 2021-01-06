@@ -11,7 +11,7 @@ from rasa.shared.data import get_nlu_directory
 args = argparse.Namespace
 # onlyfiles = [f for f in listdir("pipelines/") if isfile(join("pipelines/", f))]
 # print (onlyfiles)
-pipelines = glob.glob("pipelines/*")
+pipelines = glob.glob("pipelines\\*")
 print(pipelines)
 nlu_data = get_nlu_directory("data")
 additional_args = {
@@ -40,12 +40,12 @@ additional_args = {
 for i in range(len(pipelines)):
     try:
         os.system(
-            "rasa train nlu --config {} --out stack_models/{}".format(
+            "rasa train nlu --config {} --out stack_models\\{}".format(
                 pipelines[i], pipelines[i]
             )
         )
         perform_nlu_cross_validation(
-            "{}".format(pipelines[i]), nlu_data, "results\{}".format(pipelines[i]), {}
+            "{}".format(pipelines[i]), nlu_data, "results\\{}".format(pipelines[i]), {}
         )
     except OSError:
         print("{} cannot find the model".format(pipelines[i]))

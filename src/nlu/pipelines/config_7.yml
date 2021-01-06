@@ -27,36 +27,36 @@ pipeline:
   # - name: "KeywordIntentClassifier"
   - name: DIETClassifier
     epochs: 100
-  - name: "CRFEntityExtractor"
-    # BILOU_flag determines whether to use BILOU tagging or not.
-    "BILOU_flag": True
-    # features to extract in the sliding window
-    "features": [
-      ["low", "title", "upper"],
-      [
-        "bias",
-        "low",
-        "prefix5",
-        "prefix2",
-        "suffix5",
-        "suffix3",
-        "suffix2",
-        "upper",
-        "title",
-        "digit",
-        "pattern",
-      ],
-      ["low", "title", "upper"],
-    ]
+  # - name: "CRFEntityExtractor"
+  #   # BILOU_flag determines whether to use BILOU tagging or not.
+  #   "BILOU_flag": True
+  #   # features to extract in the sliding window
+  #   "features": [
+  #     ["low", "title", "upper"],
+  #     [
+  #       "bias",
+  #       "low",
+  #       "prefix5",
+  #       "prefix2",
+  #       "suffix5",
+  #       "suffix3",
+  #       "suffix2",
+  #       "upper",
+  #       "title",
+  #       "digit",
+  #       "pattern",
+  #     ],
+  #     ["low", "title", "upper"],
+  #   ]
     # The maximum number of iterations for optimization algorithms.
-    "max_iterations": 50
-    # weight of the L1 regularization
-    "L1_c": 0.1
-    # weight of the L2 regularization
-    "L2_c": 0.1
-    # Name of dense featurizers to use.
-    # If list is empty all available dense features are used.
-    "featurizers": []
+    # "max_iterations": 50
+    # # weight of the L1 regularization
+    # "L1_c": 0.1
+    # # weight of the L2 regularization
+    # "L2_c": 0.1
+    # # Name of dense featurizers to use.
+    # # If list is empty all available dense features are used.
+    # "featurizers": []
   - name: RegexEntityExtractor
   - name: FallbackClassifier
     threshold: 0.3

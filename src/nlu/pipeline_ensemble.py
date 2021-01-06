@@ -11,7 +11,7 @@ from rasa.nlu.model import Interpreter, Metadata
 from rasa import model
 from rasa.shared.utils.io import json_to_string
 import rasa.utils.common
-from pipeline_info import ModelScores, StackModels
+from pipeline_ensemble_preprocessing import ModelScores, StackModels
 
 if typing.TYPE_CHECKING:
     from rasa.nlu.components import ComponentBuilder
@@ -65,16 +65,21 @@ def test_stack_pipelines(
     model_folder_path = "nlu\\stack_models\\pipelines"
     model_score_path = "nlu\\results\\pipelines"
     entity_out_file_path = "nlu\\results\\stack_reports\\full_entity_result14.csv"
-    evaluation_dataset_path = "nlu\\data\\test_data.csv"
-
+    evaluation_dataset_path = "nlu\\data\\evaluation_data.csv"
 
     target_entities = []
 
     stackmodels = StackModels(model_folder_path)
     stackmodels = stackmodels.load_models()
-    modelscores = ModelScores(model_score_path,model_folder_path=model_folder_path,evaluation_dataset_path=evaluation_dataset_path)
+    modelscores = ModelScores(
+        model_score_path,
+        model_folder_path=model_folder_path,
+        evaluation_dataset_path=evaluation_dataset_path,
+    )
     model_scores = modelscores.get_scores(trim_count=trim_count)
+    print("############start###############")
     entity_scores = modelscores.get_model_evaluation_scores()
+    print("############fin##################")
     value_added_scores = modelscores.get_value_added_scores()
     test_result = []
     test_entity_result = []
@@ -140,8 +145,6 @@ def model_stack_predict(
     intent_ranking = []
     stack_entities = []
     entity_file_exist = 0
-    
-    
 
     if entity_out_file_path:
         try:
@@ -152,8 +155,7 @@ def model_stack_predict(
             entity_file_exist = 0
 
     for config_id, config in enumerate(modelscores):
-        print("###############modelscores :",modelscores[config])
-        print("$$$$$$$$$$$$$$$modelentityscores :",modelentityscores[config])
+
         score = modelscores[config]
 
         try:
@@ -249,7 +251,8 @@ def model_stack_predict(
                     ]:
                         stack_entities.append(entity)
 
-        elif entity_stacking_type == 3:
+        elif entity_stacking_type == 3:            
+            modelentityscores[config]=1
             if not modelentityscores[config]:
                 modelentityscores[config] = 0.5
             for entity in result["entities"]:
@@ -258,17 +261,23 @@ def model_stack_predict(
                         confidence_entity = (
                             value_added_scores[config] * entity["confidence_entity"]
                         )
+                        count = value_added_scores[config]
                     else:
-                        confidence_entity = entity["confidence_entity"]*modelentityscores[config]
+                        confidence_entity = (
+                            modelentityscores[config] * entity["confidence_entity"]
+                        )
+                        count = modelentityscores[config]
                 except KeyError:
                     remove_from_regex = ["greeting", "thanks", "deny", "confirm_answer"]
                     if result["intent"]["name"] in remove_from_regex:
                         confidence_entity = 0
                     else:
                         confidence_entity = modelentityscores[config]
+                    count = modelentityscores[config]
 
                 if not stack_entities:
-                    entity["count"] = confidence_entity
+                    entity["count"] = count
+                    entity["confidence"] = confidence_entity
                     stack_entities.append(entity)
                 elif (entity["entity"], entity["value"]) in [
                     (en["entity"], en["value"]) for en in stack_entities
@@ -278,9 +287,14 @@ def model_stack_predict(
                         for item in stack_entities
                         if item["entity"] == entity["entity"]
                     )
-                    matched_entity["count"] += confidence_entity
+                    matched_entity["confidence"] = (
+                        matched_entity["count"] * matched_entity["confidence"]
+                        + confidence_entity
+                    ) / (matched_entity["count"] + count)
+                    matched_entity["count"] += count
                 else:
-                    entity["count"] = confidence_entity
+                    entity["count"] = count
+                    entity["confidence"] = confidence_entity
                     stack_entities.append(entity)
 
         nlu_result["intent"] = [
@@ -299,14 +313,16 @@ def model_stack_predict(
         for num, i in enumerate(stack_entities):
             if i:
                 if value_added_scores:
-                    if i["count"] < 25:
+                    if i["confidence"] < 25:
                         stack_entities.remove(i)
                         continue
-                if i["count"] < 2:
+                if i["confidence"] < 0.5:
                     stack_entities[num] = None
                     if entity_file_exist:
                         entity_out_file.write(
-                            "remove {} with count {}".format(i["entity"], i["count"])
+                            "remove {} with count {}".format(
+                                i["entity"], i["confidence"]
+                            )
                             + "\n"
                         )
                     continue
@@ -316,11 +332,19 @@ def model_stack_predict(
                     for j in stack_entities[num + 1 :]:
                         if j:
                             if i["entity"] == j["entity"]:
-                                low_entity = i if i["count"] < j["count"] else j
+                                low_entity = (
+                                    i if i["confidence"] < j["confidence"] else j
+                                )
+                                print("i,j,low_entity1 :",num,i,j,low_entity)
                                 stack_entities[stack_entities.index(low_entity)] = None
                             if i["value"] == j["value"] and i["start"] == j["start"]:
-                                low_entity = i if i["count"] < j["count"] else j
-                                stack_entities[stack_entities.index(low_entity)] = None
+                                low_entity = (
+                                    i if i["confidence"] < j["confidence"] else j
+                                )
+                                print("i,j,low_entity2 :",num,i,j,low_entity)
+                                if low_entity in stack_entities:
+                                    # print("stack_entities[stack_entities.index(low_entity)] :",stack_entities[stack_entities.index(low_entity)])
+                                    stack_entities[stack_entities.index(low_entity)] = None
 
         stack_entities = [i for i in stack_entities if i]
 
