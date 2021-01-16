@@ -58,15 +58,16 @@ class ModelScores:
 
         for model in models:
             config = model.split("\\")[-1]
+            print("!!!!!!!!!!", config)
             try:
                 with open("{}\intent_report.json".format(model, config)) as f:
                     intent_report = json.load(f)
+                    print("@intent_report", intent_report)
             except (OSError, IOError) as e:
                 print("error load in reports \n {} \n config {}".format(e, config))
             finally:
                 model_score = intent_report[avg][score]
                 model_scores[config] = model_score
-                # print("score ", model_score)
 
         if trim_count:
             sorted_model_scores = {
@@ -95,7 +96,6 @@ class ModelScores:
 
         for idx, key in enumerate(sorted_model_scores):
             value_added_scores[key] = idx + 1
-        # print("value_added_scores :", value_added_scores)
         return value_added_scores
 
     @staticmethod
@@ -118,7 +118,6 @@ class ModelScores:
             for entity in result["entities"]:
                 filtered_entities[entity["entity"]] = entity["value"]
             test_entity_result.append(filtered_entities)
-        # print("test result  :", test_result)
         return tuple(test_result), test_entity_result
 
     @staticmethod
@@ -161,7 +160,7 @@ class ModelScores:
                 target_entities,
                 test_pipeline_predicted_entities,
             )
-            test_score_entities[config] = dict_comparison.f1score()
+            test_score_entities[config] = dict_comparison.accuracy()
         print("test_score_entities: ", test_score_entities)
         return test_score_entities
 
@@ -172,9 +171,8 @@ class DictComparison:
         self.predictions = predictions
         self.out_file_path = out_file_path
 
-    @staticmethod
     def partial_confusion_matrix(self):
-        TP, FP, FN = 0, 0, 0
+        TP, FP, FN, Tot = 0, 0, 0, 0
         file_exist = 0
         if self.out_file_path:
             try:
@@ -193,6 +191,7 @@ class DictComparison:
             TP += len(set(target.items()) & set(prediction.items()))
             FP += len(set(prediction.items()) - set(target.items()))
             FN += len(set(target.items()) - set(prediction.items()))
+            Tot += len(prediction.items())
 
             if file_exist:
                 try:
@@ -223,17 +222,21 @@ class DictComparison:
                 print("no file to close in partial_confusion_matrix")
 
         print("TP, FP, FN ", TP, FP, FN)
-        return (TP, FP, FN)
+        return (TP, FP, FN, Tot)
 
     def recall(self):
-        TP, FP, FN = self.partial_confusion_matrix(self)
+        TP, FP, FN, _ = self.partial_confusion_matrix()
         return TP / (TP + FP)
 
     def precision(self):
-        TP, FP, FN = self.partial_confusion_matrix(self)
+        TP, FP, FN, _ = self.partial_confusion_matrix()
         return TP / (TP + FN)
 
     def f1score(self):
         recall = self.recall()
         precision = self.precision()
         return 2 * precision * recall / (precision + recall)
+
+    def accuracy(self):
+        TP, FP, FN, Tot = self.partial_confusion_matrix()
+        return TP / Tot

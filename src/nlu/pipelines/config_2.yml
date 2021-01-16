@@ -246,21 +246,21 @@ pipeline:
   "scoring_function": "f1_weighted"
 - name: "SpacyEntityExtractor"
   # dimensions to extract
-  dimensions: ["PERSON", "LOC", "ORG", "PRODUCT"]
-- name: "DucklingEntityExtractor"
-  # url of the running duckling server
-  url: "http://localhost:8000"
-  # dimensions to extract
-  dimensions: ["time", "number", "amount-of-money", "distance"]
-  # allows you to configure the locale, by default the language is
-  # used
-  locale: "de_DE"
-  # if not set the default timezone of Duckling is going to be used
-  # needed to calculate dates from relative expressions like "tomorrow"
-  timezone: "Europe/Berlin"
-  # Timeout for receiving response from http url of the running duckling server
-  # if not set the default timeout of duckling http url is set to 3 seconds.
-  timeout : 3
+#   dimensions: ["PERSON", "LOC", "ORG", "PRODUCT"]
+# - name: "DucklingEntityExtractor"
+#   # url of the running duckling server
+#   url: "http://localhost:8000"
+#   # dimensions to extract
+#   dimensions: ["time", "number", "amount-of-money", "distance"]
+#   # allows you to configure the locale, by default the language is
+#   # used
+#   locale: "de_DE"
+#   # if not set the default timezone of Duckling is going to be used
+#   # needed to calculate dates from relative expressions like "tomorrow"
+#   timezone: "Europe/Berlin"
+#   # Timeout for receiving response from http url of the running duckling server
+#   # if not set the default timeout of duckling http url is set to 3 seconds.
+#   timeout : 3
 - name: RegexEntityExtractor
   # text will be processed with case insensitive as default
   case_sensitive: False

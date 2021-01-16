@@ -1,4 +1,4 @@
-import pipeline_ensemble as pe
+import pipeline_ensemble_preprocessing as pe
 
 model_folder_path = "nlu\\stack_models\\pipelines"
 model_score_path = "nlu\\results\\pipelines"
@@ -34,8 +34,3 @@ class NluEnsemblePredict:
             sentence, self.stack_models, self.model_scores, self.model_entity_scores
         )
 
-nep = NluEnsemblePredict()
-
-print(nep.run_stack_pipelines("hi"))
-print("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$")
-print(nep.run_stack_pipelines("i want 2 tickets to watch avengers"))

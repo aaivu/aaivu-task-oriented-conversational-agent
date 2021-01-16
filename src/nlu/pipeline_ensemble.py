@@ -55,12 +55,15 @@ def test_pipelines(test_data, model_path):
         for entity in result["entities"]:
             filtered_entities[entity["entity"]] = entity["value"]
         test_entity_result.append(filtered_entities)
-    # print("test result  :", test_result)
     return tuple(test_result), test_entity_result
 
 
 def test_stack_pipelines(
-    test_data, output_file_path, trim_count=None, fallback_confidence=0.5
+    test_data,
+    output_file_path,
+    entity_threshold=0.5,
+    trim_count=None,
+    fallback_confidence=0.5,
 ):
     model_folder_path = "nlu\\stack_models\\pipelines"
     model_score_path = "nlu\\results\\pipelines"
@@ -77,9 +80,7 @@ def test_stack_pipelines(
         evaluation_dataset_path=evaluation_dataset_path,
     )
     model_scores = modelscores.get_scores(trim_count=trim_count)
-    print("############start###############")
     entity_scores = modelscores.get_model_evaluation_scores()
-    print("############fin##################")
     value_added_scores = modelscores.get_value_added_scores()
     test_result = []
     test_entity_result = []
@@ -103,6 +104,7 @@ def test_stack_pipelines(
             stackmodels,
             model_scores,
             entity_scores,
+            entity_threshold,
             output_file_path,
             fallback_confidence,
             value_added_scores=None,
@@ -129,8 +131,9 @@ def get_loaded_model_path(model_path):
 def model_stack_predict(
     message,
     stackmodels,
-    modelscores,
+    modelintentscores,
     modelentityscores,
+    entity_threshold=0.5,
     output_file_path=None,
     fallback_confidence=0.5,
     entity_stacking_type=3,
@@ -154,9 +157,9 @@ def model_stack_predict(
             print("cannot open output file to write entity results")
             entity_file_exist = 0
 
-    for config_id, config in enumerate(modelscores):
+    for config_id, config in enumerate(modelintentscores):
 
-        score = modelscores[config]
+        score = modelintentscores[config]
 
         try:
             result = stackmodels[config].parse(message)
@@ -251,20 +254,17 @@ def model_stack_predict(
                     ]:
                         stack_entities.append(entity)
 
-        elif entity_stacking_type == 3:            
-            modelentityscores[config]=1
+        elif entity_stacking_type == 3:
             if not modelentityscores[config]:
                 modelentityscores[config] = 0.5
             for entity in result["entities"]:
                 try:
                     if value_added_scores:
-                        confidence_entity = (
-                            value_added_scores[config] * entity["confidence_entity"]
-                        )
+                        confidence_entity = value_added_scores[config]
                         count = value_added_scores[config]
                     else:
                         confidence_entity = (
-                            modelentityscores[config] * entity["confidence_entity"]
+                            entity["confidence_entity"] * modelentityscores[config]
                         )
                         count = modelentityscores[config]
                 except KeyError:
@@ -277,7 +277,7 @@ def model_stack_predict(
 
                 if not stack_entities:
                     entity["count"] = count
-                    entity["confidence"] = confidence_entity
+                    entity["confidence_entity"] = confidence_entity
                     stack_entities.append(entity)
                 elif (entity["entity"], entity["value"]) in [
                     (en["entity"], en["value"]) for en in stack_entities
@@ -287,14 +287,16 @@ def model_stack_predict(
                         for item in stack_entities
                         if item["entity"] == entity["entity"]
                     )
-                    matched_entity["confidence"] = (
-                        matched_entity["count"] * matched_entity["confidence"]
-                        + confidence_entity
-                    ) / (matched_entity["count"] + count)
+                    # matched_entity["confidence_entity"] = (
+                    #     matched_entity["count"] * matched_entity["confidence_entity"]
+                    #     + confidence_entity
+                    # ) / (matched_entity["count"] + count)
+                    # matched_entity["count"] += count
+                    matched_entity["confidence_entity"] += confidence_entity
                     matched_entity["count"] += count
                 else:
                     entity["count"] = count
-                    entity["confidence"] = confidence_entity
+                    entity["confidence_entity"] = confidence_entity
                     stack_entities.append(entity)
 
         nlu_result["intent"] = [
@@ -310,22 +312,26 @@ def model_stack_predict(
                 "stack_entities before trim :" + str(initial_stack_entities) + "\n"
             )
 
+        pipeline_sum = sum(modelentityscores.values())
+        print("pipeline sum ", pipeline_sum)
+
         for num, i in enumerate(stack_entities):
             if i:
+                if i["entity"] in ["PERSON", "LOC", "ORG", "PRODUCT"]:
+                    stack_entities.remove(i)
                 if value_added_scores:
-                    if i["confidence"] < 25:
+                    if i["confidence_entity"] < 25:
                         stack_entities.remove(i)
-                        continue
-                if i["confidence"] < 0.5:
+                if (i["confidence_entity"]) < (pipeline_sum / 2):
+                    print("i['entity'] ", i["entity"], i["confidence_entity"])
                     stack_entities[num] = None
                     if entity_file_exist:
                         entity_out_file.write(
                             "remove {} with count {}".format(
-                                i["entity"], i["confidence"]
+                                i["entity"], i["confidence_entity"]
                             )
                             + "\n"
                         )
-                    continue
                 elif num > (len(stack_entities) - 1):
                     break
                 else:
@@ -333,18 +339,26 @@ def model_stack_predict(
                         if j:
                             if i["entity"] == j["entity"]:
                                 low_entity = (
-                                    i if i["confidence"] < j["confidence"] else j
+                                    i
+                                    if i["confidence_entity"] < j["confidence_entity"]
+                                    else j
                                 )
-                                print("i,j,low_entity1 :",num,i,j,low_entity)
-                                stack_entities[stack_entities.index(low_entity)] = None
+                                print("i,j,low_entity1 :", num, i, j, low_entity)
+                                if low_entity in stack_entities:
+                                    stack_entities[
+                                        stack_entities.index(low_entity)
+                                    ] = None
                             if i["value"] == j["value"] and i["start"] == j["start"]:
                                 low_entity = (
-                                    i if i["confidence"] < j["confidence"] else j
+                                    i
+                                    if i["confidence_entity"] < j["confidence_entity"]
+                                    else j
                                 )
-                                print("i,j,low_entity2 :",num,i,j,low_entity)
+                                print("i,j,low_entity2 :", num, i, j, low_entity)
                                 if low_entity in stack_entities:
-                                    # print("stack_entities[stack_entities.index(low_entity)] :",stack_entities[stack_entities.index(low_entity)])
-                                    stack_entities[stack_entities.index(low_entity)] = None
+                                    stack_entities[
+                                        stack_entities.index(low_entity)
+                                    ] = None
 
         stack_entities = [i for i in stack_entities if i]
 
@@ -370,7 +384,4 @@ def model_stack_predict(
                 outfile.write("\n")
         except (OSError, IOError) as e:
             print("cannot open output file")
-        finally:
-            # print("nlu_test_result_tofile :", nlu_test_result_tofile)
-            print("done")
     return nlu_result
