@@ -1,0 +1,782 @@
+version: "2.0"
+
+nlu:
+- intent: greeting
+  examples: |
+    - හෙලෝ
+    - හායි
+    - ඒයි මේ
+    - සුභ උදෑසනක්
+    - සුබ සැන්දෑවක්
+    - ඒයි මචං
+    - සුභ උදෑසනක්
+    - සුභ සැන්දෑවක්
+    - සුභ සන්ධ්යාවක්
+
+- intent: multiple_choice
+  examples: |
+    - ප්‍රවේශ පත්‍ර කීයක් තිබේද?
+    - පෙන්වන්නේ කුමන චිත්‍රපටයද?
+    - ලබා ගත හැකි දිනය සහ ආරම්භක වේලාව කුමක්ද?
+    - එදින ප්‍රවේශ පත්‍ර කීයක් තිබේද?
+    - ටිකට් කීයක් තියනවද?
+
+- intent: confirm_answer
+  examples: |
+    - ඔව්
+    - හරි
+    - ඇත්ත වශයෙන්ම
+    - ඇත්ත
+    - ඒක හොදයි
+    - එය හොඳ යැයි හැඟෙනවා
+    - එහෙම හොඳයි
+    - නිවැරදි
+    - නිවැරදියි
+    
+- intent: deny
+  examples: |
+    - නොමැත
+    - නෑ
+    - නැහැ
+    - එපා
+    - ඒක එපා
+    - කවදාවත් නෑ
+    - මම හිතන්නේ නැහැ
+    - එයට කැමති නැහැ
+    - කොහෙත්ම නැහැ
+    - ඇත්තෙන්ම නැහැ
+    - මං ඒකට කැමති නෑ
+    - සමාවෙන්න! මෙය වැරදි ටිකට් පතක්!
+
+- intent: confirm_question
+  examples: |
+    - ටිකට්පත් මිලදී ගැනීමට ඔබට මට උදව් කළ හැකිද?
+    - ටිකට්පත් වෙන්කරවා ගැනීමට ඔබට මට උදව් කළ හැකිද?
+    - එම චිත්‍රපටයේ ටිකට්පත් වෙන්කරවා ගැනීමට ඔබට මට උදව් කළ හැකිද?
+    - ඔබට පුලුවන්ද මට ටිකට් පතක් වෙන්කරවා ගන්න උදව් කරන්න?
+    - එම චිත්‍රපටයේ ටිකට්පත් වෙන්කරවා ගන්න මට උදව් කළ හැකිද?
+    - ටිකට්පත් වෙන්කරවා ගන්න ඔයාට මට උදව් කරන්න පුලුවන්ද?
+    - ඔයාට පුලුවන්ද මට ටිකට් එකක් වෙන් කරගන්න උදව් කරන්න?
+
+- intent: thanks
+  examples: |
+    - ඔබට ස්තුතියි
+    - ස්තූතියි, [ආයුබෝවන්](closing)
+    - [සුභ දවසක්](closing)
+    - [සමුගන්න](closing)
+    - [ආපහු හම්බවෙමු](closing)
+    - [නැවත මුණගැහෙමු](closing)
+    - [නැවත මුනගැහෙමු](closing)
+    - [පසුව හමුවෙමු](closing)
+
+- intent: inform
+  examples: |
+    - මට [සූටෝපියා](moviename) චිත්‍රපටය නැරඹීමට අවශ්‍යයි
+    - මට බලන්න ඕනෙ [උදේ 10:30](starttime) ට
+    - මට අවශ්‍යයි [හැමිල්ටන්](city) වලදි නැරඹීමට 
+    - මට එය [හෙට](date) වෙන්කරවා ගන්න ඕනෙ
+    - මට ප්‍රවේශ පත්‍ර [2](numberofpeople) ක් අවශ්‍යයි!
+    - මට [ලිබර්ටි](theater) එකෙන් ඕනෙ
+    - [රයන් රෙනෝල්ඩ්ස්](actor)
+    - මට [ඇලබාමා](state)හි [මැන්විල්](city) වලින් ටිකට්පත් [තුනක්](numberofpeople) අවශ්‍යයි.
+    - මට [ප.ව.2 ට පමණ](starttime) [තනි](numberofpeople) ප්‍රවේශ පත්‍ර අවශ්‍යයි
+    - මට [මෙම සති අන්තයේ](date) [නවතම දර්ශනය](starttime) බැලීමට අවශ්‍යයි.
+    - [ඉහළම ශ්‍රේණිගත කිරීම](critic_rating)
+    - [තවමත් සිනමාහල් වල වාදනය වේ](description)
+    - මට [ප්‍රහසන](genre) චිත්‍රපටයක් නැරඹීමට අවශ්‍යයි.
+    - මම කැමතියි [ත්‍රාසජනක](genre) චිත්‍රපටයක් බලන්න.
+    - [pg](mpaa_rating)
+    - [3d](video_format)
+    - [රු.500](price)
+    - [ළමයි 2](numberofkids)
+    - [ෆස්ට්](moviename)
+    - [රීගල් මෙරිඩියන්](theater_chain)
+    - මට [nyc](city) හි [සවස 4:30](starttime) ට චිත්‍රපටයක් නැරඹීමට අවශ්‍යයි
+    - [Imax](video_format) [මෙහි ආසන්නයේ](distanceconstraints)
+    - [සැවෝයි](theater) ටිකට්පත් [දෙකක්](numberofpeople)
+    - මට [ඩෙඩ්පූල්](moviename) [maxlite](theater) එකෙන් බලන්න ඕනෙ
+    - [අද](date) [නවතම දර්ශනය](starttime) බලන්න ටිකට් [4](numberofpeople) ක් වෙන්කරගන්න ඕනෙ
+    - [හොඳම අවන්හල](other)
+    - මට [‍රෑ ඩැනියෙල් දවල් මිගෙල්](moviename) සඳහා ප.ව. 1:10 ට(starttime) ප්‍රවේශ පත්‍ර අවශ්‍යයි.
+    - මට [කොළඹින්](city) ටිකට්පත් අවශ්‍යයි.
+    - මට [මොරටුවෙන්](city) ප්‍රවේශ පත්‍ර කිහිපයක් අවශ්‍යයි.
+    - මට [EAP සිනමාහලකින්](theater) ටිකට්පත් අවශ්‍යයි.
+    - මට [pa](state) ප්‍රවේශ පත්‍ර අවශ්‍යයි.
+    - මට [රීගල් මෙරිඩියන්](theater_chain) හි [ස්ටාර් වෝස්](moviename) සඳහා ප්‍රවේශ පත්‍ර කිහිපයක් අවශ්‍යයි.
+    - මට ටිකට් කිහිපයක් අවශ්‍යයි [සවස 4 ට පෙර](starttime)
+    - [IMAX](video_format) සඳහා [ප.ව. 2 ට පමණ](starttime) මට ප්‍රවේශ පත්‍ර [9](numberofpeople)ක් අවශ්‍යයි.
+    - හායි, මම කැමතියි [il](state) වල [නැව ගිලුනත් බෑන් චූන්](moviename) ෆිල්ම් එක සඳහා ප්‍රවේශ පත්‍ර මිලදී ගැනීමට.
+    - හරි, මට [මායාකාරිය](චිත‍්‍රපටය) සඳහා [සාමාන්‍ය](video_format) ටිකට් පත් තිබිය යුතුය
+    - හරි, මට [සති අන්තයේ](date) [සවස 4 ට පෙර](starttime) [රෙඩ්වුඩ් සිටි 20](theater) න් ටිකට් ගන්න ඕන.
+    - හරි, මට [ඇවෙන්ජර්ස්](moviename) සඳහා ටිකට් පත් අවශ්‍යයි [හෙට](date) [පෙ.ව. 9.30 ට.](starttime) [සියැටල්](city) හි [ඉමාජින්](theater) වලින්
+
+- intent: theater
+  examples: |    
+    - [රාත්‍රී 8](starttime) ට [සූටෝපියා](moviename) පෙන්වන රංග ශාලාවක් තියනවද?
+    - [ඩෙට්‍රොයිට්](city) හි [8:45](starttime) ට [විස්කි ටැන්ගෝ ෆොක්ස්ට්‍රෝට්](moviename) පෙන්වන රංග ශාලාව දන්නවද?
+    - [මියාමි](city) හි තිරගත වන රංග ශාලාවන් මොනවාද?
+    - [නවතම දර්ශනය](starttime) [වෙනස් දිනයක්](date) [තනිකඩව සිටින්නේ කෙසේද](moviename) කුමන රංග ශාලාවද?
+    - [කුං ෆු පැන්ඩා 3](moviename) පෙන්වන රංග ශාලාව කුමක්ද?
+    - ලබා ගත හැකි [ආසන්නතම](distanceconstraints) තියටර් එක කුමක්ද?
+    - [රාත්‍රී 10 ට](starttime) එය රඟ දක්වන්නේ කුමන රංග ශාලාවද?
+    - [ඇවටර්)(moviename) සඳහා මට [1](numberofpeople) ටිකට් පතක් වෙන්කර ගත හැක්කේ කුමන රංග ශාලාවෙන්ද?
+    - [අබා](moviename) පෙන්නන රංග ශාලාව මොකක්ද?
+    - [චිකාගෝ](city) හි [සූරිය අරණ](moviename) පෙන්වන රංග ශාලාව කුමක්ද?
+    - [ඊජිප්තුවේ දෙවිවරුන්](moviename) [පළමු දින](date) පෙන්වන්නේ කුමන රංග ශාලාවේද?
+    - [සුපර් 6](moviename) පෙන්වන [ළඟම](distanceconstraints) රංග ශාලාව කුමක්ද?
+    - [මාතර](city) ඇති [මායාකාරිය](moviename) තිරගත වන රංග ශාලාව දන්නවද?
+    - සිප්කෝඩ් [48071](zip) අසල ඇති [බැට්මෑන්)(moviename) පෙන්වන රඟහල කුමක්ද?
+    - [3d](video_format) [සුපර්මෑන්](moviename) පෙන්නන තියටර් එක දන්නවද?
+    - මේ [ආසන්නව](distanceconstraints) මට [Imax](video_format) වලින් ටිකට් [5](numberofpeople) ක් වෙන්කරවා ගත හැක්කේ කුමන රංග ශාලාවද?
+    - ලබා ගත හැකි රංග ශාලාව කුමක්ද?
+    - මට ටිකට්පත් [හතක්](numberofpeople) මිලදී ගත හැක්කේ කොතැනින්ද?
+    - [උතුරු කැරොලිනා](state) වලින් මට [වැඩිහිටියන් 2](numberofpeople) ටිකට්පත් වෙන් කරවා ගත හැක්කේ කුමන රංග ශාලාවෙන්ද?
+    - [ගම්පහ](city) නගරයේ තිරගත වන රංග ශාලවල් මොනවද?
+    - මට ප්‍රවේශ පත්‍ර [2](numberofpeople) ක් අවශ්‍යයි. [ලුසියානා](state) හි [2d](video_format) ඉදිරිපත් කරන රඟහල කුමක්ද?
+    - මට ටිකට් [3](numberofpeople)ක් අවශ්‍යයි. [3d](video_format) ඉදිරිපත් කරන රංග ශාලාව කුමක්ද?
+    - මට ටිකට් [4](numberofpeople)ක් අවශ්‍යයි. [ළඟම](distanceconstraints) ඇති රඟහල මොකක්ද?
+    - මට ටිකට් [5](numberofpeople)ක් අවශ්‍යයි. [කොළඹට ආසන්න](distanceconstraints) [mn](state) හි තියටර් හෝල් එක මොකක්ද?
+    - මට ප්‍රවේශ පත්‍ර [10](numberofpeople) අවශ්‍යයි. [Ga](state) හි [2D](video_format) ඉදිරිපත් කරන රංග ශාලාව කුමක්ද?
+
+- intent: ticket
+  examples: |    
+    - [සාමාන්‍ය](video_format) ටිකට්පත් තිබේද?
+    - ප්‍රවේශ පත්‍රයක් තිබේද [ආසන්නයෙන්ම](distanceconstraints)?
+    - [මාර්තු 24](date) සඳහා ප්‍රවේශ පත්‍ර ලබා ගත හැකිද?
+    - ටිකට්පත් වෙන්කරවා ගැනීමට ඔබට මට උදව් කළ හැකිද?
+    - [සීසර්](චිත‍්‍රපට නාමය) සඳහා මට ටිකට් පත් [12](numberofpeople) ලබා ගත හැකිද?
+    - මට [ස්පයිඩර් මෑන්](moviename) [සති අන්තයෙ](date) බැලීම සඳහා ප්‍රවේශ පත්‍ර ලබා ගත හැකිද?    
+    - මට [ඩෙඩ්පූල්](moviename) සඳහා [නුවරින්](city) ප්‍රවේශ පත්‍ර මිලදී ගත හැකිද?
+    - මට [කුං ෆු පැන්ඩා 3](moviename) සඳහා ටිකට්පත් ලබා ගත හැකිද?
+    - මට [1](numberofpeople) ටිකට් පතක් ලබා ගත හැකිද?
+    - මට [ලිබර්ටි ලයිට්](theater) වලින් [දුටුගැමුණු](moviename) චිත්‍රපටිය සඳහා ප්‍රවේශ පත්‍ර ලබා ගත හැකිද?
+
+- intent: moviename
+  examples: |  
+    - [පිට්ස්බර්ග්](city) හි [3/12](date) [11:10][ආරම්භක වේලාව] ට පෙන්වන චිත්‍රපටය කුමක්ද?
+    - [ඊළඟ සිකුරාදා](date) ටිකට්පත් [3](numberofpeople) ක් ලබා ගත හැකි චිත්‍රපටය කුමක්ද?
+    - [ඇට්ලන්ටා](city) හි පෙන්වන චිත්‍රපටය කුමක්ද?
+    - [මේ ආසන්නයේ](distanceconstraints) පෙන්නන චිත්‍රපටය කුමක්ද?
+    - [රාජකීය ඕක් ඉමාජින්](theater) රඟහලේ තිරගත වන චිත්‍රපටය කුමක්ද?
+    - [අඟහරුවාදා](date) පෙන්වන චිත්‍රපටය කුමක්ද?
+    - ලබා ගත හැකි චිත්‍රපටිය කුමක්ද?
+
+- intent: other
+  examples: | 
+    - චිත්‍රපටය ගැන වෙන කිසිවක් තිබේද?
+    - චිත්‍රපටය ගැන වෙනත් ගැටළු තිබේද?
+
+- intent: price
+  examples: | 
+    - මිල කීයද?
+    - මිල ගැන කුමක් කිව හැකිද?
+    - ටිකට් පතේ මිල මට කියන්න පුළුවන්ද?
+    - මිල මට කියන්න
+    - ගාන කීයද?
+    - ගාන කොහොමද?
+
+- intent: city
+  examples: | 
+    - ලබා ගත හැකි නගරය කුමක්ද?
+    - පවතින නගර මොනවාද?
+    - තියන නගර මොනවද?
+    - මට මෙම චිත්‍රපටය නැරඹිය හැකි නගරය කුමක්ද?
+
+- intent: numberofpeople
+  examples: | 
+    - ප්‍රවේශ පත්‍ර කීයක් තිබේද?
+    - ටිකට් කීයක් තියනවද?
+    - ටිකට්පත් කීයක් තියෙනවාද?
+    - මට ප්‍රවේශ පත්‍ර කීයක් ලබා ගත හැකිද?
+
+- intent: actor
+  examples: | 
+    - චිත්‍රපටයේ සිටින නළුවා කවුද?
+    - මේ චිත්‍රපටයේ නළුවා කවුද?
+    - මේ චිත්‍රපටයේ නළුවාගේ නම?
+
+- intent: actress
+  examples: | 
+    - චිත්‍රපටයේ සිටින නිළිය කුමක්ද?
+    - මේ චිත්‍රපටයේ නිළිය කවුද?
+    - ඔබට මට නිළියගේ නම දෙන්න පුළුවන්ද?
+
+- intent: critic_rating
+  examples: | 
+    - චිත්‍රපටය සඳහා විචාරක ශ්‍රේණිගත කිරීම කුමක්ද?
+    - විචාරක ශ්‍රේණිගත කිරීම කෙසේද?
+    - රේටින්ග්ස් කොහොමද?
+
+- intent: starttime
+  examples: | 
+    - එය [amc](theater_chain) හි ආරම්භ වන වේලාව කුමක්ද?
+    - [ගාඩියන්ස්](moviename) සඳහා ආරම්භක වේලාව කුමක්ද?
+    - [ගාල්ල පැත්තේ](distanceconstraints) [කුං ෆු පැන්ඩා](moviename) ආරම්භක වේලාව කුමක්ද?
+    - zipcode [90602](zip) හි [Deadpool](moviename) සඳහා පටන්ගන්න වෙලාව මොකක්ද?
+    - [ඈන්ට් මෑන්](moviename) සඳහා මට ප්‍රවේශ පත්‍ර දෙකක් වෙන් කර ගත හැකි ආරම්භක වේලාව මොකක්ද?
+    - [සිකුරාදා](date) [ශර්ලොක්](moviename) පටන්ගන්න වේලාව මොකක්ද?
+    - [ෆ්ලෝරීඩා](state) හි [සහෝදර ග්‍රිම්ස්බි](moviename) සඳහා ආරම්භක වේලාව කුමක්ද?
+    - [කලුතර](city) තිරගත වෙන්නෙ කවදාද?
+    - [ලිබර්ටි](theater) වල [ඇක්වා මෑන්](moviename) පෙන්නන වේලාව කුමක්ද?
+    - පුද්ගලයින් [පහක්](අංක) සඳහා ප්‍රවේශ පත්‍ර ලබා ගත හැකි ආරම්භක වේලාව මොකක්ද?
+    - ලබා ගත හැකි පටන් ගන්න වෙලාව කුමක්ද?
+    - [මාර්තු 11 සිකුරාදා](date) එය පෙන්නන්නේ කීයටද? මට ප්‍රවේශ පත්‍ර [6](numberofpeople) ක් අවශ්‍යයි. 
+    - [සියැට්ල්](city) වෙතින් මට ටිකට්පත් [8](numberofpeople) ක් වෙන්කරවා ගත හැකි ආරම්භක වේලාව කුමක්ද?
+    - මට පටන්ගන්න වෙලාවට ටිකට්පත් [7](numberofpeople)ක් [නගරයෙන්](distanceconstraints) වෙන්කරවා ගත හැක්කේ කෙසේද?
+    - එය [කුරුණෑගල](city) [tn](state) හිදී තිරගත වෙන්නෙ කවදාද?
+    - මට ටිකට්පත් [5](numberofpeople) ක් මිලදී ගැනීමට අවශ්‍යයි. [යාපනයෙ](city) [මැජෙස්ටික්](theater) හි එම චිත්‍රපටය තිරගත වෙන්නෙ කීයටද?
+    - මට ටිකට්පත් [එකොළොස්](numberofpeople) ක් මිලදී ගැනීමට අවශ්‍යයි. [මාර්තු 12](date), සිප්කෝඩ් [97232](zip) හි තිරගත වන වේලාව කුමක්ද?
+    - මට ප්‍රවේශ පත්‍ර [දහය](numberofpeople) ක් අවශ්‍යයි. [3/9/2016](date) [මැජෙස්ටික් සිටි](theater) හි චිත්‍රපටය පෙන්වන්නේ කීයටද?
+    - මට ටිකට්පත් [11](numberofpeople) ක් මිලදී ගැනීමට අවශ්‍යයි. [ගම්පහ](city) හි සෙල්ලම් කරන වේලාව කීයද, සහ සිප්කෝඩ් [33172](zip) වේ.
+    - [95833 ට ආසන්න)(distanceconstraints) ව තිරගත වන එම චිත්‍රපටයේ ආරම්භක වේලාව දන්නවද?
+    - [රීගල් සිනමා ශාලාවේ](theater) පෙන්නන වේලාව කුමක්ද?
+    - [හෙට දහවල්](date) [ලුයිස් පාර්ක්](city) [33133](zip) හි පෙන්නන වේලාව කීයද?
+    - [පෝට්ලන්ඩ්](city) පෙන්නන වේලාව කුමක්ද?
+    - [අද](date) පෙන්නන්නෙ කීයටද?
+    - [3/11](date) [මොන්රෝ](city) හි පෙන්නන්නෙ කීයටද?
+    - මම කැමතියි එම චිත්‍රපටය සඳහා ප්‍රවේශ පත්‍ර [10](numberofpeople)ක් ගන්න. එය [ca](state) පෙන්වන්නෙ කීයටද?
+    - මට ප්‍රවේශ පත්‍ර [7](numberofpeople) ක් අවශ්‍යයි. සිප්කෝඩ් [65807](zip) ප්‍රදේශයේ ආරම්භක වේලාව දන්නවද?
+    - මට ප්‍රවේශ පත්‍ර [2](numberofpeople) ක් ලබා ගැනීමට අවශ්‍යයි. [දෙහිවල](city) [fl](state) හි පෙන්නන වේලාව කීයද?
+    - [මොරටුව](city) [ටවර් හෝල්](theater) හි තිරගත වන වේලාව කුමක්ද?
+    - මට ප්‍රවේශ පත්‍ර [3](numberofpeople) ක් ලබා ගැනීමට අවශ්‍යයි. [9 වෙනිද](date) [ස්පාටා](city) [94952](zip) හි ආරම්භක වේලාව කුමක්ද?
+    - zipcode [60201](zip) හි තිරගත වන වේලාව කුමක්ද?
+    - මට ප්‍රවේශ පත්‍ර [4](numberofpeople) අවශ්‍යයි. [මාර්තු 21](date) [ෂිලෝ](city) හි [ස්කෝප් සිනමා](theater) වල ආරම්භක වේලාව කුමක්ද?
+
+- intent: description
+  examples: |   
+    - [සිරි රජ සිරි](moviename) සඳහා වෙනත් විස්තරයක් තිබේද?
+    - චිත්‍රපටය සඳහා විස්තරය කුමක්ද?
+    - ඔබට චිත්‍රපටය සඳහා විස්තරයක් ලබා දිය හැකිද?
+    - චිත්‍රපටය පිළිබඳ විස්තරයක් තිබේද?
+
+- intent: distanceconstraints
+  examples: |   
+    - චිත්‍රපටය සඳහා ඇති දුරස්ථ සීමාවන් මොනවාද?
+    - දුර සීමාවන් මොනවාද?
+    - දුර සීමාවන් තිබේද?
+
+- intent: genre
+  examples: | 
+    - චිත්‍රපටයේ ප්‍රභේදය කුමක්ද?
+    - මෙම චිත්‍රපටය අයත් වන්නේ කුමන ප්‍රභේදයටද?
+    - චිත්‍රපටයේ ප්‍රභේදය කුමක්ද?
+
+- intent: mpaa_rating
+  examples: | 
+    - චිත්‍රපටය සඳහා mpaa_rating කුමක්ද?
+    - චිත්‍රපටයේ ශ්‍රේණිගත කිරීම මොකක්ද?
+    - mpaa ශ්‍රේණිගත කිරීම කුමක්ද?
+    
+- intent: video_format
+  examples: | 
+    - චිත්‍රපටය සඳහා වීඩියෝ ආකෘතිය කුමක්ද?
+    - චිත්‍රපටයේ වීඩියෝ ආකෘතිය?
+    - ඔබට චිත්‍රපටයේ වීඩියෝ ෆෝමැට් එක ලබා දිය හැකිද?
+
+- intent: numberofkids
+  examples: | 
+    - ළමුන්ගේ ටිකට්පත් කීයක් තිබේද?
+    - මට ළදරු ටිකට් කීයක් ලබා ගත හැකිද?
+    - ළමයින් සඳහා ප්‍රවේශ පත්‍ර කීයක් තිබේද?
+
+- intent: zip
+  examples: |
+    - සිප් කේතය කුමක්ද?
+    - ඔබට මට සිප් කේතය ලබා දිය හැකිද?
+    - සිප් කේතය?
+
+- intent: theater_chain
+  examples: |
+    - එය රඟ දක්වන්නේ කුමන රඟහලද?
+    - රංග ශාලාව කුමක්ද?
+    - එය ලබා ගත හැකි රංග ශාලාව කුමක්ද?
+        
+- intent: state
+  examples: |
+    - ලබා ගත හැකි ස්ටේට් එක කුමක්ද?
+    - පවතින ප්‍රාන්තය කුමක්ද?
+    - කුමන ප්‍රාන්තයෙන්ද?
+
+- intent: movie_series
+  examples: |
+    - චිත්‍රපට මාලාව කුමක්ද?
+    - චිත්‍රපට මාලාවේ නම කුමක්ද?
+    - චිත්‍රපට මාලාවේ නම?
+    
+- intent: date
+  examples: | 
+    - [බෘක්ලින්](moviename) සඳහා මට ටිකට්පත් වෙන්කර ගත හැක්කේ කුමන දිනයද?
+    - [දොරේ අනෙක් පැත්ත](moviename) [උදේ 10:30](starttime) ට පෙන්වන්නේ කුමන දිනයේද?
+    - [ද බෝයි](moviename) තිරගත කරන්නේ කවදාද?
+    - [ඔෆලෝන්](city) හි [ඉන්ෆිනිටි වෝ](moviename) තිරගත වන දිනය කුමක්ද?
+    - [කෑගල්ලේ](city) [මායාකාරිය](moviename) තිරගත වෙන්නේ කවදාද?
+    - [ඉට්](moviename) [85249](zip) සිප් කේතයේ තිරගත වෙන්නේ කුමන දිනයේද?
+    - [තරුණ මෙසියස්](moviename) [රීගල් මේරිස්විල්](theater) හි පෙන්නන්නේ කුමන දිනයේද?
+    - ලබා ගත හැකි දිනය කුමක්ද?
+    - [ඇලඩින්](moviename) [මේ නගරයේ](distanceconstraints) තිරගත වන්නේ කවදාද?
+    - [3](අංක) දෙනෙක් සඳහා ප්‍රවේශ පත්‍ර ලබා ගත හැකි දිනය කුමක්ද?
+    - මට [Ny](state) වලින් ප්‍රවේශ පත්‍ර [දෙකක්](numberofpeople) ලබා ගත හැකි දිනය කුමක්ද?
+    - ගන්න පුලුවන් දවස මොකක්ද?
+
+- intent: theater+starttime
+  examples: |  
+    - [හෙට](date) ලබා ගත හැකි තියටර් හෝල් එක සහ ආරම්භක වේලාව කුමක්ද?
+    - [ෆෙයාර්වීව් හයිට්ස්](city) හි ටිකට් [පතක්]("entity": "numberofpeople", "value": "1") වෙන්කරවා ගැනීමට ඇති රංග ශාලාව සහ ආරම්භක වේලාව කුමක්ද?
+    - [ස්ප්‍රිංෆීල්ඩ්](city) [35246](zip) හි ටිකට්පත් වෙන්කරවා ගැනීමට ඇති රංග ශාලාව සහ පටන් ගන්න වේලාව කුමක්ද?
+    - [මෙම සති අන්තයේ](date) [ඇල්බනි](city) වලින් ලබා ගත හැකි තියටර් එක සහ පටන්ගන්න වේලාව කුමක්ද?
+    - [mi](state) හිදී ලබා ගත හැකි රංග ශාලාව සහ ආරම්භ වෙන වේලාව කුමක්ද?
+    - කුමන රංග ශාලාව සහ ආරම්භ වෙන වේලාව වෙන්කරවා ගැනීමටද ඔබට පුලුවන්?
+    - ටිකට්පත් [5](numberofpeople) ක් සඳහා [වැල්ලවත්තේ](distanceconstraints) ඇති රංග ශාලාව සහ ආරම්භක වේලාව කුමක්ද?
+    - [අද](date) [කොල්ලුපිටියෙ](city) හි ටිකට්පත් [4](numberofpeople) සඳහා ඇති රංග ශාලාව සහ ආරම්භක වේලාව කුමක්ද?
+    - [කැලිෆෝනියා](state) වලින් ටිකට් [හතරක්]("entity": "numberofpeople", "value": "4") ක් ලබා ගත හැකි තියටර් හෝල් එක සහ පටන්ගන්න වේලාව මොකක්ද?
+    - [සෙනසුරාදා](date) [කොළඹ](city) [48071](zip) හි ඇති තියටර් එක සහ ආරම්භක වේලාව කුමක්ද?
+    - [90036](zip) හි ටිකට් [6](numberofpeople) වෙන්කරවා ගැනීමට ඇති රංග ශාලාව සහ ආරම්භ වෙන වේලාව දන්නවද? 
+    - [ආසන්නයෙන්](distanceconstraints) ලබා ගත හැකි රංග ශාලාව සහ ආරම්භක වේලාව කුමක්ද?
+    - කුමන රංග ශාලාව සහ ආරම්භ වෙන වේලාව තිබේද?
+    - [අද](date) පුද්ගලයින් [දෙන්නෙක්](numberofpeople) සඳහා ප්‍රවේශ පත්‍ර ලබා ගත හැකි රංග ශාලාව සහ ආරම්භක වේලාව කුමක්ද?
+    - [සවුත්ෆීල්ඩ්](city) [ඔරිගන්](state) ලබා ගත හැකි රංග ශාලාව සහ ආරම්භක වේලාව කුමක්ද?
+    - [සිකුරාදා](date) [මොන්රෝ](city) [35242](zip) හි පුද්ගලයින් [10](numberofpeople) සඳහා ප්‍රවේශ පත්‍ර ලබා ගත හැකි තියටර් එක සහ පටන්ගන්න වේලාව කුමක්ද?  
+    - [imax 3d](video_format) සඳහා [පානදුරෙ](city) හි [මා අසල](distanceconstraints) ඇති රංග ශාලාව දන්නවද?
+    - ටිකට් [9](numberofpeople) ක් වෙන්කරවා ගැනීමට ඇති රංග ශාලාව සහ ආරම්භක වේලාව කුමක්ද?
+
+- intent: date+starttime
+  examples: |  
+    - ටිකට්පත් [20](numberofpeople) ක් වෙන්කරවා ගත හැකි දිනය හා පටන්ගන්න වේලාව කුමක්ද?
+    - [සැවොයි](theater) හි ටිකට්පත් වෙන්කරවා ගැනීමට ඇති දවස සහ ආරම්භක වේලාව කුමක්ද?
+    - [මෙ ලඟින්](distanceconstraints) ලබා ගත හැකි දිනය සහ ආරම්භක වේලාව?
+    - [නොර්ෆොක්](city) හි [ලිබර්ටි](theater) දී ටිකට්පත් වෙන්කරවා ගැනීමට ඇති දිනය සහ ආරම්භවෙන වේලාව මොකක්ද?
+    - [ගාල්ල](city) හි ටිකට්පත් වෙන්කරවා ගැනීමට ඇති දිනය සහ පටන් ගන්න වේලාව දන්නවද?
+    - zipcode [08835](zip) හි ඇති දවස සහ ආරම්භක වේලාව මොකක්ද?
+    - [මොරටුවෙන්](city) ලබා ගත හැකි දිනය සහ පටන්ගන්න වේලාව කුමක්ද?
+    - [ලුයිස්](city) හි [මැජෙස්ටික් සිටි](theater) වලින් ලබා ගත හැකි දිනය හා ආරම්භ වෙන වේලාව කුමක්ද?
+    - [පානදුර](city) හි [දෙන්නෙක්]("entity": "numberofpeople", "value": "2") සඳහා ප්‍රවේශ පත්‍ර ලබා ගත හැකි දවස සහ පටන්ගන්න වේලාව දන්නවද?
+    - ටිකට් [2](numberofpeople) ක් [ආසන්නයෙන්](distanceconstraints) වෙන්කරවා ගැනීමට ඇති දිනය සහ ආරම්භක වේලාව කුමක්ද?
+    - සිප් කේතය [98272](zip) හි [තුන් දෙනෙක්]("entity": "numberofpeople", "value": "3") සඳහා ප්‍රවේශ පත්‍ර ලබා ගත හැකි දිනය සහ ආරම්භක වේලාව මොකක්ද?
+    - [වොෂිංටන්](state) හි [1](numberofpeople) ටිකට් පතක් වෙන් කරවා ගත හැකි දවස හා පටන් ගන්න වේලාව කුමක්ද?
+    - ලබා ගත හැකි දවස සහ ආරම්භ වන වේලාව මොකක්ද?
+    - [නුවරින්](city) ලබා ගත හැකි දිනය සහ ආරම්භක වේලාව කුමක්ද?
+    - [මාතරින්](city) ගන්න පුලුවන් දවස හා ආරම්භ වෙන වේලාව මොකක්ද?
+
+- intent: date+theater
+  examples: | 
+    - පවතින රංග ශාලාව සහ දිනය මට කියන්න පුළුවන්ද?
+    - මට ලබා ගත හැකි දිනයන් සහ සිනමාහල් ලබා දෙන්න
+
+- intent: date+ticket+starttime
+  examples: |  
+    - සමහර ටිකට්පත් සඳහා ඇති දිනය සහ ආරම්භක වේලාව කුමක්ද?
+    - ප්‍රවේශ පත්‍ර ලබා ගැනීම සඳහා ලබා ගත හැකි දිනයන් සහ ආරම්භක වේලාවන් මොනවාද?
+
+- intent: date+theater+starttime
+  examples: | 
+    - පවතින රංග ශාලාව සහ දිනය, ආරම්භක වේලාව මට කියන්න පුළුවන්ද?
+    - ලබා ගත හැකි සිනමාහල් මොනවාද සහ චිත්‍රපටය සඳහා දවස් සහ පටන් ගන්න වෙලාවල් මොනවද?
+
+# - lookup: city
+#   examples: |
+#     - hamilton
+#     - manville
+#     - bridgewater
+#     - seattle
+#     - bellevue
+#     - birmingham
+#     - san francisco
+#     - portland
+#     - royal oak
+#     - Royal Oak
+#     - madison heights
+#     - detroit
+#     - des moines
+#     - johnstown
+#     - boston
+#     - carbondale
+#     - los angeles
+#     - stony brook
+#     - 94952
+#     - tampa
+#     - hoover
+#     - dramas
+#     - Sacramento
+#     - nashville
+#     - Seattle
+#     - st louis
+#     - whittier village stadium cinemas
+#     - southeast portland
+#     - miami
+#     - chicago
+#     - nyc
+#     - sacramento
+#     - pittsburgh
+#     - atlanta
+#     - south barrington
+#     - over seattle
+#     - dallas
+#     - st
+#     - louis park
+#     - Portland
+#     - Monroe
+#     - cary
+#     - whittier
+#     - sparta
+#     - Shiloh
+#     - Belleville
+#     - o'fallon
+#     - fairview heights
+#     - springfield
+#     - albany
+#     - houma
+#     - la
+#     - evanston
+#     - Southfield
+#     - monroe
+#     - Long Island
+#     - northern san francisco
+#     - 94109
+#     - louis
+#     - sappington
+#     - norfolk
+#     - Los Angeles CA 90015
+#     - campcreek area
+#     - regency
+#     - arlington
+#     - philadelphia
+#     - princeton
+#     - buford
+#     - las vegas
+#     - waynesboro
+#     - Clear Lake
+#     - du quoin
+#     - Du Quoin
+#     - altoona
+#     - orlando
+#     - regency academy 6 theater
+#     - baltimore
+#     - knoxville
+#     - chico
+#     - wilmington
+#     - lansing
+#     - bayou vista
+#     - manchester stadium 16
+#     - Houma
+#     - tulare
+#     - shiloh
+#     - belleville
+#     - Springfield
+#     - du Quoin
+
+# - lookup: theater
+#   examples: |
+#     - Redwood City 20
+#     - many
+#     - amc pacific place 11 theater
+#     - regal lloyd center 10
+#     - carmike 16
+#     - river east 21
+#     - emagine theater
+#     - emagine
+#     - different
+#     - amc star john r 15
+#     - any
+#     - FLIX BREWHOUSE DES MOINES
+#     - CARMIKE COBBLESTONE 9
+#     - cinemas
+#     - regal visalia stadium 10
+#     - amc pacific place 11
+#     - amc loews boston common 19
+#     - amc showplace carbondale 8
+#     - amc lowes oak tree
+#     - amc lowes oak tree 6
+#     - royal oak emagine theater
+#     - Regal LA LIVE Stadium 14
+#     - regal la live stadium
+#     - Big Picture
+#     - Cinerama
+#     - Central Cinema
+#     - century rowland plaza
+#     - the century rowland plaza
+#     - regency commerce 14
+#     - bellevue lincoln square
+#     - amc west shore 14 210 Westshore Plaza
+#     - pacific science center imax theaters
+#     - carmike patton creek
+#     - regal meridian sundance cinemas
+#     - regal thornton place
+#     - REGAL NATOMAS MARKETPLACE STADIUM 16 & RPX
+#     - Regal Natomas Marketplace
+#     - amc hamilton 24
+#     - regal meridan 16
+#     - elmwood palace 20
+#     - regal hollywood stadium 27
+#     - chase park plaza cinemas
+#     - regal lloyd center century eastport 16
+#     - regal movies on tv stadium 16
+#     - regal lloyd
+#     - Regal South Beach
+#     - Cinepolis USA
+#     - Cobb Dolphin Cinemas
+#     - cobb dolphin cinemas
+#     - amc southcenter 16
+#     - ua kaufman astoria stadium 14
+#     - regal theater
+#     - the Holiday 6
+#     -  the Stadium 5
+#     - the Natomas Marketplace Stadium
+#     - Natomas Marketplace Stadium
+#     - regal natomas marketplace stadium
+#     - richland cinemas
+#     - this theater
+#     - amc loews waterfront 22
+#     - amc phipps plaza 14
+#     - south barrington
+#     - regal la live stadium 14
+#     - pacific theatres at the grove
+#     - regal la stadium 14
+#     - regal la
+#     - varsity theater
+#     - theaters all over
+#     - alamo draft house
+#     - alamo drafthouse dallas
+#     - century Eastport 16
+#     - regal pioneer place
+#     - regal lloyd center 10 & IMAX
+#     - CENTURY 16 EASTPORT PLAZA
+#     - century 16 EASTPORT PLAZA
+#     - century 16
+#     - regal barkley village stadium 16
+#     - amc loews cascade mall
+#     - regal marysville 14
+#     - park west 14
+#     - fangandgo
+#     - Frank Theatres Parkside Town Commons Stadium 11
+#     - Frank Theatres
+#     - whittier village stadium cinemas
+#     - cinemar downey
+#     - amc theaters puente hills
+#     - wehrenberg o'fallon 15 cine
+#     - wehrenberg st clair 10 cine
+#     - WEHRENBERG CAMPBELL 16
+#     - pacific place 11
+
+# - lookup: distanceconstraints
+#   examples: |
+#     - closest
+#     - visalia
+#     - near the space needle
+#     - area
+#     - nearest
+#     - near 98119
+#     - closest time
+#     - space needle
+#     - east side
+#     - downtown
+#     - close to 95833
+#     - near space needle
+#     - south beach
+#     - near
+#     - south barrington
+#     - near me
+#     - south side
+#     - local theater
+#     - closest theater to you
+#     - 12 miles
+#     -  seattle area
+#     - northern part of the city
+#     - near here
+#     - near my location
+#     - safeco field
+#     - near you:
+#     - north side
+#     - vicinity
+#     - around the city
+#     - far away from disney
+#     - near you
+#     - near safeco field
+#     - in your area
+#     - your area
+#     - ave
+#     - general
+
+# - lookup: critic_rating
+#   examples: |
+#     - හොඳ
+#     - සියයට 84 යි
+#     - ප්‍රේක්ෂකයින් 93 ක්
+#     - හොඳම
+#     - හොඳ ස්ථානයක්
+#     - ඉහළම ශ්‍රේණිගත කිරීම
+#     - බොහෝ දර්ශන
+#     - අංක 1
+#     - 4.5/5
+#     - top 4
+#     - lowly 26% on rotten tomatoes but 64% of the audience seemed to like it
+#     - great reviews all around with a 84 percent on rotten tomatoes and 93 of audience members recommending it
+#     - 6
+#     - 5
+#     - nice
+#     - 4 5/5 star rating
+#     - 26%
+#     - popular
+#     - most seen
+#     - 4 5/5 stars
+#     - 8%
+#     - top
+
+# - lookup: state
+#   examples: |
+#     - illinois
+#     - ny
+#     - fl
+#     - ca
+#     - tn
+#     - florida
+#     - il
+#     - pa
+#     - ga
+#     - mn
+#     - OR
+#     - north carolina
+#     - mo
+#     - alabama
+#     - louisiana
+#     - WA
+#     - NY
+#     - virginia
+#     - texas
+#     - ne
+#     - georgia
+#     - va
+#     - IA
+#     - maryland
+#     - nc
+#     - or
+#     - michigan
+#     - la
+#     - LA
+#     - nv
+
+# - lookup: moviename
+#   examples: |
+#     - where to invade next
+#     - zoolander 2
+#     - hail caesar
+#     - star wars
+#     - the big short
+#     - the danish girl
+#     - deadpool
+#     - kung fu panda 3
+#     - room
+#     - independce day
+#     - kung fu panda
+#     - Deadpool
+#     - London has fallen
+#     - the revenant
+#     - 10 cloverfield lane
+#     - the brothers grimsby
+#     - the perfect match
+#     - the brother's grimsby
+#     - lolo
+#     - brooklyn
+#     - the other side of the door
+#     - the boy
+#     - other side of the door
+#     - witch
+#     - The Witch
+#     - Young Messiah
+#     - The Young Messiah
+#     - risen
+#     - big short
+#     - Avengers
+#     - Finding Dory
+#     - zoology
+#     - called zoology
+#     - batman
+#     - batman vs superman
+#     - race
+#     - revenant
+#     - star wars the force awakens
+#     - TheWitch
+#     - The Other Side of The Door
+#     - How to be Single
+#     - whiskey
+#     - tango
+#     - Foxtrot
+#     - whisky tango foxtrot
+#     - Zootopia
+#     - starwars
+#     - The revenant
+#     - dirty grandpa
+#     - first
+#     - kung fu kanda 3
+#     - Fandango
+#     - 10 cloverfield lane
+#     - deadpool
+#     - brothers grimsby
+#     - The Perfect Match
+#     - mei ren yu (the mermaid)
+#     - mei ren yu
+#     - big
+#     - London Has Fallen
+#     - Whiskey Tango Foxtrot
+#     - Eddie The Eagle
+#     - Godys of Egypt
+#     - Triple 9
+#     - Where to Invade Next
+#     - Zoolander 2
+#     - Hail Caesar
+#     - Kung Fu Panda 3
+#     - Star Wars
+#     - The Big Short
+#     - The Danish Girl
+#     - more
+#     - spotlight
+#     - batman moviename
+#     - batman v superman
+#     - creed
+#     - large number of movies
+#     - risen race spotlight
+#     - london had fallen
+#     - hail casaer
+#     - race and risen
+#     - The big short
+#     - whisky foxtrot tango
+#     - zootopis
+#     - avengers
+#     - finding dory
+#     - same movie
+#     - the young messiah
+#     - morning as
+
+# - lookup: genre
+#   examples: |
+#     - comedy
+#     - comedies
+#     - kid
+#     - action
+#     - violence
+#     - superhero
+#     - romance
+#     - thriller
+#     - drama
+#     - family friendly
+#     - funny
+#     - kids
+#     - scary
+#     - horror
+#     - showing
+#     - romantic comedies
+#     - romantic comedy
+#     - adult comedy
+#     - romantic
+#     - drama/romance
+#     - foreign
+#     - superhero movie
+#     - dramas
+#     - animated
+#     - thriller science fiction
+#     - super great day
+#     - comedies)
+#     - not live action
+#     - date night:
+#     - sci-fi
+#     - Action/Adventure Sci-Fi/Fantasyversion: "2.0"
+
