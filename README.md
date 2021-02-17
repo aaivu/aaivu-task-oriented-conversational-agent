@@ -1,30 +1,25 @@
-# Project Title / Research Title
+Building Task-Oriented Conversational Agents in Low-Resource Settings
 
 ![project] ![research]
 
 
 
-- <b>Project Lead(s) / Mentor(s)</b>
-    1. Name (talk forum profile link)
-    2. Name (talk forum profile link)
+- <b>Project Supervisor(s) </b>
+    1. Dr. Uthayasanker Thayasivam
+    2. Prof. Sanath Jayasena
 - <b>Contributor(s)</b>
-    1. Name (talk forum profile link)
-    2. Name (talk forum profile link)
+    1. Tharindu Madusanka
+    2. Durashi Langappuli
+    3. Thisara Welmilla
 
-<b>Useful Links </b>
-
-- GitHub : <project_url>
-- Talk Forum : <talk_forum_link>
-
----
 
 ## Summary
 
-two - three paragraphs about your project.
+Implementing a task-oriented conversational agent in low resource settings addressing the overfitting issue arise when optimizing dialogue policy using Reinforcement Learning (RL) and utilizing pipeline ensembling in Natural Language Understanding (NLU).
 
 ## Description
 
-Detailed description of your project.
+we  introduce  a  comprehensive task-oriented conversational agent in low resource settings utilizing a novel pipeline ensemble technique to enhance natural language understanding and utilizing the Reinforcement Learning based  dialogue  policy  learner  by  proposing  a  novel  approach  for  synthetic  agenda  generation by acknowledging the underlying probability distribution of the user agendas with a reward-based  sampling  method  that  prioritizes  failed  dialogue  acts
 
 - Project phases
 - Diagrams
